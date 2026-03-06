@@ -16,3 +16,6 @@ o funcionamento para disconto da empresa. O que acontece se a empresa não paga 
 
 COMPORTAMENTOS DIGITAIS:
 -   Pesquisa informações sobre o produto em website da empresa.
+-   Utiliza instagram e LinkedIn.
+
+Deseja aderir a energia bulbe porém possui certas incertezas sobre confiabilidade da empresa.
