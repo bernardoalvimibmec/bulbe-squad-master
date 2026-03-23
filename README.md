@@ -158,7 +158,6 @@
 
 ---
 
-<<<<<<< HEAD
 ### US-01 · [Transparência sobre cobrança e repasse à CEMIG]
 
 > **Como** [Eduardo, um novo assinante cauteloso que tem dúvidas sobre confiar o pagamento da conta de luz a uma empresa nova],  
@@ -175,24 +174,6 @@
 
 **Notas técnicas:**  
 [O conteúdo deve priorizar linguagem simples, objetiva e institucional, reduzindo insegurança jurídica e financeira do usuário. Pode depender de validação com time jurídico/comercial para garantir precisão sobre responsabilidades contratuais e processo de faturamento. Ideal incluir elementos de prova de confiança, como FAQ, resumo visual do fluxo de cobrança e links para documentos oficiais.]
-=======
-### US-01 · [Título]
-
-> **Como** [Persona],  
-> **quero** [ação que o usuário deseja realizar],  
-> **para que** [benefício ou objetivo que o usuário alcança].
-
-**Demanda relacionada:** D-0X  
-**Estimativa de esforço:** [P / M / G] *(Story Points ou T-shirt sizing)*
-
-**Critérios de Aceitação:**
-- [ ] [Critério 1: condição verificável e objetiva]
-- [ ] [Critério 2]
-- [ ] [Critério 3]
-
-**Notas técnicas:**  
-[Observações relevantes para a implementação, limitações conhecidas ou dependências.]
->>>>>>> 445cdce717bee1fda8527aaf7e480364a5adb67c
 
 ---
 
