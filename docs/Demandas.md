@@ -1,4 +1,4 @@
-<img width="513" height="372" alt="D-01 Bellei" src="https://github.com/user-attachments/assets/5a52b56d-d8e2-4895-8fc2-f1eed8b1f33c" />
+<img width="513" height="372" alt="D-01 Bellei" src="file:///C:/Users/berna/OneDrive/Ibmec/2o%20Per%C3%ADodo/Projeto01%20-%20Bulbe/Gemini_Generated_Image_kazsvkazsvkazsvk.png" />
 <br><br/>
 <img width="806" height="694" alt="D-02 Alvim" src="https://github.com/user-attachments/assets/c6257490-0e98-4805-84d5-17b05a151076" />
 <br><br/>
