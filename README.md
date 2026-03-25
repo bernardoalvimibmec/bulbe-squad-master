@@ -45,7 +45,7 @@ Dentro do escopo do projeto, estão a reorganização da comunicação da jornad
 
 | Nome Completo | Matrícula | Curso | Papel na Squad |
 |---|---|---|---|
-| [Bernardo A. Alvim] | [202508427141] | [Eng. Software] | [Ex: Tech Lead] |
+| Bernardo A. Alvim | 202508427141 | Eng. Software | Ex: Tech Lead |
 | [Nome] | [Matrícula] | [Curso] | [Papel] |
 | [Nome] | [Matrícula] | [Curso] | [Papel] |
 | [Nome] | [Matrícula] | [Curso] | [Papel] |
@@ -158,7 +158,7 @@ Dentro do escopo do projeto, estão a reorganização da comunicação da jornad
 
 | ID | Persona | Título | Prioridade | Status |
 |---|---|---|---|---|
-| US-01 | [Persona] | [Título curto] | Alta / Média / Baixa | To Do / In Progress / Done |
+| US-01 | Eduardo | Cobrança e Repasse | Alta | Done |
 | US-02 | [Persona] | [Título curto] | | |
 | US-03 | [Persona] | [Título curto] | | |
 
@@ -166,17 +166,17 @@ Dentro do escopo do projeto, estão a reorganização da comunicação da jornad
 
 ### US-01 · [Transparência sobre cobrança e repasse à CEMIG]
 
-> **Como** [Eduardo, um novo assinante cauteloso que tem dúvidas sobre confiar o pagamento da conta de luz a uma empresa nova],  
-> **quero** [visualizar de forma clara como funciona a relação entre Bulbe, cliente e CEMIG, incluindo cobrança, pagamento e responsabilidades],  
-> **para que** [para que eu possa aderir à energia Bulbe com confiança, reduzindo meus gastos sem medo de ficar inadimplente ou assumir riscos que desconheço].
+> **Como** Eduardo, um novo assinante cauteloso que tem dúvidas sobre confiar o pagamento da conta de luz a uma empresa nova,  
+> **quero** visualizar de forma clara como funciona a relação entre Bulbe, cliente e CEMIG, incluindo cobrança, pagamento e responsabilidades,  
+> **para que** para que eu possa aderir à energia Bulbe com confiança, reduzindo meus gastos sem medo de ficar inadimplente ou assumir riscos que desconheço.
 
 **Demanda relacionada:** D-01  
-**Estimativa de esforço:** [M] *(Story Points ou T-shirt sizing)*
+**Estimativa de esforço:** M *(Story Points ou T-shirt sizing)*
 
 **Critérios de Aceitação:**
-- [ ] [A página ou fluxo deve explicar objetivamente o papel da Bulbe, do cliente e da CEMIG na prestação do serviço.]
-- [ ] [O sistema deve informar, de forma explícita, o que acontece caso haja atraso ou falha de pagamento por parte da empresa.]
-- [ ] [O usuário deve conseguir visualizar como funciona o faturamento, incluindo quem cobra, quem recebe e como o pagamento é repassado.]
+- [ ] A página ou fluxo deve explicar objetivamente o papel da Bulbe, do cliente e da CEMIG na prestação do serviço.
+- [ ] O sistema deve informar, de forma explícita, o que acontece caso haja atraso ou falha de pagamento por parte da empresa.
+- [ ] O usuário deve conseguir visualizar como funciona o faturamento, incluindo quem cobra, quem recebe e como o pagamento é repassado.
 
 **Notas técnicas:**  
 [O conteúdo deve priorizar linguagem simples, objetiva e institucional, reduzindo insegurança jurídica e financeira do usuário. Pode depender de validação com time jurídico/comercial para garantir precisão sobre responsabilidades contratuais e processo de faturamento. Ideal incluir elementos de prova de confiança, como FAQ, resumo visual do fluxo de cobrança e links para documentos oficiais.]
