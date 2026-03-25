@@ -25,7 +25,7 @@
 
 O mercado de energia solar por assinatura no Brasil cresce com o avanço da micro e minigeração distribuída, especialmente na modalidade de geração compartilhada, regulamentada pela Lei nº 14.300/2022. Além disso, a energia solar já ocupa posição de destaque na matriz elétrica brasileira, o que reforça a relevância e o potencial de expansão desse setor.
 
-Nesse contexto, a Bulbe Energia atua com um modelo de assinatura em que a energia é gerada em usinas solares, injetada na rede da CEMIG e convertida em créditos para os assinantes. Seu diferencial está em oferecer economia na conta de luz sem exigir instalação de placas, obras ou investimento inicial, por meio de uma jornada digital e simplificada. Assim, a Bulbe se posiciona como uma alternativa mais acessível ao modelo tradicional de energia solar residencial.
+Nesse contexto, a Bulbe Energia atua com um modelo de assinatura em que a energia é gerada em usinas solares, injetada na rede da CEMIG e convertida em créditos para os assinantes. Seu diferencial está em oferecer uma economia de 15% na conta de luz sem exigir instalação de placas, obras ou investimento inicial, por meio de uma jornada digital e simplificada. Assim, a Bulbe se posiciona como uma alternativa mais acessível ao modelo tradicional de energia solar residencial.
 
 Durante a visita à empresa e as conversas com os responsáveis por Marketing e Projetos, foi identificado que a principal dificuldade da Bulbe está em conquistar a confiança de novos clientes. Embora a proposta de desconto seja atrativa, muitos usuários desconfiam da simplicidade do serviço e sentem falta de informações mais claras sobre o funcionamento da assinatura, o prazo para início do benefício e situações excepcionais do processo. Esse cenário motivou o desenvolvimento do projeto.
 
@@ -45,7 +45,7 @@ Dentro do escopo do projeto, estão a reorganização da comunicação da jornad
 
 | Nome Completo | Matrícula | Curso | Papel na Squad |
 |---|---|---|---|
-| Bernardo A. Alvim | 202508427141 | Eng. Software | Ex: Tech Lead |
+| Bernardo A. Alvim | 202508427141 | Eng. Software | Tech Lead |
 | [Felipe Nunes ] | [202501440487] | [CDIA] | [Papel] |
 | [Caio Freitas] | [202503206091] | [CDIA] | [Papel] |
 | [Davi Edmundo] | [202501274161] | [Eng. Software] | [Papel] |
@@ -251,7 +251,7 @@ Dentro do escopo do projeto, estão a reorganização da comunicação da jornad
 
 ---
 
-### US-01 · [Transparência sobre cobrança e repasse à CEMIG]
+### US-01 · Transparência sobre cobrança e repasse à CEMIG
 
 > **Como** Eduardo, um novo assinante cauteloso que tem dúvidas sobre confiar o pagamento da conta de luz a uma empresa nova,  
 > **quero** visualizar de forma clara como funciona a relação entre Bulbe, cliente e CEMIG, incluindo cobrança, pagamento e responsabilidades,  
@@ -270,18 +270,41 @@ Dentro do escopo do projeto, estão a reorganização da comunicação da jornad
 
 ---
 
-### US-02 · [Título]
+### US-02 · Transparência sobre o período de espera
 
-> **Como** [Persona],  
-> **quero** [ação],  
-> **para que** [benefício].
+> **Como** Eduardo,
+> **quero** quero visualizar de forma clara, antes da contratação, que o desconto da Bulbe começa após o período de espera de aproximadamente 90 dias e entender o motivo desse prazo,  
+> **para que** para que eu possa decidir com segurança se desejo assinar o serviço, sem me sentir enganado ou surpreso depois da adesão.
 
-**Demanda relacionada:** D-0X  
-**Estimativa de esforço:** [P / M / G]
+**Demanda relacionada:** D-02  
+**Estimativa de esforço:** P
 
 **Critérios de Aceitação:**
-- [ ] [Critério 1]
-- [ ] [Critério 2]
+- [ ] O site deve informar, antes da confirmação da assinatura, que o benefício não é ativado imediatamente e que existe um período de espera de cerca de 90 dias.
+- [ ] A interface deve explicar de forma simples que esse prazo decorre de uma regra/processo da CEMIG, e não de uma escolha arbitrária da Bulbe.
+
+**Notas Técnincas:**
+A user story foca exclusivamente na camada de comunicação e transparência no frontend. Não inclui alteração no prazo real do processo nem integração com sistemas da CEMIG. O objetivo é reduzir insegurança e cancelamentos causados por expectativa incorreta sobre o início do benefício.
+
+# US-03 · Transparência e Acompanhamento de Faturas
+
+**Como Eduardo,** um engenheiro de software que busca transparência e confiabilidade,  
+**quero** visualizar o status de processamento do meu contrato e as confirmações de pagamento da CEMIG,  
+**para que** eu tenha certeza absoluta de que minhas contas estão em dia e elimine minhas dúvidas sobre a Bulbe.
+
+---
+
+**Demanda relacionada:** D-03  
+**Estimativa de esforço:** M (Média)  
+**Persona vinculada:** Eduardo
+
+---
+
+### Critérios de Aceitação:
+
+- [ ] O sistema deve disponibilizar um dashboard ou área logada onde o Eduardo visualize a etapa atual do seu contrato (ex: em análise, aguardando compensação, ativo).
+- [ ] Deve haver uma seção de "Histórico de Pagamentos" que mostre o comprovante ou a confirmação de quitação da fatura junto à CEMIG.
+
 
 ---
 

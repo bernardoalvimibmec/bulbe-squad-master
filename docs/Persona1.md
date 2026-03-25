@@ -11,7 +11,7 @@ OBJETIVOS:
 
 FRUSTRAÇÕES:
 -   Falta de confiança na empresa. Falta de conhecimento sobre todo 
-o funcionamento para disconto da empresa. O que acontece se a empresa não paga meu consumo para CEMIG, fico endividado?
+o funcionamento para desconto da empresa. O que acontece se a empresa não paga meu consumo para CEMIG, fico endividado?
 -   Falta de informação/transparência sobre a relação cliente-bulbe-cemig.
 
 COMPORTAMENTOS DIGITAIS:
