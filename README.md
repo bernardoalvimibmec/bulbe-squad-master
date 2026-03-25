@@ -251,22 +251,22 @@ O modelo de compensação depende da enregia efetivamente injetada na rede pela 
 
 ---
 
-### US-01 · Transparência sobre cobrança e repasse à CEMIG
+### US-01 · Clareza sobre déficit de geração e variação do desconto
 
-> **Como** Eduardo, um novo assinante cauteloso que tem dúvidas sobre confiar o pagamento da conta de luz a uma empresa nova,  
-> **quero** visualizar de forma clara como funciona a relação entre Bulbe, cliente e CEMIG, incluindo cobrança, pagamento e responsabilidades,  
-> **para que** para que eu possa aderir à energia Bulbe com confiança, reduzindo meus gastos sem medo de ficar inadimplente ou assumir riscos que desconheço.
+> **Como** José Carlos, um consumidor que busca economizar na conta de luz, mas precisa confiar que a economia prometida vai realmente acontecer de forma compreensível e previsíve,  
+> **quero** entender de forma clara por que o desconto da Bulbe pode variar quando a geração de energia é menor do que o esperado, incluindo o que é cobrado pela CEMIG e o que depende da energia efetivamente injetada,  
+> **para que** eu possa usar o serviço com segurança, sem sentir que o valor da minha conta virou uma surpresa ou que a economia prometida depende de fatores que ninguém me explicou.
 
 **Demanda relacionada:** D-01  
-**Estimativa de esforço:** M *(Story Points ou T-shirt sizing)*
+**Estimativa de esforço:** M
 
 **Critérios de Aceitação:**
-- [ ] A página ou fluxo deve explicar objetivamente o papel da Bulbe, do cliente e da CEMIG na prestação do serviço.
-- [ ] O sistema deve informar, de forma explícita, o que acontece caso haja atraso ou falha de pagamento por parte da empresa.
-- [ ] O usuário deve conseguir visualizar como funciona o faturamento, incluindo quem cobra, quem recebe e como o pagamento é repassado.
+- [ ] O sistema deve explicar, em linguagem simples, que o desconto não é fixo em todos os meses e depende da energia efetivamente gerada/injetada.
+- [ ] O fluxo deve responder objetivamente à dúvida sobre risco de ficar sem energia, deixando claro que baixa geração afeta o benefício financeiro, e não o fornecimento da CEMIG.
+- [ ] O usuário deve conseguir entender, sem linguagem técnica excessiva, por que em alguns meses a conta da CEMIG pode vir maior do que o esperado
 
 **Notas técnicas:**  
-[O conteúdo deve priorizar linguagem simples, objetiva e institucional, reduzindo insegurança jurídica e financeira do usuário. Pode depender de validação com time jurídico/comercial para garantir precisão sobre responsabilidades contratuais e processo de faturamento. Ideal incluir elementos de prova de confiança, como FAQ, resumo visual do fluxo de cobrança e links para documentos oficiais.]
+O conteúdo deve priorizar clareza visual e linguagem acessível, evitando termos regulatórios sem explicação. Ideal incluir um quadro comparativo do tipo “consumo total x energia compensada x saldo cobrado pela CEMIG”, além de FAQ com perguntas reais de clientes. Pode depender de validação com os times técnico, comercial e jurídico para garantir precisão sobre compensação de energia, sazonalidade da geração e comunicação contratual do desconto.
 
 ---
 
@@ -288,9 +288,9 @@ A user story foca exclusivamente na camada de comunicação e transparência no 
 
 # US-03 · Transparência e Acompanhamento de Faturas
 
-**Como Eduardo,** um engenheiro de software que busca transparência e confiabilidade,  
-**quero** visualizar o status de processamento do meu contrato e as confirmações de pagamento da CEMIG,  
-**para que** eu tenha certeza absoluta de que minhas contas estão em dia e elimine minhas dúvidas sobre a Bulbe.
+**Como Eduardo,** um engenheiro de software cauteloso que tem dúvidas sobre confiar o pagamento da conta de luz a uma empresa nova,  
+**quero** saber se é possível visualizar o status de processamento do meu contrato e as confirmações de pagamento da CEMIG,  
+**para que** eu tenha certeza absoluta de que minhas contas fiquem em dia e elimine minhas dúvidas sobre a Bulbe.
 
 ---
 
