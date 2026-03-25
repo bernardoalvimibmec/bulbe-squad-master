@@ -1,4 +1,4 @@
-# 🌞 [Nome do Projeto] — Bulbe Energia
+# 🌞 [Project Trust] — Bulbe Energia
 > **Disciplina:** Projeto Aplicado I — Ibmec 2026.1  
 > **Professor:** Cristiano de Macedo Neto, M.Sc.  
 > **Squad:** [Master]  
@@ -23,23 +23,29 @@
 
 ### 1.1 Contexto do Projeto
 
-> ⚠️ **Instrução para a Squad:** Descreva aqui o contexto do projeto com base na visita ao cliente e nas entrevistas realizadas. Não copie materiais de referência do professor; use suas próprias palavras e cite as fontes das informações.
+O mercado de energia solar por assinatura no Brasil cresce com o avanço da micro e minigeração distribuída, especialmente na modalidade de geração compartilhada, regulamentada pela Lei nº 14.300/2022. Além disso, a energia solar já ocupa posição de destaque na matriz elétrica brasileira, o que reforça a relevância e o potencial de expansão desse setor.
 
-[Descreva brevemente o mercado de energia solar por assinatura no Brasil, a posição da Bulbe Energia nesse mercado e o problema central que motivou este projeto. Referencie dados de mercado confiáveis, como relatórios da ANEEL, ABSOLAR ou artigos acadêmicos.]
+Nesse contexto, a Bulbe Energia atua com um modelo de assinatura em que a energia é gerada em usinas solares, injetada na rede da CEMIG e convertida em créditos para os assinantes. Seu diferencial está em oferecer economia na conta de luz sem exigir instalação de placas, obras ou investimento inicial, por meio de uma jornada digital e simplificada. Assim, a Bulbe se posiciona como uma alternativa mais acessível ao modelo tradicional de energia solar residencial.
+
+Durante a visita à empresa e as conversas com os responsáveis por Marketing e Projetos, foi identificado que a principal dificuldade da Bulbe está em conquistar a confiança de novos clientes. Embora a proposta de desconto seja atrativa, muitos usuários desconfiam da simplicidade do serviço e sentem falta de informações mais claras sobre o funcionamento da assinatura, o prazo para início do benefício e situações excepcionais do processo. Esse cenário motivou o desenvolvimento do projeto.
 
 ### 1.2 Problema de Design
 
-[Descreva o problema específico que a squad identificou durante a fase de descoberta com o cliente. Seja preciso: qual dor do usuário ou do negócio este projeto resolve?]
+O problema de design identificado pela squad é a falta de clareza, previsibilidade e segurança percebida na jornada de adesão de novos clientes da Bulbe. Embora a proposta comercial seja atrativa, a comunicação atual não explica de forma suficientemente transparente etapas e condições importantes do serviço, o que gera insegurança no momento da decisão. Na prática, o usuário entende a promessa de economia, mas não compreende completamente como o processo funciona, quando o desconto começa a valer e quais garantias possui caso algo não ocorra como esperado.
+
+Essa falha impacta tanto a experiência do cliente quanto o negócio. Para o usuário, gera dúvida sobre como a assinatura realmente funciona. Para a empresa, dificulta a conversão de novos assinantes e pode até contribuir para cancelamentos antes do início efetivo do benefício.
 
 ### 1.3 Solução Proposta
 
-[Descreva em 2–3 parágrafos a solução de frontend que a squad propõe. Inclua o escopo definido (o que está dentro e fora do projeto).]
+A solução proposta pela squad é o desenvolvimento de uma solução de frontend voltada para aumentar a transparência e a confiança na jornada de adesão da Bulbe. A proposta consiste em estruturar uma experiência digital mais explicativa e previsível, com foco em apresentar de forma clara como o serviço funciona, quais etapas existem entre a assinatura e o início da economia e quais responsabilidades cabem à Bulbe e à distribuidora. Em vez de apenas comunicar a promessa de desconto, a interface passará a apoiar a tomada de decisão do usuário com informações essenciais apresentadas de forma simples, visual e acessível.
+
+Dentro do escopo do projeto, estão a reorganização da comunicação da jornada, a criação de componentes informativos e a apresentação mais clara de dúvidas críticas, como prazo de ativação, composição da conta e funcionamento do repasse à CEMIG. Ficam fora do escopo mudanças operacionais da Bulbe, integrações de back-end e alterações no modelo regulatório ou comercial da empresa. Assim, o projeto se concentra especificamente na camada de experiência e interface, usando o frontend como ferramenta para reduzir a desconfiança e melhorar a conversão de novos assinantes.
 
 ### 1.4 Integrantes da Squad
 
 | Nome Completo | Matrícula | Curso | Papel na Squad |
 |---|---|---|---|
-| [Nome] | [Matrícula] | [Eng. Software / Ciência de Dados / Eng. Computação] | [Ex: Tech Lead] |
+| [Bernardo A. Alvim] | [202508427141] | [Eng. Software] | [Ex: Tech Lead] |
 | [Nome] | [Matrícula] | [Curso] | [Papel] |
 | [Nome] | [Matrícula] | [Curso] | [Papel] |
 | [Nome] | [Matrícula] | [Curso] | [Papel] |
