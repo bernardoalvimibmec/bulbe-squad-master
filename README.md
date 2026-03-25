@@ -164,7 +164,7 @@ Dentro do escopo do projeto, estão a reorganização da comunicação da jornad
 
 ---
 
-### US-01 · [Transparência sobre cobrança e repasse à CEMIG]
+### US-01 · Transparência sobre cobrança e repasse à CEMIG
 
 > **Como** Eduardo, um novo assinante cauteloso que tem dúvidas sobre confiar o pagamento da conta de luz a uma empresa nova,  
 > **quero** visualizar de forma clara como funciona a relação entre Bulbe, cliente e CEMIG, incluindo cobrança, pagamento e responsabilidades,  
@@ -183,18 +183,21 @@ Dentro do escopo do projeto, estão a reorganização da comunicação da jornad
 
 ---
 
-### US-02 · [Título]
+### US-02 · Transparência sobre o período de espera
 
-> **Como** [Persona],  
-> **quero** [ação],  
-> **para que** [benefício].
+> **Como** Eduardo,
+> **quero** quero visualizar de forma clara, antes da contratação, que o desconto da Bulbe começa após o período de espera de aproximadamente 90 dias e entender o motivo desse prazo,  
+> **para que** para que eu possa decidir com segurança se desejo assinar o serviço, sem me sentir enganado ou surpreso depois da adesão.
 
-**Demanda relacionada:** D-0X  
-**Estimativa de esforço:** [P / M / G]
+**Demanda relacionada:** D-02  
+**Estimativa de esforço:** P
 
 **Critérios de Aceitação:**
-- [ ] [Critério 1]
-- [ ] [Critério 2]
+- [ ] O site deve informar, antes da confirmação da assinatura, que o benefício não é ativado imediatamente e que existe um período de espera de cerca de 90 dias.
+- [ ] A interface deve explicar de forma simples que esse prazo decorre de uma regra/processo da CEMIG, e não de uma escolha arbitrária da Bulbe.
+
+**Notas Técnincas:**
+A user story foca exclusivamente na camada de comunicação e transparência no frontend. Não inclui alteração no prazo real do processo nem integração com sistemas da CEMIG. O objetivo é reduzir insegurança e cancelamentos causados por expectativa incorreta sobre o início do benefício.
 
 ---
 
