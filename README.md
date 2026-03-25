@@ -71,19 +71,19 @@ Dentro do escopo do projeto, estão a reorganização da comunicação da jornad
 
 ---
 
-### D-01 · [Clientes ficam confusos com os pagamentos]
+### D-01 · Falta de clareza sobre o déficit de geração de energia
 
 | Campo | Conteúdo |
 |---|---|
 | **ID** | D-01 |
-| **Título** | [Clientes ficam confusos com os pagamentos] |
-| **Origem** | [Durante a visita, não ficou claro como é dividido as contas a pagar, pois em dado momento chega a conta da Cemig e a conta da Bulbe ao mesmo tempo.], [data] |
-| **Evidência** | *"[Quanto tenho que pagar? Tenho que pagar a Cemig mesmo depois que fechar contrato...?]"* |
+| **Título** | Falta de clareza sobre o déficit de geração de energia |
+| **Origem** | Durante a visita, indentificamos a falta de informação sobre o funcionamento do desconto de 15% nos casos em que o consumo elétrico total dos assinantes excede a geração das usinas da Bulbe, [data] |
+| **Evidência** | *"A bulbe prometeu 15% de desconto, mas este mês minha conta da fatura da Cemig veio quase o valor total. O desconto não deveria ser fixo todo mês?"* |
 | **Prioridade MoSCoW** | Must|
 | **Impacto no Negócio** | [Descreva o impacto: churn, conversão, satisfação, etc.] |
 
 **Descrição:**  
-[2–3 frases explicando a demanda com suas próprias palavras.]
+O modelo de compensação depende da enregia efetivamente injetada na rede pela Bulbe. Caso a geração seja insuficiente, a Cemig supre o déficit. Nessa situação, a bulbe continuaria disponibilizando o desconto de 15% sobre o consumo total?
 
 ---
 
