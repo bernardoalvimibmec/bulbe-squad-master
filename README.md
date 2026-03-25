@@ -25,7 +25,7 @@
 
 O mercado de energia solar por assinatura no Brasil cresce com o avanço da micro e minigeração distribuída, especialmente na modalidade de geração compartilhada, regulamentada pela Lei nº 14.300/2022. Além disso, a energia solar já ocupa posição de destaque na matriz elétrica brasileira, o que reforça a relevância e o potencial de expansão desse setor.
 
-Nesse contexto, a Bulbe Energia atua com um modelo de assinatura em que a energia é gerada em usinas solares, injetada na rede da CEMIG e convertida em créditos para os assinantes. Seu diferencial está em oferecer economia na conta de luz sem exigir instalação de placas, obras ou investimento inicial, por meio de uma jornada digital e simplificada. Assim, a Bulbe se posiciona como uma alternativa mais acessível ao modelo tradicional de energia solar residencial.
+Nesse contexto, a Bulbe Energia atua com um modelo de assinatura em que a energia é gerada em usinas solares, injetada na rede da CEMIG e convertida em créditos para os assinantes. Seu diferencial está em oferecer uma economia de 15% na conta de luz sem exigir instalação de placas, obras ou investimento inicial, por meio de uma jornada digital e simplificada. Assim, a Bulbe se posiciona como uma alternativa mais acessível ao modelo tradicional de energia solar residencial.
 
 Durante a visita à empresa e as conversas com os responsáveis por Marketing e Projetos, foi identificado que a principal dificuldade da Bulbe está em conquistar a confiança de novos clientes. Embora a proposta de desconto seja atrativa, muitos usuários desconfiam da simplicidade do serviço e sentem falta de informações mais claras sobre o funcionamento da assinatura, o prazo para início do benefício e situações excepcionais do processo. Esse cenário motivou o desenvolvimento do projeto.
 
@@ -45,11 +45,12 @@ Dentro do escopo do projeto, estão a reorganização da comunicação da jornad
 
 | Nome Completo | Matrícula | Curso | Papel na Squad |
 |---|---|---|---|
-| Bernardo A. Alvim | 202508427141 | Eng. Software | Ex: Tech Lead |
-| [Nome] | [Matrícula] | [Curso] | [Papel] |
-| [Nome] | [Matrícula] | [Curso] | [Papel] |
-| [Nome] | [Matrícula] | [Curso] | [Papel] |
-
+| Bernardo A. Alvim | 202508427141 | Eng. Software | Tech Lead |
+| [Felipe Nunes ] | [202501440487] | [CDIA] | [Papel] |
+| [Caio Freitas] | [202503206091] | [CDIA] | [Papel] |
+| [Davi Edmundo] | [202501274161] | [Eng. Software] | [Papel] |
+| [Luca bellei] | [202501560229] | [CDIA] | [Papel] |
+| [Vinicius ] | [202501007163] | [CDIA] | [Papel] |
 ### 1.5 Repositório e Entrega
 
 | Item | Link |
@@ -70,15 +71,15 @@ Dentro do escopo do projeto, estão a reorganização da comunicação da jornad
 
 ---
 
-### D-01 · [Título Curto da Demanda]
+### D-01 · [Clientes ficam confusos com os pagamentos]
 
 | Campo | Conteúdo |
 |---|---|
 | **ID** | D-01 |
-| **Título** | [Título descritivo] |
-| **Origem** | Entrevista com [cargo/nome do contato na Bulbe], [data] |
-| **Evidência** | *"[Trecho literal de fala do cliente que justifica esta demanda]"* |
-| **Prioridade MoSCoW** | Must / Should / Could / Won't |
+| **Título** | [Clientes ficam confusos com os pagamentos] |
+| **Origem** | [Durante a visita, não ficou claro como é dividido as contas a pagar, pois em dado momento chega a conta da Cemig e a conta da Bulbe ao mesmo tempo.], [data] |
+| **Evidência** | *"[Quanto tenho que pagar? Tenho que pagar a Cemig mesmo depois que fechar contrato...?]"* |
+| **Prioridade MoSCoW** | Must|
 | **Impacto no Negócio** | [Descreva o impacto: churn, conversão, satisfação, etc.] |
 
 **Descrição:**  
@@ -86,15 +87,75 @@ Dentro do escopo do projeto, estão a reorganização da comunicação da jornad
 
 ---
 
-### D-02 · [Título Curto da Demanda]
+### D-02 · [Clientes são pegos de surpresa com o período de espera]
 
 | Campo | Conteúdo |
 |---|---|
 | **ID** | D-02 |
-| **Título** | [Título descritivo] |
-| **Origem** | [Fonte da demanda] |
-| **Evidência** | *"[Trecho ou dado que evidencia a demanda]"* |
-| **Prioridade MoSCoW** | Must / Should / Could / Won't |
+| **Título** | [Clientes são pegos de surpresa com o período de espera] |
+| **Origem** | [Dado citado pelo time do comercial] |
+| **Evidência** | *"[O período de espera é padrão da Cemig, é fora do nosso alcance]"* |
+| **Prioridade MoSCoW** |  Should |
+| **Impacto no Negócio** | [Impacto] |
+
+**Descrição:**  
+[Descrição da demanda.]
+
+---
+### D-03 · [Falta de confiança do cliente com a Bulbe]
+
+| Campo | Conteúdo |
+|---|---|
+| **ID** | D-03 |
+| **Título** | [Falta de confiança do cliente com a Bulbe] |
+| **Origem** | [Durante a apresentação da empresa nos foi apresentado o problema da falta de confiança do cliente relacionada com o serviço da Bulbe.] |
+| **Evidência** | *"[Parece que depois que o contrato é assinado, o cliente deixa de ser prioridade até a conta chegar]"* |
+| **Prioridade MoSCoW** | Must |
+| **Impacto no Negócio** | [Impacto] |
+
+**Descrição:**  
+[Descrição da demanda.]
+
+---
+### D-04 · [Baixa comunicação com o cliente]
+
+| Campo | Conteúdo |
+|---|---|
+| **ID** | D-04 |
+| **Título** | [Baixa comunicação com o cliente] |
+| **Origem** | [Após uma pergunta da squad sobre o suporte da Bulbe e foi relatado que uma conversa com o cliente é muito limitada] |
+| **Evidência** | *"[Cancelei meu plano após não obter respostas da empresa]"* |
+| **Prioridade MoSCoW** | Must  |
+| **Impacto no Negócio** | [Impacto] |
+
+**Descrição:**  
+[Descrição da demanda.]
+
+---
+### D-05 · [O aplicativo não tem acessibilidade e informação suficiente]
+
+| Campo | Conteúdo |
+|---|---|
+| **ID** | D-05 |
+| **Título** | [O aplicativo não tem acessibilidade e informação suficiente] |
+| **Origem** | [Após questionamento da equipe, foi identificado que uma das maiores dificuldades é fazer com que o cliente use o aplicativo.] |
+| **Evidência** | *"[Não tinha informações suficientes pelo aplicativo para contratar uma empresa]"* |
+| **Prioridade MoSCoW** |  Should |
+| **Impacto no Negócio** | [Impacto] |
+
+**Descrição:**  
+[Descrição da demanda.]
+
+---
+### D-06 · [Nossos clientes não entendem o funcionamento da empresa]
+
+| Campo | Conteúdo |
+|---|---|
+| **ID** | D-06 |
+| **Título** | [Nossos clientes não entendem o funcionamento da empresa] |
+| **Origem** | [A reunião foi relatada que a maioria dos clientes da lâmpada são o público C e D, e a maioria não entende como realmente funciona a empresa.] |
+| **Evidência** | *"[O que são esses créditos de energia?]"* |
+| **Prioridade MoSCoW** | Must|
 | **Impacto no Negócio** | [Impacto] |
 
 **Descrição:**  
@@ -112,21 +173,21 @@ Dentro do escopo do projeto, estão a reorganização da comunicação da jornad
 
 ---
 
-### Persona 1 — [Nome Fictício]
+### Persona 1 — [Luciana]
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│  👤  [Nome], [Idade] anos                                   │
-│      [Profissão] · [Cidade / Região]                        │
+│  👤  [Luciana], [43] anos                                   │
+│      [Caixa de supermercado] · [Norte de Minas]                        │
 └─────────────────────────────────────────────────────────────┘
 ```
 
 | Atributo | Descrição |
 |---|---|
-| **Perfil** | [1 frase sobre quem é essa pessoa] |
-| **Escolaridade** | [Ex: Ensino Superior Completo] |
-| **Familiaridade com tecnologia** | [Baixa / Média / Alta] |
-| **Dispositivo principal** | [Ex: Smartphone Android] |
+| **Perfil** | [Adulto que busca ganhar dinheiro para sustentar sua família] |
+| **Escolaridade** | [Ensino Superior Incompleto] |
+| **Familiaridade com tecnologia** | [Baixa] |
+| **Dispositivo principal** | [Android] |
 
 **Objetivos:**
 - [Objetivo 1 relacionado ao uso do produto]
@@ -144,9 +205,35 @@ Dentro do escopo do projeto, estão a reorganização da comunicação da jornad
 
 ---
 
-### Persona 2 — [Nome Fictício]
+### Persona 2 — [Eduardo]
+```
+┌─────────────────────────────────────────────────────────────┐
+│  👤  [Eduardo], [27] anos                                   │
+│      [Engenheiro de Software no Google] · [São Paulo]                        │
+└─────────────────────────────────────────────────────────────┘
+```
 
-> 🔁 *Repita a estrutura acima. Recomendado: 2 a 3 personas.*
+| Atributo | Descrição |
+|---|---|
+| **Perfil** | [Jovem com um filho e uma boa qualidade de vida] |
+| **Escolaridade** | [Ensino Superior Completo] |
+| **Familiaridade com tecnologia** | [Alta] |
+| **Dispositivo principal** | [Macbook] |
+
+**Objetivos:**
+- [Objetivo 1 relacionado ao uso do produto]
+- [Objetivo 2]
+
+**Frustrações:**
+- [Frustração 1 com o estado atual]
+- [Frustração 2]
+
+**Citação representativa:**
+> *"[Frase que captura a motivação central desta persona — use dados das entrevistas]"*
+
+**Relevância para o Projeto:**  
+[Explique por que esta persona é central para as decisões de design da squad.]
+
 
 ---
 
