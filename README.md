@@ -199,6 +199,26 @@ Dentro do escopo do projeto, estão a reorganização da comunicação da jornad
 **Notas Técnincas:**
 A user story foca exclusivamente na camada de comunicação e transparência no frontend. Não inclui alteração no prazo real do processo nem integração com sistemas da CEMIG. O objetivo é reduzir insegurança e cancelamentos causados por expectativa incorreta sobre o início do benefício.
 
+# US-03 · Transparência e Acompanhamento de Faturas
+
+**Como Eduardo,** um engenheiro de software que busca transparência e confiabilidade,  
+**quero** visualizar o status de processamento do meu contrato e as confirmações de pagamento da CEMIG,  
+**para que** eu tenha certeza absoluta de que minhas contas estão em dia e elimine minhas dúvidas sobre a Bulbe.
+
+---
+
+**Demanda relacionada:** D-03  
+**Estimativa de esforço:** M (Média)  
+**Persona vinculada:** Eduardo
+
+---
+
+### Critérios de Aceitação:
+
+- [ ] O sistema deve disponibilizar um dashboard ou área logada onde o Eduardo visualize a etapa atual do seu contrato (ex: em análise, aguardando compensação, ativo).
+- [ ] Deve haver uma seção de "Histórico de Pagamentos" que mostre o comprovante ou a confirmação de quitação da fatura junto à CEMIG.
+
+
 ---
 
 > 🔁 *Repita o bloco para cada User Story. Recomendado: mínimo de 6 histórias.*
