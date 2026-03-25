@@ -6,7 +6,7 @@ Idade: 38 | Profissão: Técnico de manuntenção de maquinas. | Cidade: Contage
 Renda Estimada: 3.500 | Dispositivo preferido: Celular Android.
 
 Objetivos: 
-O que ela quer alcançar com a Bulbe?
+O que ela quer alcançar coam a Bulbe?
 Economia de energia mensal 
 
 Qual dor que ela quer eliminar?
