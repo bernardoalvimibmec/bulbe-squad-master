@@ -46,17 +46,17 @@ Dentro do escopo do projeto, estão a reorganização da comunicação da jornad
 | Nome Completo | Matrícula | Curso | Papel na Squad |
 |---|---|---|---|
 | Bernardo A. Alvim | 202508427141 | Eng. Software | Tech Lead |
-| [Felipe Nunes ] | [202501440487] | [CDIA] | [Papel] |
-| [Caio Freitas] | [202503206091] | [CDIA] | [Papel] |
-| [Davi Edmundo] | [202501274161] | [Eng. Software] | [Papel] |
-| [Luca bellei] | [202501560229] | [CDIA] | [Papel] |
-| [Vinicius ] | [202501007163] | [CDIA] | [Papel] |
+| Felipe Nunes | 202501440487 | CDIA | Dev |
+| Caio Freitas | 202503206091 | CDIA | Dev |
+| Davi Edmundo | 202501274161 | Eng. Software | Dev |
+| Luca Bellei | 202501560229 | CDIA | Dev |
+| Vinicius | 202501007163 | CDIA | Dev |
 ### 1.5 Repositório e Entrega
 
 | Item | Link |
 |---|---|
-| Repositório GitHub | [URL do repositório] |
-| GitHub Project (Kanban) | [URL do board] |
+| Repositório GitHub | https://github.com/bernardoalvimibmec/bulbe-squad-master |
+| GitHub Project (Kanban) | https://github.com/users/bernardoalvimibmec/projects/1/views/1 |
 | Deploy / Demo | [URL do deploy, se disponível] |
 
 ---
