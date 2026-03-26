@@ -286,6 +286,8 @@ O conteúdo deve priorizar clareza visual e linguagem acessível, evitando termo
 **Notas Técnincas:**
 A user story foca exclusivamente na camada de comunicação e transparência no frontend. Não inclui alteração no prazo real do processo nem integração com sistemas da CEMIG. O objetivo é reduzir insegurança e cancelamentos causados por expectativa incorreta sobre o início do benefício.
 
+---
+
 ### US-03 · Transparência e Acompanhamento de Faturas
 
 **Como Eduardo,** um engenheiro de software cauteloso que tem dúvidas sobre confiar o pagamento da conta de luz a uma empresa nova,  
@@ -298,13 +300,13 @@ A user story foca exclusivamente na camada de comunicação e transparência no 
 
 **Critérios de Aceitação:**
 
-- [ ] O sistema deve disponibilizar um dashboard ou área logada onde o Eduardo visualize a etapa atual do seu contrato (ex: em análise, aguardando compensação, ativo).
+- [ ] O app deve disponibilizar um dashboard ou área logada onde o Eduardo visualize a etapa atual do seu contrato (ex: em análise, aguardando compensação, ativo).
 - [ ] Deve haver uma seção de "Histórico de Pagamentos" que mostre o comprovante ou a confirmação de quitação da fatura junto à CEMIG.
 
 **Notas técnicas:**  
-[Observações relevantes para a implementação, limitações conhecidas ou dependências.]
+Usar linguagem simples e visual (cards ou timeline) para tornar claro para qualquer cliente. Validar com produto/comercial o fluxo real de atualização de status CEMIG e frequência de sincronização. Incluir estados de fallback para dados ausentes (“Ainda não há histórico de pagamento”, “Confira novamente em alguns minutos”) e tratamento de erros de conexão/API (retry, mensagem clara e botão de re-tentativa).
 
-----
+---
 
 ### US-04 · [Título]
 
