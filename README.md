@@ -77,13 +77,13 @@ Dentro do escopo do projeto, estão a reorganização da comunicação da jornad
 |---|---|
 | **ID** | D-01 |
 | **Título** | Falta de clareza sobre o déficit de geração de energia |
-| **Origem** | Durante a visita, indentificamos a falta de informação sobre o funcionamento do desconto de 15% nos casos em que o consumo elétrico total dos assinantes excede a geração das usinas da Bulbe, [data] |
+| **Origem** | Durante a visita, identificamos a falta de informação sobre o funcionamento do desconto de 15% nos casos em que o consumo elétrico total dos assinantes excede a geração das usinas da Bulbe, [data] |
 | **Evidência** | *"A bulbe prometeu 15% de desconto, mas este mês minha conta da fatura da Cemig veio quase o valor total. O desconto não deveria ser fixo todo mês?"* |
-| **Prioridade MoSCoW** | Must|
-| **Impacto no Negócio** | [Descreva o impacto: churn, conversão, satisfação, etc.] |
+| **Prioridade MoSCoW** | Must |
+| **Impacto no Negócio** | Pode reduzir a conversão de novos clientes, ao gerar insegurança sobre a previsibilidade do desconto, e aumentar o churn de assinantes que percebem divergência entre a expectativa criada e o valor efetivamente economizado. Também impacta a satisfação, pois a falta de clareza sobre a regra do benefício pode ser interpretada como falha de transparência da Bulbe. |
 
 **Descrição:**  
-O modelo de compensação depende da enregia efetivamente injetada na rede pela Bulbe. Caso a geração seja insuficiente, a Cemig supre o déficit. Nessa situação, a bulbe continuaria disponibilizando o desconto de 15% sobre o consumo total?
+O modelo de compensação depende da energia efetivamente injetada na rede pela Bulbe. Caso a geração seja insuficiente, a Cemig supre o déficit. Nessa situação, a Bulbe continuaria disponibilizando o desconto de 15% sobre o consumo total?
 
 ---
 
