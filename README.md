@@ -286,25 +286,80 @@ O conteúdo deve priorizar clareza visual e linguagem acessível, evitando termo
 **Notas Técnincas:**
 A user story foca exclusivamente na camada de comunicação e transparência no frontend. Não inclui alteração no prazo real do processo nem integração com sistemas da CEMIG. O objetivo é reduzir insegurança e cancelamentos causados por expectativa incorreta sobre o início do benefício.
 
-# US-03 · Transparência e Acompanhamento de Faturas
+### US-03 · Transparência e Acompanhamento de Faturas
 
 **Como Eduardo,** um engenheiro de software cauteloso que tem dúvidas sobre confiar o pagamento da conta de luz a uma empresa nova,  
 **quero** saber se é possível visualizar o status de processamento do meu contrato e as confirmações de pagamento da CEMIG,  
 **para que** eu tenha certeza absoluta de que minhas contas fiquem em dia e elimine minhas dúvidas sobre a Bulbe.
 
----
-
 **Demanda relacionada:** D-03  
 **Estimativa de esforço:** M (Média)  
 **Persona vinculada:** Eduardo
 
----
-
-### Critérios de Aceitação:
+**Critérios de Aceitação:**
 
 - [ ] O sistema deve disponibilizar um dashboard ou área logada onde o Eduardo visualize a etapa atual do seu contrato (ex: em análise, aguardando compensação, ativo).
 - [ ] Deve haver uma seção de "Histórico de Pagamentos" que mostre o comprovante ou a confirmação de quitação da fatura junto à CEMIG.
 
+**Notas técnicas:**  
+[Observações relevantes para a implementação, limitações conhecidas ou dependências.]
+
+----
+
+### US-04 · [Título]
+
+> **Como** [Persona],  
+> **quero** [ação que o usuário deseja realizar],  
+> **para que** [benefício ou objetivo que o usuário alcança].
+
+**Demanda relacionada:** D-0X  
+**Estimativa de esforço:** [P / M / G] *(Story Points ou T-shirt sizing)*
+
+**Critérios de Aceitação:**
+- [ ] [Critério 1: condição verificável e objetiva]
+- [ ] [Critério 2]
+- [ ] [Critério 3]
+
+**Notas técnicas:**  
+[Observações relevantes para a implementação, limitações conhecidas ou dependências.]
+
+---
+
+### US-05 · [Título]
+
+> **Como** [Persona],  
+> **quero** [ação que o usuário deseja realizar],  
+> **para que** [benefício ou objetivo que o usuário alcança].
+
+**Demanda relacionada:** D-0X  
+**Estimativa de esforço:** [P / M / G] *(Story Points ou T-shirt sizing)*
+
+**Critérios de Aceitação:**
+- [ ] [Critério 1: condição verificável e objetiva]
+- [ ] [Critério 2]
+- [ ] [Critério 3]
+
+**Notas técnicas:**  
+[Observações relevantes para a implementação, limitações conhecidas ou dependências.]
+
+---
+
+### US-06 · [Título]
+
+> **Como** [Persona],  
+> **quero** [ação que o usuário deseja realizar],  
+> **para que** [benefício ou objetivo que o usuário alcança].
+
+**Demanda relacionada:** D-0X  
+**Estimativa de esforço:** [P / M / G] *(Story Points ou T-shirt sizing)*
+
+**Critérios de Aceitação:**
+- [ ] [Critério 1: condição verificável e objetiva]
+- [ ] [Critério 2]
+- [ ] [Critério 3]
+
+**Notas técnicas:**  
+[Observações relevantes para a implementação, limitações conhecidas ou dependências.]
 
 ---
 
