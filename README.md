@@ -77,7 +77,7 @@ Dentro do escopo do projeto, estão a reorganização da comunicação da jornad
 |---|---|
 | **ID** | D-01 |
 | **Título** | Falta de clareza sobre o déficit de geração de energia |
-| **Origem** | Durante a visita, identificamos a falta de informação sobre o funcionamento do desconto de 15% nos casos em que o consumo elétrico total dos assinantes excede a geração das usinas da Bulbe, [data] |
+| **Origem** | Durante a visita, identificamos a falta de informação sobre o funcionamento do desconto de 15% nos casos em que o consumo elétrico total dos assinantes excede a geração das usinas da Bulbe. |
 | **Evidência** | *"A bulbe prometeu 15% de desconto, mas este mês minha conta da fatura da Cemig veio quase o valor total. O desconto não deveria ser fixo todo mês?"* |
 | **Prioridade MoSCoW** | Must |
 | **Impacto no Negócio** | Pode reduzir a conversão de novos clientes, ao gerar insegurança sobre a previsibilidade do desconto, e aumentar o churn de assinantes que percebem divergência entre a expectativa criada e o valor efetivamente economizado. Também impacta a satisfação, pois a falta de clareza sobre a regra do benefício pode ser interpretada como falha de transparência da Bulbe. |
@@ -209,31 +209,34 @@ O modelo de compensação depende da energia efetivamente injetada na rede pela 
 ```
 ┌─────────────────────────────────────────────────────────────┐
 │  👤  [Eduardo], [27] anos                                   │
-│      [Engenheiro de Software no Google] · [São Paulo]                        │
+│      [Engenheiro de Software na Google] · [São Paulo]       │
 └─────────────────────────────────────────────────────────────┘
 ```
 
 | Atributo | Descrição |
 |---|---|
-| **Perfil** | [Jovem com um filho e uma boa qualidade de vida] |
-| **Escolaridade** | [Ensino Superior Completo] |
-| **Familiaridade com tecnologia** | [Alta] |
-| **Dispositivo principal** | [Macbook] |
+| **Perfil** | Profissional jovem, interessado em sustentabilidade e economia, usa tecnologia intensivamente |
+| **Escolaridade** | Ensino Superior Completo |
+| **Familiaridade com tecnologia** | Alta |
+| **Dispositivo principal** | Macbook |
 
 **Objetivos:**
-- [Objetivo 1 relacionado ao uso do produto]
-- [Objetivo 2]
+- Deseja se tornar mais sustentável e reduzir gastos com energia.
+- Deseja economizar na conta de luz pessoal e do condomínio.
 
 **Frustrações:**
-- [Frustração 1 com o estado atual]
-- [Frustração 2]
+- Falta de confiança na empresa devido à falta de transparência sobre funcionamento do desconto.
+- Incertidão sobre o que ocorre se a Bulbe não paga o consumo à CEMIG e risco de dívida.
+
+**Comportamentos digitais:**
+- Pesquisa informações sobre o produto no site da empresa.
+- Utiliza Instagram e LinkedIn.
 
 **Citação representativa:**
-> *"[Frase que captura a motivação central desta persona — use dados das entrevistas]"*
+> *"Quero ver passo a passo como funciona a cobrança e de onde vem o desconto, porque não vou assinar algo que não consigo validar com dados."
 
-**Relevância para o Projeto:**  
-[Explique por que esta persona é central para as decisões de design da squad.]
-
+**Relevância para o Projeto:**
+Representa perfil de usuário classe A-B, que engloba a maior parte dos assinantes da Bulbe na região metropolitana de BH e público alvo para região de Nova Lima. Perfil técnico que demanda clareza na comunicação e no processo de adesão, representando uma persona estratégica para aumentar a confiança no serviço.
 
 ---
 
