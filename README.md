@@ -173,7 +173,7 @@ O modelo de compensação depende da energia efetivamente injetada na rede pela 
 
 ---
 
-### Persona 1 — [Luciana]
+### Persona 1 — Luciana
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
@@ -184,24 +184,23 @@ O modelo de compensação depende da energia efetivamente injetada na rede pela 
 
 | Atributo | Descrição |
 |---|---|
-| **Perfil** | [Adulto que busca ganhar dinheiro para sustentar sua família] |
-| **Escolaridade** | [Ensino Superior Incompleto] |
-| **Familiaridade com tecnologia** | [Baixa] |
-| **Dispositivo principal** | [Android] |
+| **Perfil** | Adulto que busca ganhar dinheiro para sustentar sua família |
+| **Escolaridade** | Ensino Superior Incompleto |
+| **Familiaridade com tecnologia** | Baixa |
+| **Dispositivo principal** | Android |
 
 **Objetivos:**
-- [Objetivo 1 relacionado ao uso do produto]
-- [Objetivo 2]
+- Objetivo 1 - Economizar dinheiro, pagando uma conta de energia mais barata
+- Objetivo 2 - Conseguir uma renda extra de forma simples e rapida usando o aplicativo
 
 **Frustrações:**
-- [Frustração 1 com o estado atual]
-- [Frustração 2]
+- Frustração 1 - Dificuldade em usar aplicativos complicados ou com muitas etapas
+- Frustração 2 - Medo de golpes ou plataformas que não sejam confiaveis
 
 **Citação representativa:**
-> *"[Frase que captura a motivação central desta persona — use dados das entrevistas]"*
-
+> *"Eu só quero algo que funcione facil e que me ajude a economizar um dinheiro no final do mes, sem dor de cabeça"
 **Relevância para o Projeto:**  
-[Explique por que esta persona é central para as decisões de design da squad.]
+A Luciana representa um publico chave que tem necessidade real e urgente de renda, mas enfrenta barreiras tecnologicas.Projetar pensando nela garante que o produto seja simples, intuitivo e acessivel, aumentando a adoção por usuarios menos experientes e ampliando o alcance da solução.
 
 ---
 
@@ -311,22 +310,22 @@ Usar linguagem simples e visual (cards ou timeline) para tornar claro para qualq
 
 ---
 
-### US-04 · [Título]
+US-04 · Transparência no Atendimento e Resolução de Dúvidas
+**Como Pedro,** um assinante que já teve experiências ruins com falta de retorno de empresas,
+**quero** ter acesso a um canal de comunicação claro e um histórico de suporte dentro da plataforma,
+**para que** eu não me sinta abandonado pela Bulbe e tenha segurança de que minhas solicitações estão sendo tratadas, evitando o cancelamento por falta de suporte.
 
-> **Como** [Persona],  
-> **quero** [ação que o usuário deseja realizar],  
-> **para que** [benefício ou objetivo que o usuário alcança].
+**Demanda relacionada:** D-04
 
-**Demanda relacionada:** D-0X  
-**Estimativa de esforço:** [P / M / G] *(Story Points ou T-shirt sizing)*
+**Estimativa de esforço:** M (Média)
 
 **Critérios de Aceitação:**
-- [ ] [Critério 1: condição verificável e objetiva]
-- [ ] [Critério 2]
-- [ ] [Critério 3]
+- [ ] O sistema deve disponibilizar um canal direto de atendimento (chat ou abertura de chamado) facilmente localizável.
+- [ ] O usuário deve conseguir visualizar o status atual de sua solicitação e o histórico de interações anteriores.
+- [ ]A plataforma deve informar o prazo estimado para resposta, garantindo que o cliente saiba quando será atendido.
 
-**Notas técnicas:**  
-[Observações relevantes para a implementação, limitações conhecidas ou dependências.]
+**Notas técnicas:** 
+O foco deve ser a reversão da percepção de "péssimo suporte" citada nos feedbacks. É essencial que o fluxo de comunicação seja transparente, mostrando que a empresa recebeu a demanda. Pode ser necessária integração com ferramenta de CRM/Suporte para espelhar as respostas no painel do usuário. Recomenda-se incluir uma área de "Dúvidas Frequentes" dinâmica para resolver problemas comuns sem necessidade de interação humana imediata.
 
 ---
 
