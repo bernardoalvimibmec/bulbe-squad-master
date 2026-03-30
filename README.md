@@ -111,10 +111,14 @@ O modelo de compensação depende da energia efetivamente injetada na rede pela 
 | **Origem** | Durante a apresentação da empresa nos foi apresentado o problema da falta de confiança do cliente relacionado com o serviço da Bulbe. |
 | **Evidência** | *"Parece que depois que o contrato é assinado, o cliente deixa de ser prioridade até a conta chegar"* |
 | **Prioridade MoSCoW** | Deve |
-| **Impacto no título** | Pode reduzir drasticamente a retenção de clientes ao gerar uma percepção de abandono pós-venda. O sentimento de que o cliente só é prioridade no momento da cobrança gera um impacto negativo no NPS (satisfação) e aumenta o churn, dificultando a fidelização e a indicação orgânica do serviço. |
+| **Impacto no título** | Gera uma barreira crítica de adesão e retenção, pois o cliente teme ficar inadimplente com a Cemig caso a Bulbe não cumpra o repasse de impostos e taxas. Essa incerteza jurídica e financeira sobre a responsabilidade do débito aumenta o churn e pode gerar crises de imagem severas, com o cliente se sentindo desprotegido frente à concessionária de energia. |
 
 **Descrição:**
-O problema central reside na quebra de expectativa após o fechamento do contrato. Enquanto a fase de vendas é consultiva e próxima, o suporte e a atenção diminuem drasticamente após a assinatura. Como a jornada do cliente com a Bulbe é de longo prazo, a percepção de ser "apenas um número" até a fatura chegar corrói a confiança na marca. Precisamos definir estratégias de Customer Success que garantam que o cliente se sinta assistido durante todo o ciclo de vida do contrato, e não apenas na prospecção.
+O problema central reside na **opacidade do fluxo de repasse financeiro** e na sensação de abandono pós-assinatura. O modelo de negócio da Bulbe prevê que o cliente pague uma fatura única e a empresa repasse os valores devidos (taxas e impostos) à Cemig. A falta de confiança surge da ausência de um protocolo claro: o cliente não sabe o que acontece se a Bulbe atrasar ou não realizar esse repasse. Ele corre o risco de ficar endividado com a Cemig? Sua energia pode ser cortada? 
+
+Essa "caixa-preta" operacional, somada à percepção de que o suporte diminui após a venda, corrói a credibilidade da marca. É necessário garantir transparência total sobre a quitação das obrigações junto à concessionária, oferecendo ao cliente comprovantes ou notificações reais de que seus débitos com a Cemig foram devidamente liquidados pela Bulbe.
+
+
 ---
 ### D-04 · [Baixa comunicação com o cliente]
 
