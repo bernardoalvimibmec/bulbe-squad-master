@@ -92,14 +92,15 @@ O modelo de compensação depende da energia efetivamente injetada na rede pela 
 | Campo | Conteúdo |
 |---|---|
 | **ID** | D-02 |
-| **Título** | [Clientes são pegos de surpresa com o período de espera] |
-| **Origem** | [Dado citado pelo time do comercial] |
-| **Evidência** | *"[O período de espera é padrão da Cemig, é fora do nosso alcance]"* |
+| **Título** | Clientes são pegos de surpresa com o período de espera |
+| **Origem** | Identificado a partir de relatos recorrentes do time comercial durante o processo de onboarding de novos clientes. Após a assinatura do contrato, clientes manifestam frustração ao descobrir que o desconto não é aplicado imediatamente, sem que essa informação tenha sido comunicada de forma clara durante a venda.
+ |
+| **Evidência** | *""Assinei o contrato achando que o desconto já valia no mês seguinte. Ninguém me avisou que teria que esperar meses para aparecer na fatura.""* |
 | **Prioridade MoSCoW** |  Should |
-| **Impacto no Negócio** | [Impacto] |
+| **Impacto no Negócio** | Aumenta a taxa de cancelamento nos primeiros meses de contrato, período em que o cliente ainda não percebeu valor real no serviço. Também prejudica o NPS e pode comprometer indicações, já que a experiência inicial é de frustração. A percepção de falta de transparência pode ser associada à imagem da Bulbe, mesmo que o prazo seja uma restrição operacional da Cemig. |
 
 **Descrição:**  
-[Descrição da demanda.]
+Após a contratação, existe um período de espera até que a Cemig realize a migração do cliente para o modelo de compensação de energia da Bulbe. Esse prazo, que pode variar conforme a distribuidora, não é de controle direto da Bulbe, mas também não é comunicado de forma proativa ao cliente durante o processo comercial. A ausência dessa informação gera surpresa negativa e sensação de promessa não cumprida.
 
 ---
 ### D-03 · Falta de confiança do cliente com a Bulbe
@@ -125,14 +126,14 @@ Essa "caixa-preta" operacional, somada à percepção de que o suporte diminui a
 | Campo | Conteúdo |
 |---|---|
 | **ID** | D-04 |
-| **Título** | [Baixa comunicação com o cliente] |
-| **Origem** | [Após uma pergunta da squad sobre o suporte da Bulbe e foi relatado que uma conversa com o cliente é muito limitada] |
-| **Evidência** | *"[Cancelei meu plano após não obter respostas da empresa]"* |
+| **Título** | Otimização dos Canais e Fluxos de Comunicação com o Cliente|
+| **Origem** | Através de diagnóstico realizado pela squad junto ao time de suporte, identificou-se uma lacuna crítica na fluidez do diálogo com o usuário final, resultando em uma experiência de atendimento limitada e reativa.|
+| **Evidência** | *"Cancelei meu plano após não obter respostas da empresa. Tentei contato diversas vezes sem sucesso."*|
 | **Prioridade MoSCoW** | Must  |
-| **Impacto no Negócio** | [Impacto] |
+| **Impacto no Negócio** | Impacta diretamente na retenção (Churn Rate), pois a ausência de retorno gera a percepção de abandono e descaso. Além disso, prejudica o LTV (Lifetime Value) e a reputação da marca no mercado, dificultando a aquisição orgânica por meio de indicações.|
 
 **Descrição:**  
-[Descrição da demanda.]
+O cenário atual apresenta um gargalo no suporte da Bulbe, onde a falta de agilidade e clareza nas respostas impede a resolução eficaz de problemas dos assinantes. Para reverter esse quadro, é necessário definir: quais canais serão priorizados (WhatsApp, E-mail, Chat)? Qual o SLA (tempo de resposta) aceitável? E como a empresa garantirá que o cliente se sinta ouvido antes de optar pelo cancelamento?
 
 ---
 ### D-05 · [O aplicativo não tem acessibilidade e informação suficiente]
