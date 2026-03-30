@@ -102,19 +102,22 @@ O modelo de compensação depende da energia efetivamente injetada na rede pela 
 [Descrição da demanda.]
 
 ---
-### D-03 · [Falta de confiança do cliente com a Bulbe]
+### D-03 · Falta de confiança do cliente com a Bulbe
 
 | Campo | Conteúdo |
-|---|---|
-| **ID** | D-03 |
-| **Título** | [Falta de confiança do cliente com a Bulbe] |
-| **Origem** | [Durante a apresentação da empresa nos foi apresentado o problema da falta de confiança do cliente relacionada com o serviço da Bulbe.] |
-| **Evidência** | *"[Parece que depois que o contrato é assinado, o cliente deixa de ser prioridade até a conta chegar]"* |
-| **Prioridade MoSCoW** | Must |
-| **Impacto no Negócio** | [Impacto] |
+| :--- | :--- |
+| **EU IA** | D-03 |
+| **Título** | Falta de confiança do cliente com a Bulbe |
+| **Origem** | Durante a apresentação da empresa nos foi apresentado o problema da falta de confiança do cliente relacionado com o serviço da Bulbe. |
+| **Evidência** | *"Parece que depois que o contrato é assinado, o cliente deixa de ser prioridade até a conta chegar"* |
+| **Prioridade MoSCoW** | Deve |
+| **Impacto no título** | Gera uma barreira crítica de adesão e retenção, pois o cliente teme ficar inadimplente com a Cemig caso a Bulbe não cumpra o repasse de impostos e taxas. Essa incerteza jurídica e financeira sobre a responsabilidade do débito aumenta o churn e pode gerar crises de imagem severas, com o cliente se sentindo desprotegido frente à concessionária de energia. |
 
-**Descrição:**  
-[Descrição da demanda.]
+**Descrição:**
+O problema central reside na **opacidade do fluxo de repasse financeiro** e na sensação de abandono pós-assinatura. O modelo de negócio da Bulbe prevê que o cliente pague uma fatura única e a empresa repasse os valores devidos (taxas e impostos) à Cemig. A falta de confiança surge da ausência de um protocolo claro: o cliente não sabe o que acontece se a Bulbe atrasar ou não realizar esse repasse. Ele corre o risco de ficar endividado com a Cemig? Sua energia pode ser cortada? 
+
+Essa "caixa-preta" operacional, somada à percepção de que o suporte diminui após a venda, corrói a credibilidade da marca. É necessário garantir transparência total sobre a quitação das obrigações junto à concessionária, oferecendo ao cliente comprovantes ou notificações reais de que seus débitos com a Cemig foram devidamente liquidados pela Bulbe.
+
 
 ---
 ### D-04 · [Baixa comunicação com o cliente]
