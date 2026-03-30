@@ -251,8 +251,12 @@ Representa perfil de usuário classe A-B, que engloba a maior parte dos assinant
 | ID | Persona | Título | Prioridade | Status |
 |---|---|---|---|---|
 | US-01 | Eduardo | Cobrança e Repasse | Alta | Done |
-| US-02 | [Persona] | [Título curto] | | |
-| US-03 | [Persona] | [Título curto] | | |
+| US-02 | Eduardo | Transparência sobre o período de espera | Alta | Done |
+| US-03 | Eduardo | Transparência e Acompanhamento de Faturas | Alta | Done |
+| US-04 | Pedro | Transparência no Atendimento e Resolução de Dúvidas | Média | Done |
+| US-05 | xxx | xxxx | xxx | xx |
+| US-06 | José Carlos | Nossos clientes não entendem o funcionamento da empresa | Baixa | Done |
+
 
 ---
 
