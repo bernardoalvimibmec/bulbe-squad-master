@@ -158,11 +158,11 @@ O cenário atual apresenta um gargalo no suporte da Bulbe, onde a falta de agili
 | **Título** | Nossos clientes não entendem o funcionamento da empresa |
 | **Origem** | Relatos de reuniões indicam que a maioria dos clientes (públicos C e D) não compreende o modelo de negócio da empresa, o que gera desconfiança e impede a assinatura de novos contratos com a Bulbe. |
 | **Evidência** | *"Eu até tenho interesse, mas não entendi direito como esse desconto aparece na minha conta... tenho medo de acabar pagando mais em vez de economizar."* |
-| **Prioridade MoSCoW** | Must |
-| **Impacto no título** | Impacta diretamente a taxa de conversão no final do funil de vendas, reduzindo a previsibilidade de receita e a competitividade no mercado. A falta de clareza força a empresa a investir mais em marketing e força comercial para converter cada cliente, aumentando o custo de aquisição (CAC). |
+| **Prioridade MoSCoW** | Deve |
+| **Impacto no título** | Impacta diretamente a taxa de conversão no final do funil de vendas, tornando a previsibilidade de receita e a competitividade no mercado. A falta de clareza força a empresa a investir mais em marketing e força comercial para converter cada cliente, aumentando o custo de aquisição (CAC). |
 
 **Descrição:**
-A demanda consiste em tornar o funcionamento do serviço mais claro e acessível para os públicos C e D. É necessário simplificar a comunicação, utilizando uma linguagem menos técnica e canais mais diretos para explicar como o desconto é gerado na conta de energia. O foco é reduzir inseguranças durante a jornada de compra e aumentar a confiança do cliente no momento da decisão, facilitando o fechamento de novos contratos.
+A demanda consiste em tornar o funcionamento do serviço mais claro e acessível para os públicos C e D. É necessário simplificar a comunicação, utilizando uma linguagem menos técnica e canais mais diretos para explicar como o desconto é gerado na conta de energia. O foco é reduzir a insegurança durante a jornada de compra e aumentar a confiança do cliente no momento da decisão, facilitando o fechamento de novos contratos.
 ---
 
 > 🔁 *Repita o bloco acima para cada demanda identificada (recomendado: 4 a 8 demandas).*
