@@ -87,20 +87,19 @@ O modelo de compensação depende da energia efetivamente injetada na rede pela 
 
 ---
 
-### D-02 · [Clientes são pegos de surpresa com o período de espera]
+### D-02 · Clientes são pegos de surpresa com o período de espera
 
 | Campo | Conteúdo |
-|---|---|
-| **ID** | D-02 |
+| :--- | :--- |
+| **EU IA** | D-02 |
 | **Título** | Clientes são pegos de surpresa com o período de espera |
-| **Origem** | Identificado a partir de relatos recorrentes do time comercial durante o processo de onboarding de novos clientes. Após a assinatura do contrato, clientes manifestam frustração ao descobrir que o desconto não é aplicado imediatamente, sem que essa informação tenha sido comunicada de forma clara durante a venda.
- |
-| **Evidência** | *""Assinei o contrato achando que o desconto já valia no mês seguinte. Ninguém me avisou que teria que esperar meses para aparecer na fatura.""* |
-| **Prioridade MoSCoW** |  Should |
-| **Impacto no Negócio** | Aumenta a taxa de cancelamento nos primeiros meses de contrato, período em que o cliente ainda não percebeu valor real no serviço. Também prejudica o NPS e pode comprometer indicações, já que a experiência inicial é de frustração. A percepção de falta de transparência pode ser associada à imagem da Bulbe, mesmo que o prazo seja uma restrição operacional da Cemig. |
+| **Origem** | Identificado a partir de relatos recorrentes do time comercial durante o processo de onboarding de novos clientes. Após a assinatura do contrato, os clientes manifestam frustração ao descobrir que o desconto não é aplicado imediatamente. |
+| **Evidência** | *"Assinei o contrato achando que o desconto já valeria no mês seguinte. Ninguém me avisou que teria que esperar meses para aparecer na fatura."* |
+| **Prioridade MoSCoW** | Deveria |
+| **Impacto no título** | Aumenta a taxa de cancelamento nos primeiros meses de contrato, período em que o cliente ainda não visualiza valor real no serviço. Também prejudica o NPS e a imagem da Bulbe, pois a falta de transparência sobre prazos operacionais da Cemig é interpretada como falha na comunicação da empresa. |
 
-**Descrição:**  
-Após a contratação, existe um período de espera até que a Cemig realize a migração do cliente para o modelo de compensação de energia da Bulbe. Esse prazo, que pode variar conforme a distribuidora, não é de controle direto da Bulbe, mas também não é comunicado de forma proativa ao cliente durante o processo comercial. A ausência dessa informação gera surpresa negativa e sensação de promessa não cumprida.
+**Descrição:**
+Após a contratação, existe um período de espera necessário para que a Cemig realize a migração do cliente para o modelo de compensação de energia da Bulbe. Esse prazo, que varia conforme o distribuidor, não é de controle direto da Bulbe, mas também não é comunicado de forma proativa durante o processo comercial. A ausência dessa informação gera surpresa negativa e sensação de promessa não cumprida logo no início da jornada do cliente.
 
 ---
 ### D-03 · Falta de confiança do cliente com a Bulbe
