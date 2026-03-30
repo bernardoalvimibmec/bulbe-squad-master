@@ -106,12 +106,12 @@ O modelo de compensação depende da energia efetivamente injetada na rede pela 
 
 | Campo | Conteúdo |
 | :--- | :--- |
-| **EU IA** | D-03 |
+| **ID** | D-03 |
 | **Título** | Falta de confiança do cliente com a Bulbe |
 | **Origem** | Durante a apresentação da empresa nos foi apresentado o problema da falta de confiança do cliente relacionado com o serviço da Bulbe. |
 | **Evidência** | *"Parece que depois que o contrato é assinado, o cliente deixa de ser prioridade até a conta chegar"* |
 | **Prioridade MoSCoW** | Deve |
-| **Impacto no título** | Gera uma barreira crítica de adesão e retenção, pois o cliente teme ficar inadimplente com a Cemig caso a Bulbe não cumpra o repasse de impostos e taxas. Essa incerteza jurídica e financeira sobre a responsabilidade do débito aumenta o churn e pode gerar crises de imagem severas, com o cliente se sentindo desprotegido frente à concessionária de energia. |
+| **Impacto no Negócio** | Gera uma barreira crítica de adesão e retenção, pois o cliente teme ficar inadimplente com a Cemig caso a Bulbe não cumpra o repasse de impostos e taxas. Essa incerteza jurídica e financeira sobre a responsabilidade do débito aumenta o churn e pode gerar crises de imagem severas, com o cliente se sentindo desprotegido frente à concessionária de energia. |
 
 **Descrição:**
 O problema central reside na **opacidade do fluxo de repasse financeiro** e na sensação de abandono pós-assinatura. O modelo de negócio da Bulbe prevê que o cliente pague uma fatura única e a empresa repasse os valores devidos (taxas e impostos) à Cemig. A falta de confiança surge da ausência de um protocolo claro: o cliente não sabe o que acontece se a Bulbe atrasar ou não realizar esse repasse. Ele corre o risco de ficar endividado com a Cemig? Sua energia pode ser cortada? 
