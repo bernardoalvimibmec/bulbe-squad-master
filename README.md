@@ -79,7 +79,7 @@ Dentro do escopo do projeto, estão a reorganização da comunicação da jornad
 | **Título** | Falta de clareza sobre o déficit de geração de energia |
 | **Origem** | Durante a visita, identificamos a falta de informação sobre o funcionamento do desconto de 15% nos casos em que o consumo elétrico total dos assinantes excede a geração das usinas da Bulbe. |
 | **Evidência** | *"A bulbe prometeu 15% de desconto, mas este mês minha conta da fatura da Cemig veio quase o valor total. O desconto não deveria ser fixo todo mês?"* |
-| **Prioridade MoSCoW** | Must |
+| **Prioridade MoSCoW** | SHOULD |
 | **Impacto no Negócio** | Pode reduzir a conversão de novos clientes, ao gerar insegurança sobre a previsibilidade do desconto, e aumentar o churn de assinantes que percebem divergência entre a expectativa criada e o valor efetivamente economizado. Também impacta a satisfação, pois a falta de clareza sobre a regra do benefício pode ser interpretada como falha de transparência da Bulbe. |
 
 **Descrição:**  
@@ -95,7 +95,7 @@ O modelo de compensação depende da energia efetivamente injetada na rede pela 
 | **Título** | Clientes são pegos de surpresa com o período de espera |
 | **Origem** | Identificado a partir de relatos recorrentes do time comercial durante o processo de onboarding de novos clientes. Após a assinatura do contrato, os clientes manifestam frustração ao descobrir que o desconto não é aplicado imediatamente. |
 | **Evidência** | *"Assinei o contrato achando que o desconto já valeria no mês seguinte. Ninguém me avisou que teria que esperar meses para aparecer na fatura."* |
-| **Prioridade MoSCoW** | Deveria |
+| **Prioridade MoSCoW** | MUST |
 | **Impacto no título** | Aumenta a taxa de cancelamento nos primeiros meses de contrato, período em que o cliente ainda não visualiza valor real no serviço. Também prejudica o NPS e a imagem da Bulbe, pois a falta de transparência sobre prazos operacionais da Cemig é interpretada como falha na comunicação da empresa. |
 
 **Descrição:**
@@ -106,12 +106,12 @@ Após a contratação, existe um período de espera necessário para que a Cemig
 
 | Campo | Conteúdo |
 | :--- | :--- |
-| **EU IA** | D-03 |
+| **ID** | D-03 |
 | **Título** | Falta de confiança do cliente com a Bulbe |
 | **Origem** | Durante a apresentação da empresa nos foi apresentado o problema da falta de confiança do cliente relacionado com o serviço da Bulbe. |
 | **Evidência** | *"Parece que depois que o contrato é assinado, o cliente deixa de ser prioridade até a conta chegar"* |
-| **Prioridade MoSCoW** | Deve |
-| **Impacto no título** | Gera uma barreira crítica de adesão e retenção, pois o cliente teme ficar inadimplente com a Cemig caso a Bulbe não cumpra o repasse de impostos e taxas. Essa incerteza jurídica e financeira sobre a responsabilidade do débito aumenta o churn e pode gerar crises de imagem severas, com o cliente se sentindo desprotegido frente à concessionária de energia. |
+| **Prioridade MoSCoW** | MUST |
+| **Impacto no Negócio** | Gera uma barreira crítica de adesão e retenção, pois o cliente teme ficar inadimplente com a Cemig caso a Bulbe não cumpra o repasse de impostos e taxas. Essa incerteza jurídica e financeira sobre a responsabilidade do débito aumenta o churn e pode gerar crises de imagem severas, com o cliente se sentindo desprotegido frente à concessionária de energia. |
 
 **Descrição:**
 O problema central reside na **opacidade do fluxo de repasse financeiro** e na sensação de abandono pós-assinatura. O modelo de negócio da Bulbe prevê que o cliente pague uma fatura única e a empresa repasse os valores devidos (taxas e impostos) à Cemig. A falta de confiança surge da ausência de um protocolo claro: o cliente não sabe o que acontece se a Bulbe atrasar ou não realizar esse repasse. Ele corre o risco de ficar endividado com a Cemig? Sua energia pode ser cortada? 
@@ -120,7 +120,7 @@ Essa "caixa-preta" operacional, somada à percepção de que o suporte diminui a
 
 
 ---
-### D-04 · [Baixa comunicação com o cliente]
+### D-04 · Baixa comunicação com o cliente
 
 | Campo | Conteúdo |
 |---|---|
@@ -128,14 +128,14 @@ Essa "caixa-preta" operacional, somada à percepção de que o suporte diminui a
 | **Título** | Otimização dos Canais e Fluxos de Comunicação com o Cliente|
 | **Origem** | Através de diagnóstico realizado pela squad junto ao time de suporte, identificou-se uma lacuna crítica na fluidez do diálogo com o usuário final, resultando em uma experiência de atendimento limitada e reativa.|
 | **Evidência** | *"Cancelei meu plano após não obter respostas da empresa. Tentei contato diversas vezes sem sucesso."*|
-| **Prioridade MoSCoW** | Must  |
+| **Prioridade MoSCoW** | SHOULD  |
 | **Impacto no Negócio** | Impacta diretamente na retenção (Churn Rate), pois a ausência de retorno gera a percepção de abandono e descaso. Além disso, prejudica o LTV (Lifetime Value) e a reputação da marca no mercado, dificultando a aquisição orgânica por meio de indicações.|
 
 **Descrição:**  
 O cenário atual apresenta um gargalo no suporte da Bulbe, onde a falta de agilidade e clareza nas respostas impede a resolução eficaz de problemas dos assinantes. Para reverter esse quadro, é necessário definir: quais canais serão priorizados (WhatsApp, E-mail, Chat)? Qual o SLA (tempo de resposta) aceitável? E como a empresa garantirá que o cliente se sinta ouvido antes de optar pelo cancelamento?
 
 ---
-### D-05 · [O aplicativo não tem acessibilidade e informação suficiente]
+### D-05 · O aplicativo não tem acessibilidade e informação suficiente  
 
 | Campo | Conteúdo |
 |---|---|
@@ -143,7 +143,7 @@ O cenário atual apresenta um gargalo no suporte da Bulbe, onde a falta de agili
 | **Título** | [O aplicativo não tem acessibilidade e informação suficiente] |
 | **Origem** | [Após questionamento da equipe, foi identificado que uma das maiores dificuldades é fazer com que o cliente use o aplicativo.] |
 | **Evidência** | *"[Não tinha informações suficientes pelo aplicativo para contratar uma empresa]"* |
-| **Prioridade MoSCoW** |  Should |
+| **Prioridade MoSCoW** |  COULD |
 | **Impacto no Negócio** | [Impacto] |
 
 **Descrição:**  
@@ -250,8 +250,12 @@ Representa perfil de usuário classe A-B, que engloba a maior parte dos assinant
 | ID | Persona | Título | Prioridade | Status |
 |---|---|---|---|---|
 | US-01 | Eduardo | Cobrança e Repasse | Alta | Done |
-| US-02 | [Persona] | [Título curto] | | |
-| US-03 | [Persona] | [Título curto] | | |
+| US-02 | Eduardo | Transparência sobre o período de espera | Alta | Done |
+| US-03 | Eduardo | Transparência e Acompanhamento de Faturas | Alta | Done |
+| US-04 | Pedro | Transparência no Atendimento e Resolução de Dúvidas | Média | Done |
+| US-05 | xxx | xxxx | xxx | xx |
+| US-06 | José Carlos | Nossos clientes não entendem o funcionamento da empresa | Baixa | Done |
+
 
 ---
 
@@ -300,7 +304,6 @@ A user story foca exclusivamente na camada de comunicação e transparência no 
 
 **Demanda relacionada:** D-03  
 **Estimativa de esforço:** M (Média)  
-**Persona vinculada:** Eduardo
 
 **Critérios de Aceitação:**
 
@@ -350,26 +353,22 @@ O foco deve ser a reversão da percepção de "péssimo suporte" citada nos feed
 
 ---
 
-### US-06 · [Título]
+### US-06 · Nossos clientes não entendem o funcionamento da empresa
 
-> **Como** [Persona],  
-> **quero** [ação que o usuário deseja realizar],  
-> **para que** [benefício ou objetivo que o usuário alcança].
+> **Como** José Carlos, um cliente com pouco acesso à informação e dificuldade de entender como funciona a bulbe, 
+> **quero** uma explicação simples sobre como é o funcionamento real da empresa antes de contratar,  
+> **para que** eu me sinta seguro para fechar o plano, pois já caí em vários golpes na internet.
 
-**Demanda relacionada:** D-0X  
-**Estimativa de esforço:** [P / M / G] *(Story Points ou T-shirt sizing)*
+**Demanda relacionada:** D-06  
+**Estimativa de esforço:** P
 
 **Critérios de Aceitação:**
-- [ ] [Critério 1: condição verificável e objetiva]
-- [ ] [Critério 2]
-- [ ] [Critério 3]
+- [ ] Para os clientes com dificuldade com internet ou redes sociais o fechamento do plano pode ser via uma reunião on-line.
+- [ ] Mostrar alguns exemplos de outros clientes na mesma situação que fecharam o plano e ficaram satisfeitos.
+- [ ] Mostrar um exemplo prático de cobrança ou economia.
 
 **Notas técnicas:**  
-[Observações relevantes para a implementação, limitações conhecidas ou dependências.]
-
----
-
-> 🔁 *Repita o bloco para cada User Story. Recomendado: mínimo de 6 histórias.*
+Garantir que usuários com baixa familiaridade digital ou desconfiança consigam entender, de forma simples e prática, como a empresa funciona, aumentando a confiança antes da contratação.
 
 ---
 
