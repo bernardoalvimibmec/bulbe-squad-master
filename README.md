@@ -102,20 +102,19 @@ O modelo de compensação depende da energia efetivamente injetada na rede pela 
 [Descrição da demanda.]
 
 ---
-### D-03 · [Falta de confiança do cliente com a Bulbe]
+### D-03 · Falta de confiança do cliente com a Bulbe
 
 | Campo | Conteúdo |
-|---|---|
-| **ID** | D-03 |
-| **Título** | [Falta de confiança do cliente com a Bulbe] |
-| **Origem** | [Durante a apresentação da empresa nos foi apresentado o problema da falta de confiança do cliente relacionada com o serviço da Bulbe.] |
-| **Evidência** | *"[Parece que depois que o contrato é assinado, o cliente deixa de ser prioridade até a conta chegar]"* |
-| **Prioridade MoSCoW** | Must |
-| **Impacto no Negócio** | [Impacto] |
+| :--- | :--- |
+| **EU IA** | D-03 |
+| **Título** | Falta de confiança do cliente com a Bulbe |
+| **Origem** | Durante a apresentação da empresa nos foi apresentado o problema da falta de confiança do cliente relacionado com o serviço da Bulbe. |
+| **Evidência** | *"Parece que depois que o contrato é assinado, o cliente deixa de ser prioridade até a conta chegar"* |
+| **Prioridade MoSCoW** | Deve |
+| **Impacto no título** | Pode reduzir drasticamente a retenção de clientes ao gerar uma percepção de abandono pós-venda. O sentimento de que o cliente só é prioridade no momento da cobrança gera um impacto negativo no NPS (satisfação) e aumenta o churn, dificultando a fidelização e a indicação orgânica do serviço. |
 
-**Descrição:**  
-[Descrição da demanda.]
-
+**Descrição:**
+O problema central reside na quebra de expectativa após o fechamento do contrato. Enquanto a fase de vendas é consultiva e próxima, o suporte e a atenção diminuem drasticamente após a assinatura. Como a jornada do cliente com a Bulbe é de longo prazo, a percepção de ser "apenas um número" até a fatura chegar corrói a confiança na marca. Precisamos definir estratégias de Customer Success que garantam que o cliente se sinta assistido durante todo o ciclo de vida do contrato, e não apenas na prospecção.
 ---
 ### D-04 · [Baixa comunicação com o cliente]
 
