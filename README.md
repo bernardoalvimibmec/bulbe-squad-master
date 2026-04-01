@@ -253,7 +253,7 @@ Representa perfil de usuário classe A-B, que engloba a maior parte dos assinant
 | US-02 | Eduardo | Transparência sobre o período de espera | Alta | Done |
 | US-03 | Eduardo | Transparência e Acompanhamento de Faturas | Alta | Done |
 | US-04 | Pedro | Transparência no Atendimento e Resolução de Dúvidas | Média | Done |
-| US-05 | xxx | xxxx | xxx | xx |
+| US-05 | José Carlos | Área Pública de Informações e Atração de Clientes | Média | Done |
 | US-06 | José Carlos | Nossos clientes não entendem o funcionamento da empresa | Baixa | Done |
 
 
@@ -298,9 +298,9 @@ A user story foca exclusivamente na camada de comunicação e transparência no 
 
 ### US-03 · Transparência e Acompanhamento de Faturas
 
-**Como** Eduardo, um engenheiro de software cauteloso que tem dúvidas sobre confiar o pagamento da conta de luz a uma empresa nova,
-**quero** saber se é possível visualizar o status de processamento do meu contrato e as confirmações de pagamento da CEMIG,
-**para que** eu tenha certeza absoluta de que minhas contas fiquem em dia e elimine minhas dúvidas sobre a Bulbe.
+>**Como** Eduardo, um engenheiro de software cauteloso que tem dúvidas sobre confiar o pagamento da conta de luz a uma empresa nova,
+>**quero** saber se é possível visualizar o status de processamento do meu contrato e as confirmações de pagamento da CEMIG,
+>**para que** eu tenha certeza absoluta de que minhas contas fiquem em dia e elimine minhas dúvidas sobre a Bulbe.
 
 **Demanda relacionada:** D-03  
 **Estimativa de esforço:** M (Média)  
@@ -317,9 +317,9 @@ Usar linguagem simples e visual (cards ou timeline) para tornar claro para qualq
 
 ### US-04 · Transparência no Atendimento e Resolução de Dúvidas
 
-**Como** Pedro, um assinante que já teve experiências ruins com falta de retorno de empresas,
-**quero** ter acesso a um canal de comunicação claro e um histórico de suporte dentro da plataforma,
-**para que** eu não me sinta abandonado pela Bulbe e tenha segurança de que minhas solicitações estão sendo tratadas, evitando o cancelamento por falta de suporte.
+>**Como** Pedro, um assinante que já teve experiências ruins com falta de retorno de empresas,
+>**quero** ter acesso a um canal de comunicação claro e um histórico de suporte dentro da plataforma,
+>**para que** eu não me sinta abandonado pela Bulbe e tenha segurança de que minhas solicitações estão sendo tratadas, evitando o cancelamento por falta de suporte.
 
 **Demanda relacionada:** D-04
 **Estimativa de esforço:** M (Média)
