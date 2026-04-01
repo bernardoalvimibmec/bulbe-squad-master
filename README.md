@@ -102,6 +102,7 @@ O modelo de compensação depende da energia efetivamente injetada na rede pela 
 Após a contratação, existe um período de espera necessário para que a Cemig realize a migração do cliente para o modelo de compensação de energia da Bulbe. Esse prazo, que varia conforme o distribuidor, não é de controle direto da Bulbe, mas também não é comunicado de forma proativa durante o processo comercial. A ausência dessa informação gera surpresa negativa e sensação de promessa não cumprida logo no início da jornada do cliente.
 
 ---
+
 ### D-03 · Falta de confiança do cliente com a Bulbe
 
 | Campo | Conteúdo |
@@ -118,8 +119,8 @@ O problema central reside na **opacidade do fluxo de repasse financeiro** e na s
 
 Essa "caixa-preta" operacional, somada à percepção de que o suporte diminui após a venda, corrói a credibilidade da marca. É necessário garantir transparência total sobre a quitação das obrigações junto à concessionária, oferecendo ao cliente comprovantes ou notificações reais de que seus débitos com a Cemig foram devidamente liquidados pela Bulbe.
 
-
 ---
+
 ### D-04 · Baixa comunicação com o cliente
 
 | Campo | Conteúdo |
@@ -135,21 +136,23 @@ Essa "caixa-preta" operacional, somada à percepção de que o suporte diminui a
 O cenário atual apresenta um gargalo no suporte da Bulbe, onde a falta de agilidade e clareza nas respostas impede a resolução eficaz de problemas dos assinantes. Para reverter esse quadro, é necessário definir: quais canais serão priorizados (WhatsApp, E-mail, Chat)? Qual o SLA (tempo de resposta) aceitável? E como a empresa garantirá que o cliente se sinta ouvido antes de optar pelo cancelamento?
 
 ---
+
 ### D-05 · O aplicativo não tem acessibilidade e informação suficiente  
 
 | Campo | Conteúdo |
 |---|---|
 | **ID** | D-05 |
-| **Título** | [O aplicativo não tem acessibilidade e informação suficiente] |
-| **Origem** | [Após questionamento da equipe, foi identificado que uma das maiores dificuldades é fazer com que o cliente use o aplicativo.] |
-| **Evidência** | *"[Não tinha informações suficientes pelo aplicativo para contratar uma empresa]"* |
-| **Prioridade MoSCoW** |  COULD |
-| **Impacto no Negócio** | [Impacto] |
+| **Título** | O aplicativo não tem acessibilidade e informação suficiente |
+| **Origem** | Após questionamento da equipe, foi identificado que uma das maiores dificuldades é fazer com que o cliente use o aplicativo. |
+| **Evidência** | *"Não tinha informações suficientes pelo aplicativo para contratar uma empresa" e "Para quem ainda não é cliente o aplicativo não tinha uso"* |
+| **Prioridade MoSCoW** |  SHOULD |
+| **Impacto no Negócio** | Perda de conversão de novos usuários e baixa retenção, pois o app falha em sanar as dores iniciais e não gera interesse na contratação. |
 
 **Descrição:**  
-[Descrição da demanda.]
+A demanda foca na necessidade de transformar o aplicativo em uma ferramenta de captação e suporte, não apenas de uso restrito a quem já é cliente. Atualmente, a falta de uma área pública (não logada) e de informações claras sobre os serviços da empresa cria uma barreira de entrada, fazendo com que potenciais clientes desistam da contratação por não entenderem o valor ou o funcionamento do serviço através da plataforma.
 
 ---
+
 ### D-06 · Nossos clientes não entendem o funcionamento da empresa
 
 | Campo | Conteúdo |
@@ -163,9 +166,6 @@ O cenário atual apresenta um gargalo no suporte da Bulbe, onde a falta de agili
 
 **Descrição:**
 A demanda consiste em tornar o funcionamento do serviço mais claro e acessível para os públicos C e D. É necessário simplificar a comunicação, utilizando uma linguagem menos técnica e canais mais diretos para explicar como o desconto é gerado na conta de energia. O foco é reduzir a insegurança durante a jornada de compra e aumentar a confiança do cliente no momento da decisão, facilitando o fechamento de novos contratos.
----
-
-> 🔁 *Repita o bloco acima para cada demanda identificada (recomendado: 4 a 8 demandas).*
 
 ---
 
@@ -179,8 +179,8 @@ A demanda consiste em tornar o funcionamento do serviço mais claro e acessível
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│  👤  [Luciana], [43] anos                                   │
-│      [Caixa de supermercado] · [Norte de Minas]                        │
+│  👤  Luciana, 43 anos                                       │
+│      Caixa de supermercado · Norte de Minas                  │
 └─────────────────────────────────────────────────────────────┘
 ```
 
@@ -206,11 +206,11 @@ A Luciana representa um publico chave que tem necessidade real e urgente de rend
 
 ---
 
-### Persona 2 — [Eduardo]
+### Persona 2 — Eduardo
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│  👤  [Eduardo], [27] anos                                   │
-│      [Engenheiro de Software na Google] · [São Paulo]       │
+│  👤  Eduardo, 27 anos                                      |
+│      Engenheiro de Software na Google · São Paulo           │
 └─────────────────────────────────────────────────────────────┘
 ```
 
@@ -280,7 +280,7 @@ O conteúdo deve priorizar clareza visual e linguagem acessível, evitando termo
 
 ### US-02 · Transparência sobre o período de espera
 
-> **Como** Eduardo,
+> **Como** Eduardo um possível cliente,
 > **quero** quero visualizar de forma clara, antes da contratação, que o desconto da Bulbe começa após o período de espera de aproximadamente 90 dias e entender o motivo desse prazo,  
 > **para que** para que eu possa decidir com segurança se desejo assinar o serviço, sem me sentir enganado ou surpreso depois da adesão.
 
@@ -298,8 +298,8 @@ A user story foca exclusivamente na camada de comunicação e transparência no 
 
 ### US-03 · Transparência e Acompanhamento de Faturas
 
-**Como Eduardo,** um engenheiro de software cauteloso que tem dúvidas sobre confiar o pagamento da conta de luz a uma empresa nova,  
-**quero** saber se é possível visualizar o status de processamento do meu contrato e as confirmações de pagamento da CEMIG,  
+**Como** Eduardo, um engenheiro de software cauteloso que tem dúvidas sobre confiar o pagamento da conta de luz a uma empresa nova,
+**quero** saber se é possível visualizar o status de processamento do meu contrato e as confirmações de pagamento da CEMIG,
 **para que** eu tenha certeza absoluta de que minhas contas fiquem em dia e elimine minhas dúvidas sobre a Bulbe.
 
 **Demanda relacionada:** D-03  
@@ -315,41 +315,41 @@ Usar linguagem simples e visual (cards ou timeline) para tornar claro para qualq
 
 ---
 
-US-04 · Transparência no Atendimento e Resolução de Dúvidas
-**Como Pedro,** um assinante que já teve experiências ruins com falta de retorno de empresas,
+### US-04 · Transparência no Atendimento e Resolução de Dúvidas
+
+**Como** Pedro, um assinante que já teve experiências ruins com falta de retorno de empresas,
 **quero** ter acesso a um canal de comunicação claro e um histórico de suporte dentro da plataforma,
 **para que** eu não me sinta abandonado pela Bulbe e tenha segurança de que minhas solicitações estão sendo tratadas, evitando o cancelamento por falta de suporte.
 
 **Demanda relacionada:** D-04
-
 **Estimativa de esforço:** M (Média)
 
 **Critérios de Aceitação:**
 - [ ] O sistema deve disponibilizar um canal direto de atendimento (chat ou abertura de chamado) facilmente localizável.
 - [ ] O usuário deve conseguir visualizar o status atual de sua solicitação e o histórico de interações anteriores.
-- [ ]A plataforma deve informar o prazo estimado para resposta, garantindo que o cliente saiba quando será atendido.
+- [ ] A plataforma deve informar o prazo estimado para resposta, garantindo que o cliente saiba quando será atendido.
 
 **Notas técnicas:** 
 O foco deve ser a reversão da percepção de "péssimo suporte" citada nos feedbacks. É essencial que o fluxo de comunicação seja transparente, mostrando que a empresa recebeu a demanda. Pode ser necessária integração com ferramenta de CRM/Suporte para espelhar as respostas no painel do usuário. Recomenda-se incluir uma área de "Dúvidas Frequentes" dinâmica para resolver problemas comuns sem necessidade de interação humana imediata.
 
 ---
 
-### US-05 · [Título]
+### US-05 · Área Pública de Informações e Atração de Clientes
 
-> **Como** [Persona],  
-> **quero** [ação que o usuário deseja realizar],  
-> **para que** [benefício ou objetivo que o usuário alcança].
+> **Como** José Carlos técnico de manutenção, morador da região metropolitana,  
+> **quero** ter acesso a uma área não logada no aplicativo da Bulbe com informações claras e simples sobre a empresa e seus serviços,  
+> **para que** eu possa conhecer a confiabilidade da empresa, entender como funciona a economia de energia oferecida e sentir segurança para me tornar um cliente.
 
-**Demanda relacionada:** D-0X  
-**Estimativa de esforço:** [P / M / G] *(Story Points ou T-shirt sizing)*
+**Demanda relacionada:** D-05 
+**Estimativa de esforço:** M
 
 **Critérios de Aceitação:**
-- [ ] [Critério 1: condição verificável e objetiva]
-- [ ] [Critério 2]
-- [ ] [Critério 3]
+- [ ] O aplicativo deve permitir o acesso a uma área de conteúdo informativo sem exigir login ou cadastro prévio.
+- [ ] Esta área deve conter uma seção "Quem Somos" ou "Sobre a Bulbe", apresentando a empresa de forma clara para transmitir credibilidade.
+- [ ] A interface deve ser projetada com foco em simplicidade e usabilidade para dispositivos no geral.
 
 **Notas técnicas:**  
-[Observações relevantes para a implementação, limitações conhecidas ou dependências.]
+Criar uma tela de apresentação que apareça logo que o usuário abrir o app, antes de pedir a senha. O conteúdo deve focar mais em desenhos, ícones e vídeos curtos do que em textos longos, já que o público quer entender tudo rápido. A parte dos depoimentos deve ser fácil de atualizar pela equipe sem precisar lançar uma versão nova do aplicativo na loja toda vez.
 
 ---
 
