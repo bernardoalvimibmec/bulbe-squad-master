@@ -337,7 +337,7 @@ O foco deve ser a reversão da percepção de "péssimo suporte" citada nos feed
 ### US-05 · Área Pública de Informações e Atração de Clientes
 
 > **Como** José Carlos técnico de manutenção, morador da região metropolitana,  
-> **quero** ter acesso a uma área não logada no aplicativo da Bulbe com informações claras e simples sobre a empresa e seus serviços,  
+> **quero** ter acesso a uma área não logada no aplicativo da Bulbe com exemplificações de clientes antigos, com suas experiências reais, descontos aplicados e avaliação da empresa,  
 > **para que** eu possa conhecer a confiabilidade da empresa, entender como funciona a economia de energia oferecida e sentir segurança para me tornar um cliente.
 
 **Demanda relacionada:** D-05 
@@ -345,7 +345,7 @@ O foco deve ser a reversão da percepção de "péssimo suporte" citada nos feed
 
 **Critérios de Aceitação:**
 - [ ] O aplicativo deve permitir o acesso a uma área de conteúdo informativo sem exigir login ou cadastro prévio.
-- [ ] Esta área deve conter uma seção "Quem Somos" ou "Sobre a Bulbe", apresentando a empresa de forma clara para transmitir credibilidade.
+- [ ] Esta área deve conter uma seção de "Histórias Reais", com experiências específicas de cada cliente.
 - [ ] A interface deve ser projetada com foco em simplicidade e usabilidade para dispositivos no geral.
 
 **Notas técnicas:**  
