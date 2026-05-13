@@ -261,7 +261,7 @@ Representa perfil de usuário classe A-B, que engloba a maior parte dos assinant
 
 ### US-01 · Clareza sobre déficit de geração e variação do desconto
 
-> **Como** José Carlos, um consumidor que busca economizar na conta de luz, mas precisa confiar que a economia prometida vai realmente acontecer de forma compreensível e previsíve,  
+> **Como** José Carlos, um consumidor que busca economizar na conta de luz, mas precisa confiar que a economia prometida vai realmente acontecer de forma compreensível e previsível,  
 > **quero** entender de forma clara por que o desconto da Bulbe pode variar quando a geração de energia é menor do que o esperado, incluindo o que é cobrado pela CEMIG e o que depende da energia efetivamente injetada,  
 > **para que** eu possa usar o serviço com segurança, sem sentir que o valor da minha conta virou uma surpresa ou que a economia prometida depende de fatores que ninguém me explicou.
 
@@ -307,7 +307,7 @@ A user story foca exclusivamente na camada de comunicação e transparência no 
 
 **Critérios de Aceitação:**
 
-- [ ] O app deve disponibilizar um dashboard ou área logada onde o Eduardo visualize a etapa atual do seu contrato (ex: em análise, aguardando compensação, ativo).
+- [ ] O app deve disponibilizar uma tela onde o Eduardo visualize a etapa atual do seu contrato (ex: em análise, aguardando compensação, ativo).
 - [ ] Deve haver uma seção de "Histórico de Pagamentos" que mostre o comprovante ou a confirmação de quitação da fatura junto à CEMIG.
 
 **Notas técnicas:**  
@@ -337,7 +337,7 @@ O foco deve ser a reversão da percepção de "péssimo suporte" citada nos feed
 ### US-05 · Área Pública de Informações e Atração de Clientes
 
 > **Como** José Carlos técnico de manutenção, morador da região metropolitana,  
-> **quero** ter acesso a uma área não logada no aplicativo da Bulbe com informações claras e simples sobre a empresa e seus serviços,  
+> **quero** ter acesso a uma área não logada no aplicativo da Bulbe com exemplificações de clientes antigos, com suas experiências reais, descontos aplicados e avaliação da empresa,  
 > **para que** eu possa conhecer a confiabilidade da empresa, entender como funciona a economia de energia oferecida e sentir segurança para me tornar um cliente.
 
 **Demanda relacionada:** D-05 
@@ -345,7 +345,7 @@ O foco deve ser a reversão da percepção de "péssimo suporte" citada nos feed
 
 **Critérios de Aceitação:**
 - [ ] O aplicativo deve permitir o acesso a uma área de conteúdo informativo sem exigir login ou cadastro prévio.
-- [ ] Esta área deve conter uma seção "Quem Somos" ou "Sobre a Bulbe", apresentando a empresa de forma clara para transmitir credibilidade.
+- [ ] Esta área deve conter uma seção de "Histórias Reais", com experiências específicas de cada cliente.
 - [ ] A interface deve ser projetada com foco em simplicidade e usabilidade para dispositivos no geral.
 
 **Notas técnicas:**  
