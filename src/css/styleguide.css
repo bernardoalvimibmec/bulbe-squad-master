@@ -1,0 +1,15 @@
+:root {
+  --grayscale-600: rgba(83, 102, 121, 1);
+  --bulbe-primriasverde-floravf700: rgba(24, 129, 77, 1);
+  --bulbe-basec600: rgba(83, 102, 121, 1);
+  --bulbe-primriasazul-cuac700: rgba(5, 72, 148, 1);
+  --grayscalebranco: rgba(255, 255, 255, 1);
+  --bulbe-basebranco: rgba(255, 255, 255, 1);
+  --bulbe-primriasverde-floravf50: rgba(233, 251, 242, 1);
+  --bulbe-primriasazul-cuac50: rgba(230, 241, 254, 1);
+  --tokens-semantic-size-l: var(--tokens-base-dimension-250);
+  --tokens-semantic-borderradius-m: var(--tokens-base-borderradius-m);
+  --tokens-base-dimension-250: 40px;
+  --tokens-base-borderradius-m: 8px;
+  --tokens-base-borderradius-l: 12px;
+}
