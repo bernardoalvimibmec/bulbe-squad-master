@@ -1,0 +1,304 @@
+/* RESET DE ESTILOS GERAIS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f8f9fa;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 80px; /* Espaço para o menu inferior não cobrir o conteúdo */
+}
+
+/* CONTAINER MOBILE (Centraliza a tela como um app de celular) */
+.container {
+    width: 100%;
+    max-width: 414px; /* Largura padrão de celular */
+    background: #ffffff;
+    min-height: 100vh;
+}
+
+/* HEADER */
+.header {
+    width: 100%;
+    max-width: 414px;
+    background-color: #00009c;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    color: white;
+}
+
+.menu-btn, .notif-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.logo-dot {
+    color: #ff9800;
+    margin-left: 2px;
+}
+
+.user-avatar {
+    width: 30px;
+    height: 30px;
+    border: 2px solid white;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+/* HERO SECTION (BANNER AZUL) */
+.hero-section {
+    background-color: #00009c;
+    color: white;
+    padding: 30px 20px;
+    text-align: left;
+}
+
+.hero-section h1 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    line-height: 1.2;
+}
+
+.hero-section p {
+    font-size: 14px;
+    opacity: 0.9;
+    line-height: 1.4;
+}
+
+/* SEÇÃO COMO FUNCIONA */
+.how-it-works {
+    padding: 25px 20px;
+}
+
+.how-it-works h2 {
+    text-align: center;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #666;
+    margin-bottom: 25px;
+}
+
+/* CARDS CONFIGURAÇÕES */
+.card {
+    display: flex;
+    align-items: flex-start;
+    padding: 15px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    border: 1px solid rgba(0,0,0,0.05);
+}
+
+.step-number {
+    font-weight: bold;
+    color: white;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+    flex-shrink: 0;
+}
+
+.card-content h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #111;
+}
+
+.card-content p {
+    font-size: 13px;
+    color: #666;
+    line-height: 1.4;
+}
+
+/* CORES DOS CARDS DO FIGMA */
+.card-green { background-color: #eefbf4; }
+.card-green .step-number { background-color: #2ecc71; }
+.card-green h3 { color: #27ae60; }
+
+.card-blue { background-color: #eef4ff; }
+.card-blue .step-number { background-color: #1a73e8; }
+.card-blue h3 { color: #1a73e8; }
+
+.card-purple { background-color: #f3f0ff; }
+.card-purple .step-number { background-color: #7048e8; }
+.card-purple h3 { color: #7048e8; }
+
+.card-orange { background-color: #fff9db; }
+.card-orange .step-number { background-color: #f59f00; }
+.card-orange h3 { color: #f59f00; }
+
+/* DIAGRAMA FLUXO DE GERAÇÃO */
+.generation-flow {
+    text-align: center;
+    margin: 30px 0;
+    padding: 15px;
+    border-top: 1px dashed #ddd;
+    border-bottom: 1px dashed #ddd;
+}
+
+.generation-flow h4 {
+    font-size: 12px;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.flow-steps {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.flow-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80px;
+}
+
+.flow-icon {
+    font-size: 22px;
+    background: #eef4ff;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-bottom: 8px;
+}
+
+.flow-item p {
+    font-size: 11px;
+    font-weight: 600;
+    color: #444;
+}
+
+.arrow {
+    color: #ff9800;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* BOTÃO CALL TO ACTION */
+.cta-section {
+    padding: 10px 20px 30px 20px;
+    text-align: center;
+}
+
+.btn-primary {
+    width: 100%;
+    background-color: #00009c;
+    color: white;
+    border: none;
+    padding: 16px;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.btn-primary:hover {
+    background-color: #000066;
+}
+
+/* NAVBAR INFERIOR FIXA */
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    max-width: 414px;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    border-top: 1px solid #eee;
+    box-shadow: 0 -2px 10px rgba(0,0,0,0.05);
+    z-index: 10;
+}
+
+.nav-item {
+    background: none;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    color: #999;
+    width: 20%;
+}
+
+.nav-icon {
+    font-size: 20px;
+    margin-bottom: 2px;
+}
+
+.nav-item p {
+    font-size: 11px;
+}
+
+.nav-item.active {
+    color: #00009c;
+    font-weight: bold;
+}
+
+/* SIDEBAR (MENU LATERAL INTERATIVO) */
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    background-color: #00009c;
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 60px;
+}
+
+.sidebar a {
+    padding: 15px 32px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: block;
+    transition: 0.2s;
+}
+
+.sidebar a:hover {
+    background-color: #000066;
+}
+
+.sidebar .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 22px;
+    font-size: 36px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
