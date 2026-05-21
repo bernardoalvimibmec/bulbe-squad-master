@@ -49,11 +49,6 @@ button {
 }
 
 .page-header {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  max-width: 430px;
-  z-index: 1000;
 
   display: grid;
   grid-template-columns: 64px 1fr 88px;
@@ -120,7 +115,6 @@ button {
   padding: 14px 17px 0 22px;
   overflow: hidden;
   background: var(--blue);
-  margin-top: 59px;
 }
 
 .status-badge {
@@ -205,7 +199,7 @@ button {
 .main {
     scale: 1.15;
     margin-top: 25px;
-    margin-bottom: 55px;
+    margin-bottom: 150px;
 }
 
 .status-card,
@@ -577,12 +571,19 @@ button {
 }
 
 .bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  width: 100%;
+  max-width: 430px;
+
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   height: 80px;
-  margin-top: 25px;
   padding: 8px 0;
-  border-top: 2px solid var(--gray-400);
+
   background: #ffffff;
 }
 
