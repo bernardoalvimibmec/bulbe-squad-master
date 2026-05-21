@@ -9,112 +9,127 @@
 </head>
 <body>
 
-    <header class="header">
-        <button class="menu-btn" id="menuBtn" aria-label="Abrir Menu">☰</button>
-        <div class="logo">bulbe<span class="logo-dot">⚡</span></div>
-        <div class="header-icons">
-            <button class="notif-btn">🔔</button>
-            <div class="user-avatar"></div>
+    <div class="phone-mockup">
+        <div class="phone-screen">
+
+            <header class="header">
+                <button class="menu-btn" id="menuBtn" aria-label="Abrir Menu">☰</button>
+                <div class="logo-container">
+                    <span class="logo-text"></span>
+                    <img src="../assets/logo-base.svg" alt="Bulbe Símbolo" class="logo-symbol">
+                </div>
+                <div class="header-icons">
+                    <img src="../assets/icon.svg" alt="Notificações" class="bell-icon">
+                    <div class="user-avatar"></div>
+                </div>
+            </header>
+
+            <div class="sidebar" id="sidebar">
+                <button class="close-btn" id="closeBtn">&times;</button>
+                <a href="#">Meu Perfil</a>
+                <a href="#">Configurações</a>
+                <a href="#">Ajuda</a>
+                <a href="#">Sair</a>
+            </div>
+
+            <div class="container">
+                
+                <section class="hero-section">
+                    <h1>Energia solar sem obra, sem investimento</h1>
+                    <p>Entenda como sua energia solar vira desconto direto na sua conta</p>
+                </section>
+
+                <section class="how-it-works">
+                    <h2>COMO FUNCIONA</h2>
+
+                    <div class="card card-green">
+                        <span class="step-number">1</span>
+                        <div class="card-content">
+                            <h3>Geração nas Usina Bulbe</h3>
+                            <p>Nossas usinas solares geram energia limpa todos os dias, proporcional à sua cota contratada.</p>
+                        </div>
+                    </div>
+
+                    <div class="card card-blue">
+                        <span class="step-number">2</span>
+                        <div class="card-content">
+                            <h3>Injeção na Rede da Cemig</h3>
+                            <p>A energia é enviada diretamente para a rede de distribuição da CEMIG, que registra cada kWh.</p>
+                        </div>
+                    </div>
+
+                    <div class="generation-flow">
+                        <h4>FLUXO DE GERAÇÃO</h4>
+                        <div class="flow-steps">
+                            <div class="flow-item">
+                                <div class="flow-icon">☀️</div>
+                                <p>Usina Bulbe energia</p>
+                            </div>
+                            <span class="arrow">→</span>
+                            <div class="flow-item">
+                                <div class="flow-icon">🔌</div>
+                                <p>Rede CEMIG</p>
+                            </div>
+                            <span class="arrow">→</span>
+                            <div class="flow-item">
+                                <div class="flow-icon">🏠</div>
+                                <p>Sua conta</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card card-purple">
+                        <span class="step-number">3</span>
+                        <div class="card-content">
+                            <h3>Créditos na sua conta</h3>
+                            <p>A CEMIG converte os kWh gerados em créditos que são descontados automaticamente da sua fatura.</p>
+                        </div>
+                    </div>
+
+                    <div class="card card-orange">
+                        <span class="step-number">4</span>
+                        <div class="card-content">
+                            <h3>Você paga menos todo mês</h3>
+                            <p>Sem obras, sem painéis no telhado. Economia de até 25% direto na conta de luz.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="cta-section">
+                    <button class="btn-primary">Quero meus créditos</button>
+                </section>
+            </div>
+
+            <nav class="bottom-nav">
+                <button class="nav-item active" onclick="setActiveNav(this)">
+                    <span class="nav-indicator"></span>
+                    <img src="../assets/Home.svg" alt="Início" class="nav-icon-img">
+                    <p>Início</p>
+                </button>
+                <button class="nav-item" onclick="setActiveNav(this)">
+                    <span class="nav-indicator"></span>
+                    <img src="../assets/Solar Panel.svg" alt="Usinas" class="nav-icon-img">
+                    <p>Usinas</p>
+                </button>
+                <button class="nav-item" onclick="setActiveNav(this)">
+                    <span class="nav-indicator"></span>
+                    <img src="../assets/Vector.svg" alt="Histórias" class="nav-icon-img">
+                    <p>Histórias</p>
+                </button>
+                <button class="nav-item" onclick="setActiveNav(this)">
+                    <span class="nav-indicator"></span>
+                    <img src="../assets/Vector (1).svg" alt="Ativação" class="nav-icon-img">
+                    <p>Ativação</p>
+                </button>
+                <button class="nav-item" onclick="setActiveNav(this)">
+                    <span class="nav-indicator"></span>
+                    <img src="../assets/Profile.svg" alt="Entrar" class="nav-icon-img">
+                    <p>Entrar</p>
+                </button>
+            </nav>
+
         </div>
-    </header>
-
-    <div class="sidebar" id="sidebar">
-        <button class="close-btn" id="closeBtn">&times;</button>
-        <a href="#">Meu Perfil</a>
-        <a href="#">Configurações</a>
-        <a href="#">Ajuda</a>
-        <a href="#">Sair</a>
     </div>
-
-    <main class="container">
-        <section class="hero-section">
-            <h1>Energia solar sem obra, sem investimento</h1>
-            <p>Entenda como sua energia solar vira desconto direto na sua conta</p>
-        </section>
-
-        <section class="how-it-works">
-            <h2>COMO FUNCIONA</h2>
-
-            <div class="card card-green">
-                <span class="step-number">1</span>
-                <div class="card-content">
-                    <h3>Geração nas Usina Bulbe</h3>
-                    <p>Nossas usinas solares geram energia limpa todos os dias, proporcional à sua cota contratada.</p>
-                </div>
-            </div>
-
-            <div class="card card-blue">
-                <span class="step-number">2</span>
-                <div class="card-content">
-                    <h3>Injeção na Rede da Cemig</h3>
-                    <p>A energia é enviada diretamente para a rede de distribuição da CEMIG, que registra cada kWh.</p>
-                </div>
-            </div>
-
-            <div class="generation-flow">
-                <h4>FLUXO DE GERAÇÃO</h4>
-                <div class="flow-steps">
-                    <div class="flow-item">
-                        <div class="flow-icon">☀️</div>
-                        <p>Usina Bulbe energia</p>
-                    </div>
-                    <span class="arrow">→</span>
-                    <div class="flow-item">
-                        <div class="flow-icon">🔌</div>
-                        <p>Rede CEMIG</p>
-                    </div>
-                    <span class="arrow">→</span>
-                    <div class="flow-item">
-                        <div class="flow-icon">🏠</div>
-                        <p>Sua conta</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card card-purple">
-                <span class="step-number">3</span>
-                <div class="card-content">
-                    <h3>Créditos na sua conta</h3>
-                    <p>A CEMIG converte os kWh gerados em créditos que são descontados automaticamente da sua fatura.</p>
-                </div>
-            </div>
-
-            <div class="card card-orange">
-                <span class="step-number">4</span>
-                <div class="card-content">
-                    <h3>Você paga menos todo mês</h3>
-                    <p>Sem obras, sem painéis no telhado. Economia de até 25% direto na conta de luz.</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="cta-section">
-            <button class="btn-primary">Quero meus créditos</button>
-        </section>
-    </main>
-
-    <nav class="bottom-nav">
-        <button class="nav-item active" onclick="setActiveNav(this)">
-            <span class="nav-icon">🏠</span>
-            <p>Início</p>
-        </button>
-        <button class="nav-item" onclick="setActiveNav(this)">
-            <span class="nav-icon">🏭</span>
-            <p>Usinas</p>
-        </button>
-        <button class="nav-item" onclick="setActiveNav(this)">
-            <span class="nav-icon">🕒</span>
-            <p>Histórias</p>
-        </button>
-        <button class="nav-item" onclick="setActiveNav(this)">
-            <span class="nav-icon">⚡</span>
-            <p>Ativação</p>
-        </button>
-        <button class="nav-item" onclick="setActiveNav(this)">
-            <span class="nav-icon">👤</span>
-            <p>Entrar</p>
-        </button>
-    </nav>
 
     <script src="intro-bulbe.js"></script>
 </body>
