@@ -49,12 +49,17 @@ button {
 }
 
 .page-header {
-  position: relative;
-  z-index: 2;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  max-width: 430px;
+  z-index: 1000;
+
   display: grid;
   grid-template-columns: 64px 1fr 88px;
   align-items: center;
-  height: 50px;
+  
+  height: 65px;
   padding: 8px 9px 8px 22px;
   background: var(--blue);
   border-bottom: 2px solid var(--gray-500);
@@ -99,7 +104,7 @@ button {
   width: 20px;
   height: 2px;
   background: currentColor;
-  border-radius: 999px;
+  border-radius: 99px;
 }
 
 .avatar {
@@ -115,6 +120,7 @@ button {
   padding: 14px 17px 0 22px;
   overflow: hidden;
   background: var(--blue);
+  margin-top: 59px;
 }
 
 .status-badge {
@@ -162,8 +168,9 @@ button {
 
 .hero-visual {
   position: absolute;
-  top: 107px;
-  right: 16px;
+  scale: 1.25;
+  top: 90px;
+  right: 50px;
   width: 129px;
   height: 129px;
 }
@@ -193,6 +200,12 @@ button {
   width: 74px;
   height: 89px;
   object-fit: contain;
+}
+
+.main {
+    scale: 1.15;
+    margin-top: 25px;
+    margin-bottom: 55px;
 }
 
 .status-card,
@@ -489,12 +502,14 @@ button {
 }
 
 .info-card {
-  display: grid;
-  grid-template-columns: 27px 1fr;
-  gap: 10px;
+  /* display: grid;
+  grid-template-columns: 30px 1fr; */
+  display: flex;
+  justify-content: center;
+  gap: 15px;
   align-items: center;
   margin-top: 20px;
-  padding: 4px 13px;
+  padding: 10px;
   border-radius: 8px;
   background: var(--surface);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0.25);
