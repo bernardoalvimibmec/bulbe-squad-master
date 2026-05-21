@@ -49,12 +49,17 @@ button {
 }
 
 .page-header {
-  position: relative;
-  z-index: 2;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  max-width: 430px;
+  z-index: 1000;
+
   display: grid;
   grid-template-columns: 64px 1fr 88px;
   align-items: center;
-  height: 50px;
+  
+  height: 65px;
   padding: 8px 9px 8px 22px;
   background: var(--blue);
   border-bottom: 2px solid var(--gray-500);
@@ -99,7 +104,7 @@ button {
   width: 20px;
   height: 2px;
   background: currentColor;
-  border-radius: 999px;
+  border-radius: 99px;
 }
 
 .avatar {
@@ -115,6 +120,7 @@ button {
   padding: 14px 17px 0 22px;
   overflow: hidden;
   background: var(--blue);
+  margin-top: 59px;
 }
 
 .status-badge {
