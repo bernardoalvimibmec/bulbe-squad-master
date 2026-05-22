@@ -1,0 +1,311 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #eef2f7; /* Fundo cinza claro para destacar o celular na tela do PC */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/*  simula o tamanho real de um celular */
+.celular {
+    width: 100%;
+    max-width: 412px;
+    height: 820px;
+    background-color: #ffffff;
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.15);
+    border-radius: 32px;
+    
+    /* Ativa o flexbox para segurar o conteúdo e o rodapé */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    
+    /* IMPEDE que a moldura do celular estique ou role junto */
+    overflow: hidden; 
+}
+/* Remove os estilos padrão de listas e botões globais */
+ul {
+    list-style: none;
+}
+
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.header-fatura {
+    background-color: #00068D;
+    color: #ffffff;
+    padding: 24px 20px 32px 20px;
+    border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
+}
+
+
+.header-fatura .topo {
+    display: flex;
+    align-items: center; 
+    gap: 12px;           
+    margin-bottom: 16px; 
+}
+
+.header-fatura h1 {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.status-pagamento {
+    font-size: 12px;
+    color: #00B15E; 
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+
+.valor {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.detalhe-fatura {
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.7); /* Texto branco com opacidade */
+    margin-bottom: 24px;
+}
+
+/* Alinhamento dos cards de PIX e Data lado a lado */
+.cards {
+    display: flex;
+    gap: 12px;
+}
+
+.card-pix, .card-data {
+    flex: 1;
+    padding: 12px;
+    border-radius: 12px;
+    font-size: 13px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-pix {
+    background-color: #E9FBF2;
+    color: #18814D;
+}
+
+.card-data {
+    background-color: #E6F1FE;
+    color: #054894;
+}
+
+    .status {
+    padding: 24px 20px 60px 20px; 
+    background-color: #ffffff;
+    }
+
+.status h4 {
+    font-size: 11px;
+    text-transform: uppercase;
+    color: #536679;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+
+.timeline {
+    position: relative;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 11px; 
+    top: 12px;
+    bottom: 24px;
+    width: 2px;
+    background-color: #E2E8F0; /* Cor padrão da linha cinza */
+}
+
+/* Estrutura de cada item da lista */
+.timeline li {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+/* As Bolinhas de Status */
+.circulo {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #cbd5e1; /* Cor cinza padrão (Pendente) */
+    z-index: 1; /* Fica por cima da linha vertical */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilização dos textos das etapas */
+.conteudo-etapa, .andamento, .pendente {
+    flex: 1;
+}
+
+.conteudo-etapa h4, .andamento h4, .pendente h4 {
+    font-size: 14px;
+    color: #1E293B;
+    text-transform: none;
+    letter-spacing: normal;
+    margin-bottom: 4px;
+    font-weight: 600;
+}
+
+.conteudo-etapa p, .andamento p, .pendente p {
+    font-size: 12px;
+    color: #64748B;
+    line-height: 1.5;
+    margin-bottom: 6px;
+}
+
+.previsao-data, .data-etapa {
+    display: block;
+    font-size: 11px;
+    color: #94A3B8;
+    margin-bottom: 8px;
+}
+
+/* Dinâmica de Cores baseada nas classes do seu HTML */
+
+/* 1. Concluído (Verde) */
+.timeline li.concluido .circulo {
+    background-color: #00B15E;
+}
+.timeline li.concluido .circulo::after {
+    content: '✓';
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: bold;
+}
+.badge-concluido {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    background-color: #E6F7ED;
+    color: #00B15E;
+    padding: 4px 8px;
+    border-radius: 6px;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+/* 2. Em Andamento (Azul) */
+.timeline li:nth-child(3) .circulo { 
+    background-color: #08068D;
+    border: 4px solid #E6E7F4; 
+}
+.andamento div span {
+    display: inline-block;
+    background-color: #E6E7F4;
+    color: #08068D;
+    padding: 4px 8px;
+    border-radius: 6px;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+/* 3. Pendente (Cinza Opaco) */
+.pendente h4 {
+    color: #94A3B8;
+}
+.pendente span {
+    display: inline-block;
+    background-color: #F1F5F9;
+    color: #94A3B8;
+    padding: 4px 8px;
+    border-radius: 6px;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+
+
+ .botao {
+    padding: 0 20px;       
+    margin-top: 20px;      
+    margin-bottom: 110px !important; 
+    width: 100%;
+
+}
+
+.historico {
+    width: 100%;                  
+    background-color: #00068D !important; /* O azul escuro do Bulbe */
+    color: #ffffff !important;    
+    padding: 16px 24px;          
+    border-radius: 12px;          
+    font-size: 15px;
+    font-weight: 600;             
+    display: flex;               
+    align-items: center;          
+    justify-content: center;     
+    gap: 8px;                     
+    border: none;
+    cursor: pointer;
+}
+
+
+.historico img {
+    height: 16px; 
+    width: auto;
+}
+
+.menu-inferior {
+    position: absolute;   
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    border-top: 1px solid #E2E8F0;
+    padding: 12px 8px 16px 8px; 
+    z-index: 999;         
+}
+
+.menu-inferior ul {
+    display: flex;                
+    justify-content: space-around; 
+    align-items: center;          
+    width: 100%;
+}
+
+.menu-inferior li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;                      
+}
+
+.menu-inferior li img {
+    width: 95px;          
+    height: auto;         
+    object-fit: contain;
+}
+.conteudo-rolavel {
+    flex: 1;
+    overflow-y: auto !important; 
+    overflow-x: hidden;
+    width: 100%;
+}
