@@ -1,151 +1,128 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Informações da Ativação Bulbe</title>
-    <link rel="stylesheet" href="../css/global.css" />
-    <link rel="stylesheet" href="../css/styleguide.css" />
-    <link rel="stylesheet" href="../css/info-ativacao.css" />
-  </head>
-  <body>
-    <div class="info-ativacao-page">
-      <section class="hero-panel" aria-labelledby="info-ativacao-title">
-        <header class="info-header">
-          <button class="menu-button" type="button" aria-label="Abrir menu">
-            <span></span>
-            <span></span>
-            <span></span>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Informações da Ativação Bulbe</title>
+  <link rel="stylesheet" href="../css/info-ativacao.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  
+  <div class="phone-mockup">
+    <div class="phone-notch"></div> <div class="app-container">
+      
+      <header class="hero-panel">
+        <div class="top-bar">
+          <button class="menu-btn" aria-label="Menu">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round">
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
           </button>
-
-          <img class="header-logo" src="../assets/logo-base.svg" alt="Bulbe" />
-
-          <div class="header-actions">
-            <button class="notification-button" type="button" aria-label="Notificações">
-              <img src="../assets/boxicons_bell.svg" alt="" />
+          <img class="logo" src="../assets/logo-base.svg" alt="Bulbe" />
+          <div class="actions">
+            <button class="bell-btn">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+                <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+              </svg>
             </button>
-            <div class="avatar" aria-hidden="true"></div>
+            <div class="profile-circle"></div>
           </div>
-        </header>
-
-        <div class="regulatory-badge">
-          <span aria-hidden="true">⌛</span>
-          <strong>PRAZO REGULATÓRIO</strong>
         </div>
 
-        <h1 id="info-ativacao-title">O que acontece durante a homologação?</h1>
-        <p>
-          Após assinar seu contrato, a CEMIG tem até 90 dias para homologar sua
-          cota de energia e ativar os créditos.
-        </p>
-      </section>
+        <div class="badge">
+          <img class="badge-icon" src="../assets/Vector%2064.svg" alt="Símbolo Financeiro" />
+          PRAZO REGULATÓRIO
+        </div>
 
-      <main class="content">
-        <h2>Linha do tempo</h2>
+        <h1>O que acontece durante a homologação?</h1>
+        <p class="subtitle">Após assinar seu contrato, a CEMIG tem até 90 dias para homologar sua cota de energia e ativar os créditos.</p>
+      </header>
 
-        <section class="timeline-card" aria-label="Etapas da ativação">
-          <div class="timeline-track" aria-hidden="true">
-            <span class="track-solid"></span>
-            <span class="track-dashed"></span>
-          </div>
+      <main class="content-area">
+        <h2 class="section-title">LINHA DO TEMPO</h2>
 
-          <article class="timeline-step timeline-step-done">
-            <div class="timeline-marker" aria-hidden="true"></div>
-            <div class="timeline-copy">
-              <div class="step-title">
-                <span></span>
-                <strong>ETAPA 1</strong>
-                <span></span>
-              </div>
+        <div class="timeline-card">
+          <div class="timeline-step">
+            <div class="marker marker-done"></div>
+            <div class="track-line track-green"></div>
+            <div class="step-content">
+              <div class="step-header"><span>ETAPA 1</span></div>
               <h3>Contrato assinado</h3>
               <p>Seu contrato com a Bulbe é confirmado e enviamos os documentos para a CEMIG.</p>
             </div>
-          </article>
+          </div>
 
-          <article class="timeline-step timeline-step-done">
-            <div class="timeline-marker" aria-hidden="true"></div>
-            <div class="timeline-copy">
-              <div class="step-title">
-                <span></span>
-                <strong>ETAPA 2</strong>
-                <span></span>
-              </div>
+          <div class="timeline-step">
+            <div class="marker marker-done"></div>
+            <div class="track-line track-green"></div>
+            <div class="step-content">
+              <div class="step-header"><span>ETAPA 2</span></div>
               <h3>Análise documental</h3>
               <p>A CEMIG verifica os dados cadastrais e valida as informações da sua UC</p>
             </div>
-          </article>
+          </div>
 
-          <article class="timeline-step timeline-step-current">
-            <div class="timeline-marker" aria-hidden="true"></div>
-            <div class="timeline-copy">
-              <div class="step-title">
-                <span></span>
-                <strong>ETAPA 3</strong>
-                <span></span>
-              </div>
+          <div class="timeline-step">
+            <div class="marker marker-current"></div>
+            <div class="track-line track-dashed"></div>
+            <div class="step-content">
+              <div class="step-header"><span>ETAPA 3</span></div>
               <h3>Homologação técnica</h3>
-              <p>Processo regulatório da CEMIG - a distribuidora vincula sua conta à usina Bulbe.</p>
+              <p>Processo regulatório da CEMIG — a distribuidora vincula sua conta à usina Bulbe.</p>
             </div>
-          </article>
+          </div>
 
-          <article class="timeline-step timeline-step-pending">
-            <div class="timeline-marker" aria-hidden="true"></div>
-            <div class="timeline-copy">
-              <div class="step-title">
-                <span></span>
-                <strong>ETAPA 4</strong>
-                <span></span>
-              </div>
+          <div class="timeline-step">
+            <div class="marker marker-pending"></div>
+            <div class="track-line track-dashed"></div>
+            <div class="step-content">
+              <div class="step-header"><span>ETAPA 4</span></div>
               <h3>Ativação dos créditos</h3>
               <p>Créditos começam a aparecer na sua fatura mensal automaticamente.</p>
             </div>
-          </article>
+          </div>
 
-          <article class="timeline-step timeline-step-pending">
-            <div class="timeline-marker" aria-hidden="true"></div>
-            <div class="timeline-copy">
-              <div class="step-title">
-                <span></span>
-                <strong>ETAPA 5</strong>
-                <span></span>
-              </div>
+          <div class="timeline-step">
+            <div class="marker marker-pending"></div>
+            <div class="step-content">
+              <div class="step-header"><span>ETAPA 5</span></div>
               <h3>Economia garantida</h3>
               <p>Você começa a pagar menos todo mês, sem precisar fazer nada.</p>
             </div>
-          </article>
-        </section>
+          </div>
+        </div>
 
-        <section class="info-callout">
-          <div class="info-icon" aria-hidden="true">i</div>
-          <p>
-            O prazo médio de homologação é 30 a 60 dias. Você será notificado a
-            cada etapa concluída pelo app.
-          </p>
-        </section>
+        <div class="info-box">
+          <div class="info-icon">i</div>
+          <p>O prazo médio de homologação é 30 a 60 dias. Você será notificado a cada etapa concluída pelo app.</p>
+        </div>
       </main>
 
-      <nav class="bottom-nav" aria-label="Navegação principal">
-        <a class="nav-item" href="#">
-          <span class="nav-icon nav-home" aria-hidden="true"></span>
-          <span>Início</span>
-        </a>
-        <a class="nav-item" href="#">
-          <span class="nav-icon nav-plant" aria-hidden="true"></span>
-          <span>Usinas</span>
-        </a>
-        <a class="nav-item" href="#">
-          <span class="nav-icon nav-history" aria-hidden="true"></span>
-          <span>Histórias</span>
-        </a>
-        <a class="nav-item nav-item-active" href="#">
-          <img class="nav-icon-img" src="../assets/flash.svg" alt="" />
-          <span>Ativação</span>
-        </a>
-        <a class="nav-item" href="#">
-          <span class="nav-icon nav-profile" aria-hidden="true"></span>
-          <span>Entrar</span>
-        </a>
-      </nav>
-    </div>
-  </body>
+    </div> <nav class="bottom-nav">
+      <a class="nav-item" href="#">
+        <img class="nav-icon-img" src="../assets/Home.svg" alt="Início" />
+        <span>Início</span>
+      </a>
+      <a class="nav-item" href="#">
+        <img class="nav-icon-img" src="../assets/Solar%20Panel.svg" alt="Usinas" />
+        <span>Usinas</span>
+      </a>
+      <a class="nav-item" href="#">
+        <img class="nav-icon-img" src="../assets/Vector.svg" alt="Histórias" />
+        <span>Histórias</span>
+      </a>
+      <a class="nav-item nav-item-active" href="#">
+        <img class="nav-icon-img" src="../assets/Vector-1.svg" alt="Ativação" />
+        <span>Ativação</span>
+      </a>
+      <a class="nav-item" href="#">
+        <img class="nav-icon-img" src="../assets/Profile.svg" alt="Entrar" />
+        <span>Entrar</span>
+      </a>
+    </nav>
+  </div> </body>
 </html>
