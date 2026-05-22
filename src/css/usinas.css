@@ -5,18 +5,19 @@
 }
 
 body {
-  background: #dcdcdc;
+  background: var(--bulbe-color-app-backdrop);
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  font-family: 'Inter', sans-serif;
+  font-family: var(--bulbe-font-family);
 }
 
 .phone {
-  width: 375px;
+  width: 100%;
+  max-width: 414px;
   min-height: 812px;
-  background: #f5f5f5;
+  background: var(--bulbe-color-white);
   overflow: hidden;
   position: relative;
 }
@@ -24,14 +25,15 @@ body {
 /* HEADER */
 
 .topbar {
-  height: 64px;
-  background: #08068D;
+  height: var(--bulbe-header-height);
+  background: var(--bulbe-color-blue);
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 16px;
+  padding: 0 var(--bulbe-page-padding);
   color: white;
-  border-bottom: 2px solid white;
+  border-bottom: 1px solid var(--bulbe-color-gray-400);
+  position: relative;
 
 }
 
@@ -42,6 +44,10 @@ body {
 .logo {
   width: 95px;
   object-fit: contain;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .top-icons {
@@ -61,17 +67,24 @@ body {
 /* HERO */
 
 .hero {
-  background: #08068D;
+  background: var(--bulbe-color-blue);
   color: white;
-  padding: 12px 18px 28px;
+  padding: 20px var(--bulbe-hero-padding-inline) 35px;
+}
+
+.bell-icon {
+  width: 24px;
+  height: 24px;
 }
 
 .hero h1 {
   font-family: 'Poppins', sans-serif;
-  font-weight: 600;      /* SemiBold */
-  font-size: 24px;
-  line-height: 32px;
-  letter-spacing: 0.4px;
+  max-width: 340px;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0;
+  margin-bottom: 14px;
 }
 
 .hero p {
@@ -84,11 +97,8 @@ body {
 /* CONTENT */
 
 .content {
-  background: #f3f3f3;
-  border-top-left-radius: 26px;
-  border-top-right-radius: 26px;
-  margin-top: 10px;
-  padding: 22px 16px 120px;
+  background: var(--bulbe-color-white);
+  padding: 30px var(--bulbe-page-padding) calc(var(--bulbe-navbar-five-height) + 28px);
 }
 
 .content h3 {
@@ -106,9 +116,10 @@ body {
 
 .card {
   background: white;
-  border-radius: 0px;
+  border: var(--bulbe-border-subtle);
+  border-radius: var(--bulbe-radius-card);
   padding: 14px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  box-shadow: var(--bulbe-shadow-card);
 }
 
 .status {
@@ -149,8 +160,8 @@ body {
 
 .credit-box {
   margin-top: 24px;
-  background: #1700b3;
-  border-radius: 22px;
+  background: var(--bulbe-color-blue);
+  border-radius: var(--bulbe-radius-card);
   padding: 18px;
   color: white;
   display: flex;
@@ -161,7 +172,7 @@ body {
 .icon-box {
   width: 42px;
   height: 42px;
-  border-radius: 14px;
+  border-radius: var(--bulbe-radius-inner);
   background: rgba(255,255,255,0.15);
   display: flex;
   align-items: center;
@@ -183,40 +194,43 @@ body {
 
 .main-btn {
   width: 100%;
-  height: 54px;
+  min-height: 54px;
   border: none;
-  border-radius: 30px;
-  background: #0c043f;
+  border-radius: var(--bulbe-radius-button);
+  background: var(--bulbe-color-blue);
   color: white;
-  font-size: 18px;
-  font-weight: 700;
+  font-size: 16px;
+  font-weight: 600;
   margin-top: 18px;
   cursor: pointer;
 }
 
 .secondary-btn {
-  width: 85%;
+  width: 100%;
   margin: 16px auto 0;
   display: block;
-  height: 46px;
+  min-height: 54px;
   border: none;
-  border-radius: 24px;
-  background: #e4e4e4;
-  color: #101010;
-  font-size: 18px;
-  font-weight: 500;
+  border-radius: var(--bulbe-radius-button);
+  background: var(--bulbe-color-gray-100);
+  color: var(--bulbe-color-gray-900);
+  font-size: 16px;
+  font-weight: 600;
   cursor: pointer;
 }
 
 /* NAV */
 
 .bottom-nav {
-  position: absolute;
+  position: fixed;
   bottom: 0;
+  left: 50%;
   width: 100%;
-  height: 76px;
+  max-width: 414px;
+  transform: translateX(-50%);
+  height: var(--bulbe-navbar-five-height);
   background: white;
-  border-top: 1px solid #ddd;
+  border-top: var(--bulbe-border-subtle);
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -224,7 +238,7 @@ body {
 
 .nav-item {
   text-align: center;
-  color: #9c9c9c;
+  color: var(--bulbe-color-gray-400);
   font-size: 12px;
 }
 
@@ -235,6 +249,12 @@ body {
 }
 
 .nav-item.active {
-  color: #1700b3;
+  color: var(--bulbe-color-blue);
   font-weight: 700;
+}
+
+@media (max-width: 430px) {
+  body {
+    align-items: flex-start;
+  }
 }
