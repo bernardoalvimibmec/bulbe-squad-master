@@ -8,7 +8,7 @@ body {
   background: var(--bulbe-color-app-backdrop);
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   min-height: 100vh;
   font-family: var(--bulbe-font-family);
 }
@@ -16,7 +16,7 @@ body {
 .phone {
   width: 100%;
   max-width: 414px;
-  min-height: 812px;
+  min-height: 100vh;
   background: var(--bulbe-color-white);
   overflow: hidden;
   position: relative;

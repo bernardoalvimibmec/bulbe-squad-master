@@ -35,11 +35,16 @@
   --bulbe-header-height: 65px;
   --bulbe-navbar-five-height: 72px;
   --bulbe-navbar-four-height: 80px;
-  --bulbe-radius-shell: 32px;
-  --bulbe-radius-card: 16px;
-  --bulbe-radius-button: 12px;
-  --bulbe-radius-badge: 6px;
-  --bulbe-radius-inner: 8px;
+  --radius-sm: 5px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --bulbe-radius-shell: 0;
+  --bulbe-radius-card: var(--radius-lg);
+  --bulbe-radius-button: var(--radius-md);
+  --bulbe-radius-badge: var(--radius-sm);
+  --bulbe-radius-inner: var(--radius-md);
+  --bulbe-nav-active-filter: brightness(0) saturate(100%) invert(12%) sepia(94%) saturate(4855%) hue-rotate(244deg) brightness(76%) contrast(132%);
 }
 * {
   -webkit-font-smoothing: antialiased;
@@ -49,6 +54,7 @@ html,
 body {
   margin: 0px;
   height: 100%;
+  overflow-x: hidden;
   font-family: var(--bulbe-font-family);
   color: var(--bulbe-color-gray-700);
 }
@@ -253,7 +259,10 @@ img {
 .bulbe-nav .nav-link.nav-link-active img,
 .bulbe-nav .nav-item.active svg {
   opacity: 1;
-  filter: invert(10%) sepia(85%) saturate(5432%) hue-rotate(238deg) brightness(69%) contrast(117%);
+  color: var(--bulbe-color-blue);
+  fill: currentColor;
+  stroke: currentColor;
+  filter: var(--bulbe-nav-active-filter) !important;
 }
 
 .bulbe-nav .nav-item:hover,

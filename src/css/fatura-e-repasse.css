@@ -14,14 +14,13 @@ body {
     min-height: 100vh;
 }
 
-/*  simula o tamanho real de um celular */
 .celular {
     width: 100%;
-    max-width: 412px;
-    height: 820px;
+    max-width: var(--bulbe-page-max-width);
+    min-height: 100vh;
     background-color: #ffffff;
-    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.15);
-    border-radius: 32px;
+    box-shadow: none;
+    border-radius: 0;
     
     /* Ativa o flexbox para segurar o conteúdo e o rodapé */
     display: flex;
@@ -29,8 +28,7 @@ body {
     justify-content: space-between;
     position: relative;
     
-    /* IMPEDE que a moldura do celular estique ou role junto */
-    overflow: hidden; 
+    overflow: visible;
 }
 /* Remove os estilos padrão de listas e botões globais */
 ul {
@@ -47,8 +45,7 @@ button {
     background-color: #00068D;
     color: #ffffff;
     padding: 24px 20px 32px 20px;
-    border-bottom-left-radius: 24px;
-    border-bottom-right-radius: 24px;
+    border-radius: 0;
 }
 
 
@@ -313,18 +310,24 @@ button {
 /* Shared Bulbe surface alignment */
 body {
     background-color: var(--bulbe-color-app-backdrop);
+    align-items: flex-start;
+    overflow-x: hidden;
 }
 
 .celular {
     max-width: 414px;
-    height: min(850px, 100vh);
+    min-height: 100vh;
+    height: auto;
     background-color: var(--bulbe-color-white);
-    border-radius: var(--bulbe-radius-shell);
+    border-radius: 0;
+    box-shadow: none;
+    overflow: visible;
 }
 
 .header-fatura {
     background-color: var(--bulbe-color-blue);
     padding-inline: var(--bulbe-page-padding);
+    border-radius: 0;
 }
 
 .cards > div,
@@ -412,5 +415,25 @@ body {
 }
 
 .menu-inferior {
+    position: fixed;
+    left: 50%;
+    max-width: var(--bulbe-page-max-width);
     border-top: var(--bulbe-border-subtle);
+    transform: translateX(-50%);
+}
+
+.conteudo-rolavel {
+    width: 100%;
+    overflow-y: visible !important;
+    padding-bottom: calc(var(--bulbe-navbar-four-height) + 18px);
+}
+
+.cards,
+.status,
+.botao,
+.timeline,
+.timeline li,
+.card-pix,
+.card-data {
+    max-width: 100%;
 }

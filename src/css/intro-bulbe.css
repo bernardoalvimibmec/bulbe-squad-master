@@ -9,24 +9,25 @@
 }
 
 body {
-    background-color: var(--bulbe-color-app-backdrop);
+    background-color: var(--bulbe-color-white);
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     min-height: 100vh;
-    padding: 20px;
+    padding: 0;
     font-family: var(--bulbe-font-family);
 }
 
 /* SMARTPHONE MOCKUP */
 .phone-mockup {
     width: 100%;
-    max-width: 414px;
-    height: 850px;
-    background-color: #111; 
-    border-radius: 40px;
-    padding: 12px; 
-    box-shadow: var(--bulbe-shadow-shell);
+    max-width: var(--bulbe-page-max-width);
+    min-height: 100vh;
+    height: auto;
+    background-color: var(--bulbe-color-white);
+    border-radius: 0;
+    padding: 0;
+    box-shadow: none;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -35,10 +36,11 @@ body {
 /* TELA INTERNA DO CELULAR */
 .phone-screen {
     width: 100%;
-    height: 100%;
+    min-height: 100vh;
+    height: auto;
     background-color: #ffffff;
-    border-radius: var(--bulbe-radius-shell);
-    overflow-y: auto; 
+    border-radius: 0;
+    overflow-y: visible;
     overflow-x: hidden;
     position: relative;
     display: flex;
@@ -55,7 +57,7 @@ body {
     background: var(--bulbe-color-white);
     display: flex;
     flex-direction: column;
-    padding-bottom: 100px;
+    padding-bottom: calc(var(--bulbe-navbar-five-height) + 28px);
 }
 
 /* HEADER COM CENTRALIZAÇÃO ABSOLUTA DA LOGO */
@@ -301,10 +303,12 @@ body {
 
 /* NAVBAR INFERIOR STICKY CORRIGIDA */
 .bottom-nav {
-    position: sticky;
+    position: fixed;
     bottom: 0;
-    left: 0;
+    left: 50%;
     width: 100%;
+    max-width: var(--bulbe-page-max-width);
+    transform: translateX(-50%);
     background-color: white;
     display: flex;
     justify-content: space-around;
@@ -378,7 +382,7 @@ body {
     overflow-x: hidden;
     transition: 0.3s;
     padding-top: 60px;
-    border-radius: 32px 0 0 32px;
+    border-radius: 0;
 }
 
 .sidebar a {
