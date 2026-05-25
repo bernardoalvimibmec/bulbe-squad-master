@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/global.css">
     <link rel="stylesheet" href="../css/fatura-e-repasse.css">
 
     
@@ -46,7 +47,7 @@
                         <p>Confirmado e registrado em nosso sistema.
                             15 Mar 2025 - 14:32
                         </p>
-                                <div class="badge-concluido">
+                                <div class="badge-concluido bulbe-badge bulbe-badge-success">
                                 <img src="../assets/fatura-e-repasse/checkpequeno.svg" alt="">
                               <span>concluido</span>
                           </div>
@@ -60,7 +61,7 @@
 
                             15 Mar 2025 - 16:00
                         </p>
-                        <div class="badge-concluido">
+                        <div class="badge-concluido bulbe-badge bulbe-badge-success">
                         <img src="../assets/fatura-e-repasse/checkpequeno.svg" alt="">
                        <span>concluido</span>
                        </div>
@@ -75,7 +76,7 @@
                             Previsão: 20 Mar 2025
                         </p>
                                 <div>
-                                             <span>Em andamento</span>
+                                             <span class="bulbe-badge bulbe-badge-progress">Em andamento</span>
                                                  </div>
                     </div>
 
@@ -87,7 +88,7 @@
                         <p>A distribuidora registra as taxas e confirma os creditos do proximo ciclo. 
                             Aguardando repasse
                         </p>
-                         <span>pendente</span>
+                         <span class="bulbe-badge bulbe-badge-pending">pendente</span>
                     </div>
 
                 </li>
@@ -98,7 +99,7 @@
                         <p> Seus criterios aparecem na proxima fatura da distribuidora
                             Previsão: ciclo abril 2025
                         </p>
-                         <span>pendente</span>
+                         <span class="bulbe-badge bulbe-badge-pending">pendente</span>
                     </div>
 
                 </li>
@@ -106,27 +107,29 @@
         </section>
         
         <div class="botao">
-                <button class="historico">
+                <button class="historico bulbe-button bulbe-button-primary">
                 <span>Ver historicos de faturas</span>
                 <img src="../assets/fatura-e-repasse/seta.svg" alt="">
             </button>
             </div>
         </div>
-        <nav class="menu-inferior">
-            <ul>
-                <li>
-                    <img src="../assets/fatura-e-repasse/Espera.svg" alt="">    
-                </li>
-                <li>
-                    <img src="../assets/fatura-e-repasse/Faturas.svg" alt="">
-                </li>
-                <li>
-                    <img src="../assets/fatura-e-repasse/Consumo.svg" alt="">
-                </li>
-                <li>
-                    <img src="../assets/fatura-e-repasse/Indicações.svg" alt="">
-                </li>
-            </ul>
+        <nav class="menu-inferior bulbe-nav bulbe-nav-four" aria-label="Navegação da conta">
+            <a class="nav-link" href="ativacao.html">
+                <img src="../assets/ativacao-da-sua-conta/lucide_clock.svg" alt="">
+                <span>Espera</span>
+            </a>
+            <a class="nav-link nav-link-active" href="fatura-e-repasse.html">
+                <img src="../assets/ativacao-da-sua-conta/file-06.svg" alt="">
+                <span>Faturas</span>
+            </a>
+            <a class="nav-link" href="#">
+                <img src="../assets/ativacao-da-sua-conta/flash.svg" alt="">
+                <span>Consumo</span>
+            </a>
+            <a class="nav-link" href="#">
+                <img src="../assets/ativacao-da-sua-conta/users-plus.svg" alt="">
+                <span>Indicações</span>
+            </a>
         </nav>
 </body>
 </html>
