@@ -156,7 +156,9 @@ body {
     font-weight: 400;
 }
 
-/* SEÇÃO COMO FUNCIONA */
+/* ==========================================================================
+   SEÇÃO COMO FUNCIONA (ACCORDION UPDATED)
+   ========================================================================== */
 .how-it-works {
     padding: 30px var(--bulbe-page-padding);
 }
@@ -171,14 +173,24 @@ body {
     margin-bottom: 25px;
 }
 
-/* CARDS COM FONTES AJUSTADAS */
+/* CONTAINER DO CARD */
 .card {
     display: flex;
-    align-items: flex-start;
-    padding: 18px;
+    flex-direction: column; /* Alinha o header em cima e o conteúdo embaixo */
+    padding: 16px;
     border-radius: var(--bulbe-radius-card);
-    margin-bottom: 20px;
+    margin-bottom: 16px;
     border: var(--bulbe-border-subtle);
+    transition: background-color 0.2s ease;
+}
+
+/* HEADER DO CARD (A BARRA CLICÁVEL) */
+.card-header-trigger {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    cursor: pointer;
+    user-select: none;
 }
 
 .step-number {
@@ -191,42 +203,71 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 15px;
+    margin-right: 12px;
     flex-shrink: 0;
     font-size: 14px;
 }
 
-.card-content h3 {
+.card-header-trigger h3 {
     font-family: 'Poppins', sans-serif;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 600;
-    margin-bottom: 6px;
+    flex-grow: 1; /* Empurra a seta para a extremidade direita */
+    margin: 0;
 }
 
-.card-content p {
+/* SETA DO ACCORDION */
+.accordion-arrow {
+    font-size: 12px;
+    color: #94a3b8;
+    transition: transform 0.2s ease;
+    padding-left: 8px;
+}
+
+/* CONTEÚDO EXPANSÍVEL (MÁGICA DO ABRIR/FECHAR) */
+.card-body-content {
+    max-height: 0; /* Começa totalmente escondido */
+    overflow: hidden;
+    transition: max-height 0.25s ease-out, opacity 0.2s ease;
+    opacity: 0;
+}
+
+.card-body-content p {
     font-family: 'Inter', sans-serif;
     font-size: 13px;
     color: #64748b;
     line-height: 1.5;
     font-weight: 400;
+    padding-top: 10px; /* Dá o espaçamento perfeito quando o texto abre */
+    padding-left: 44px; /* Alinha o texto perfeitamente abaixo do título, pulando o número */
 }
 
-/* CORES DOS CARDS */
+/* ESTADO ATIVO (QUANDO CLICADO) */
+.card.active .card-body-content {
+    max-height: 100px; /* Permite que o container expanda e mostre o texto */
+    opacity: 1;
+}
+
+/* CORES DOS CARDS (MANTIDAS DO SEU PADRÃO) */
 .card-green { background-color: var(--bulbe-color-green-soft); }
 .card-green .step-number { background-color: #2ecc71; }
 .card-green h3 { color: #27ae60; }
+.card-green .accordion-arrow { color: #27ae60; }
 
 .card-blue { background-color: #f0f4ff; }
 .card-blue .step-number { background-color: var(--bulbe-color-blue-text); }
 .card-blue h3 { color: var(--bulbe-color-blue); }
+.card-blue .accordion-arrow { color: var(--bulbe-color-blue); }
 
 .card-purple { background-color: #f3f0ff; }
 .card-purple .step-number { background-color: #7048e8; }
 .card-purple h3 { color: #7048e8; }
+.card-purple .accordion-arrow { color: #7048e8; }
 
 .card-orange { background-color: #fff9db; }
 .card-orange .step-number { background-color: #f59f00; }
 .card-orange h3 { color: #f59f00; }
+.card-orange .accordion-arrow { color: #f59f00; }
 
 /* DIAGRAMA DO FLUXO */
 .generation-flow {
