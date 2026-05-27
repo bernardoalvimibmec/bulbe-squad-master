@@ -14,14 +14,13 @@ body {
     min-height: 100vh;
 }
 
-/*  simula o tamanho real de um celular */
 .celular {
     width: 100%;
-    max-width: 412px;
-    height: 820px;
+    max-width: var(--bulbe-page-max-width);
+    min-height: 100vh;
     background-color: #ffffff;
-    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.15);
-    border-radius: 32px;
+    box-shadow: none;
+    border-radius: 0;
     
     /* Ativa o flexbox para segurar o conteúdo e o rodapé */
     display: flex;
@@ -29,8 +28,7 @@ body {
     justify-content: space-between;
     position: relative;
     
-    /* IMPEDE que a moldura do celular estique ou role junto */
-    overflow: hidden; 
+    overflow: visible;
 }
 /* Remove os estilos padrão de listas e botões globais */
 ul {
@@ -47,8 +45,7 @@ button {
     background-color: #00068D;
     color: #ffffff;
     padding: 24px 20px 32px 20px;
-    border-bottom-left-radius: 24px;
-    border-bottom-right-radius: 24px;
+    border-radius: 0;
 }
 
 
@@ -308,4 +305,135 @@ button {
     overflow-y: auto !important; 
     overflow-x: hidden;
     width: 100%;
+}
+
+/* Shared Bulbe surface alignment */
+body {
+    background-color: var(--bulbe-color-app-backdrop);
+    align-items: flex-start;
+    overflow-x: hidden;
+}
+
+.celular {
+    max-width: 414px;
+    min-height: 100vh;
+    height: auto;
+    background-color: var(--bulbe-color-white);
+    border-radius: 0;
+    box-shadow: none;
+    overflow: visible;
+}
+
+.header-fatura {
+    background-color: var(--bulbe-color-blue);
+    padding-inline: var(--bulbe-page-padding);
+    border-radius: 0;
+}
+
+.cards > div,
+.historico {
+    border-radius: var(--bulbe-radius-button);
+}
+
+.card-pix {
+    background-color: var(--bulbe-color-green-soft);
+    color: var(--bulbe-color-green);
+}
+
+.card-data {
+    background-color: var(--bulbe-color-blue-soft);
+    color: var(--bulbe-color-blue-text);
+}
+
+.status {
+    padding-inline: var(--bulbe-page-padding);
+}
+
+.status h4 {
+    color: var(--bulbe-color-gray-600);
+}
+
+.timeline::before {
+    background-color: var(--bulbe-color-gray-200);
+}
+
+.circulo {
+    background-color: var(--bulbe-color-gray-300);
+}
+
+.conteudo-etapa h4,
+.andamento h4,
+.pendente h4 {
+    color: var(--bulbe-color-gray-900);
+}
+
+.conteudo-etapa p,
+.andamento p,
+.pendente p {
+    color: var(--bulbe-color-gray-600);
+}
+
+.timeline li.concluido .circulo {
+    background-color: var(--bulbe-color-green-bright);
+}
+
+.badge-concluido {
+    background-color: var(--bulbe-color-green-soft);
+    color: var(--bulbe-color-green);
+    border-radius: var(--bulbe-radius-badge);
+}
+
+.timeline li:nth-child(3) .circulo {
+    background-color: var(--bulbe-color-blue);
+    border-color: var(--bulbe-color-blue-soft);
+}
+
+.andamento div span {
+    background-color: var(--bulbe-color-blue-soft);
+    color: var(--bulbe-color-blue-text);
+    border-radius: var(--bulbe-radius-badge);
+}
+
+.pendente h4 {
+    color: var(--bulbe-color-gray-400);
+}
+
+.pendente span {
+    background-color: var(--bulbe-color-gray-100);
+    color: var(--bulbe-color-gray-600);
+    border-radius: var(--bulbe-radius-badge);
+}
+
+.botao {
+    padding-inline: var(--bulbe-page-padding);
+}
+
+.historico {
+    min-height: 54px;
+    background-color: var(--bulbe-color-blue) !important;
+    font-size: 16px;
+}
+
+.menu-inferior {
+    position: fixed;
+    left: 50%;
+    max-width: var(--bulbe-page-max-width);
+    border-top: var(--bulbe-border-subtle);
+    transform: translateX(-50%);
+}
+
+.conteudo-rolavel {
+    width: 100%;
+    overflow-y: visible !important;
+    padding-bottom: calc(var(--bulbe-navbar-four-height) + 18px);
+}
+
+.cards,
+.status,
+.botao,
+.timeline,
+.timeline li,
+.card-pix,
+.card-data {
+    max-width: 100%;
 }

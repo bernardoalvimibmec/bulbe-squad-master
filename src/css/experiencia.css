@@ -1,49 +1,51 @@
 :root {
-    --branco: #FFFFFF;
-    --azul-cinza-claro: #A4B3C1;
-    --azul-escuro: #08068D;
-    --chumbo: #3E4D5B;
-    --preto: #000000;
-    --cinza-texto: #75808A;
-    --verde: #16A34A;
-    --verde-claro: #E9FBF2;
-    --amarelo-estrela: #FFC107;
+    --branco: var(--bulbe-color-white);
+    --azul-cinza-claro: var(--bulbe-color-gray-400);
+    --azul-escuro: var(--bulbe-color-blue);
+    --chumbo: var(--bulbe-color-gray-700);
+    --preto: var(--bulbe-color-gray-900);
+    --cinza-texto: var(--bulbe-color-gray-500);
+    --verde: var(--bulbe-color-green);
+    --verde-claro: var(--bulbe-color-green-soft);
+    --amarelo-estrela: var(--bulbe-color-star);
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    font-family: var(--bulbe-font-family);
     -webkit-tap-highlight-color: transparent;
 }
 
 body {
-    background-color: #333; 
+    background-color: var(--bulbe-color-app-backdrop);
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     min-height: 100vh;
 }
 
 .app-container {
     width: 100%;
-    max-width: 400px;
+    max-width: var(--bulbe-page-max-width);
     height: 100vh;
-    max-height: 850px;
+    max-height: none;
     background-color: var(--branco);
     display: flex;
     flex-direction: column;
     position: relative;
     overflow: hidden;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    box-shadow: none;
 }
 
 .scroll-area {
     flex: 1;
     overflow-y: auto;
     overflow-x: hidden;
-    padding-bottom: 80px;
+    padding-bottom: calc(var(--bulbe-navbar-five-height) + 16px);
+    
+    /* Oculta a barra no Firefox e IE/Edge */
     -ms-overflow-style: none;  
     scrollbar-width: none;  
 }
@@ -55,14 +57,16 @@ body {
 header {
     background-color: var(--azul-escuro);
     color: var(--branco);
-    padding: 24px 20px 32px 20px;
+    padding: 12px var(--bulbe-hero-padding-inline) 35px;
 }
 
 .header-top {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 30px;
+    position: relative;
+    min-height: 41px;
+    margin-bottom: 20px;
 }
 
 .icon-btn {
@@ -77,6 +81,9 @@ header {
 .logo {
     height: 24px;
     object-fit: contain;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .header-actions {
@@ -95,10 +102,11 @@ header {
 }
 
 header h1 {
-    font-size: 28px;
+    max-width: 340px;
+    font-size: 26px;
     font-weight: 700;
     line-height: 1.2;
-    margin-bottom: 12px;
+    margin-bottom: 14px;
 }
 
 header p {
@@ -108,7 +116,7 @@ header p {
 }
 
 .cards-container {
-    padding: 24px 20px;
+    padding: 30px var(--bulbe-page-padding);
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -116,8 +124,8 @@ header p {
 
 .card {
     background-color: var(--branco);
-    border: 1px solid #E5E7EB;
-    border-radius: 12px;
+    border: var(--bulbe-border-subtle);
+    border-radius: var(--bulbe-radius-card);
     padding: 16px;
 }
 
@@ -187,8 +195,8 @@ header p {
 .metrics {
     display: flex;
     justify-content: space-between;
-    border-top: 1px solid #F3F4F6;
-    border-bottom: 1px solid #F3F4F6;
+    border-top: var(--bulbe-border-subtle);
+    border-bottom: var(--bulbe-border-subtle);
     padding: 12px 0;
     margin-bottom: 16px;
 }
@@ -228,15 +236,18 @@ header p {
 }
 
 .bottom-nav {
-    position: absolute;
+    position: fixed;
     bottom: 0;
+    left: 50%;
     width: 100%;
+    max-width: var(--bulbe-page-max-width);
     height: 65px;
     background-color: var(--branco);
-    border-top: 1px solid #E5E7EB;
+    border-top: var(--bulbe-border-subtle);
     display: flex;
     justify-content: space-between;
     padding: 0 10px;
+    transform: translateX(-50%);
 }
 
 .nav-item {
