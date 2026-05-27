@@ -1,3 +1,17 @@
+/* Quando o card for clicado, ele vai ocupar as duas colunas e mudar de cor */
+.card.active {
+  grid-column: span 2; /* Faz o card ocupar a largura total */
+  border-color: var(--bulbe-color-blue); /* Destaca a borda */
+  background-color: #f9f9ff; /* Dá um leve fundo diferenciado */
+  transition: all 0.3s ease; /* Deixa a transição suave */
+}
+
+/* Deixa o card com cursor de clique */
+.card {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -258,3 +272,78 @@ body {
     align-items: flex-start;
   }
 }
+/* Estilo Base dos Painéis */
+.sidebar-container, .popup-panel {
+  position: absolute;
+  background: white;
+  color: #333;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  z-index: 999;
+  transition: all 0.3s ease-in-out;
+}
+
+/* SIDEBAR (Vem deslizando da esquerda) */
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    background-color: var(--bulbe-color-blue);
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 60px;
+    border-radius: 0;
+}
+
+.sidebar a {
+    padding: 15px 32px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: block;
+}
+
+.sidebar .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 22px;
+    font-size: 36px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* POPUPS (Notificação e Perfil) */
+.popup-panel {
+  position: absolute;
+  top: 65px; /* Alinhado abaixo do header */
+  width: 220px;
+  background: white;
+  color: #333;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+  z-index: 99;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-10px);
+  transition: 0.3s;
+}
+
+/* Classe dinâmica ativada pelo JS */
+.popup-panel.open {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+/* Posições dos popups na direita */
+.notification-pos { right: 50px; }
+.profile-pos { right: 16px; }
+
+.popup-panel h4 { font-size: 14px; margin-bottom: 6px; color: var(--bulbe-color-blue); }
+.popup-panel p, .popup-panel a { font-size: 12px; color: #666; text-decoration: none; }
+#menuBtn, #bellBtn, #profileBtn { cursor: pointer; }

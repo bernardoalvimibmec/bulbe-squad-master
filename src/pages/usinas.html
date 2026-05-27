@@ -18,17 +18,16 @@
 
     <!-- HEADER -->
     <header class="topbar">
-      <div class="menu">☰</div>
-      
+<div class="menu" id="menuBtn">☰</div>      
 
     
      <img class="logo" src="../assets/info-ativacao/logo-base.svg" alt="Bulbe" />
 
       <div class="top-icons">
         
-     <img src="../assets/introducao-bulbe/icon.svg" alt="Notificações" class="bell-icon">
-        <div class="profile"></div>
-      </div>
+<img src="../assets/introducao-bulbe/icon.svg" alt="Notificações" class="bell-icon" id="bellBtn">
+
+<div class="profile" id="profileBtn"></div>      </div>
     </header>
 
     <!-- HERO -->
@@ -153,9 +152,26 @@
       </a>
 
     </nav>
+    <div id="sidebar" class="sidebar">
+      <button class="close-btn" id="closeBtn">&times;</button>
+      <a href="#">Minha Conta</a>
+      <a href="#">Configurações</a>
+      <a href="#">Ajuda</a>
+      <a href="#">Sair</a>
+    </div>
 
+    <div id="notificationsPanel" class="popup-panel notification-pos">
+      <h4>Notificações</h4>
+      <p>Você não tem novas mensagens.</p>
+    </div>
+
+    <div id="profilePanel" class="popup-panel profile-pos">
+      <h4>Olá, Usuário!</h4>
+      <a href="#">Editar Perfil</a>
+    </div>
   </div>
 
-  <script src="app.js"></script>
+    <script src="../js/usinas.js"></script>
+    
 </body>
 </html>
