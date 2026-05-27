@@ -39,7 +39,6 @@ body {
     box-shadow: none;
 }
 
-/* --- ALTERADO AQUI --- */
 .scroll-area {
     flex: 1;
     overflow-y: auto;
@@ -51,11 +50,9 @@ body {
     scrollbar-width: none;  
 }
 
-/* Oculta a barra no Chrome, Safari e novos navegadores Chromium */
 .scroll-area::-webkit-scrollbar {
     display: none;
 }
-/* --------------------- */
 
 header {
     background-color: var(--azul-escuro);
@@ -132,9 +129,7 @@ header p {
     padding: 16px;
 }
 
-.card.active {
-    border: 2px solid #3B82F6;
-}
+/* Regra antiga do '.card.active' que gerava a borda azul foi removida daqui */
 
 .card-header {
     display: flex;
