@@ -1,14 +1,14 @@
 :root {
-  --blue-dark: var(--bulbe-color-blue);
-  --blue-text: var(--bulbe-color-blue);
-  --green-success: var(--bulbe-color-green-bright);
-  --gray-bg: var(--bulbe-color-gray-50);
-  --gray-border: var(--bulbe-color-gray-200);
-  --gray-text: var(--bulbe-color-gray-600);
-  --gray-title: var(--bulbe-color-gray-700);
-  --yellow-bg: var(--bulbe-color-warning-soft);
-  --yellow-text: var(--bulbe-color-warning);
-  --info-bg: var(--bulbe-color-blue-soft);
+  --blue-dark: var(--bulbe-color-blue, #07038c);
+  --blue-text: var(--bulbe-color-blue, #050361);
+  --green-success: var(--bulbe-color-green-bright, #1cd171);
+  --gray-bg: var(--bulbe-color-gray-50, #f9fafc);
+  --gray-border: var(--bulbe-color-gray-200, #e2e6ee);
+  --gray-text: var(--bulbe-color-gray-600, #536071);
+  --gray-title: var(--bulbe-color-gray-700, #344054);
+  --yellow-bg: var(--bulbe-color-warning-soft, #fff1d6);
+  --yellow-text: var(--bulbe-color-warning, #eab039);
+  --info-bg: var(--bulbe-color-blue-soft, #eff4ff);
 }
 
 * {
@@ -17,30 +17,30 @@
   box-sizing: border-box;
 }
 
-/* Fundo da tela do seu computador */
 body {
-  font-family: var(--bulbe-font-family);
-  background-color: var(--bulbe-color-app-backdrop);
+  font-family: var(--bulbe-font-family, 'Poppins', sans-serif);
+  background-color: var(--bulbe-color-app-backdrop, #eef2f6);
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   min-height: 100vh;
   padding: 0;
 }
 
 /* =========================================================
-   MOLDURA DO CELULAR
+   MOLDURA PRINCIPAL
    ========================================================= */
 .phone-mockup {
   position: relative;
   width: 100%;
-  max-width: var(--bulbe-page-max-width);
+  max-width: var(--bulbe-page-max-width, 414px);
   min-height: 100vh;
   background-color: #ffffff;
+  margin: 0 auto; 
   border: 0;
   border-radius: 0;
   box-shadow: none;
-  overflow: clip;
+  overflow: hidden; 
 }
 
 /* ÁREA INTERNA QUE ROLA */
@@ -49,12 +49,12 @@ body {
   min-height: 100vh;
   height: auto;
   overflow-y: visible;
-  padding-bottom: 90px; /* Espaço pro texto não sumir atrás da barra fixa */
-  scrollbar-width: none; /* Esconde a barra feia no Firefox */
+  padding-bottom: 100px;
+  scrollbar-width: none;
 }
 
 .app-container::-webkit-scrollbar {
-  display: none; /* Esconde a barra feia no Chrome/Safari */
+  display: none;
 }
 
 /* =========================================================
@@ -63,7 +63,7 @@ body {
 .hero-panel {
   background-color: var(--blue-dark);
   color: #ffffff;
-  padding: 12px var(--bulbe-hero-padding-inline) 35px;
+  padding: 12px var(--bulbe-hero-padding-inline, 20px) 35px;
 }
 
 .top-bar {
@@ -108,19 +108,18 @@ body {
   gap: 6px;
   background-color: var(--yellow-bg);
   color: var(--yellow-text);
-  padding: 3px 8px;
-  border-radius: var(--bulbe-radius-badge);
+  padding: 4px 10px;
+  border-radius: var(--bulbe-radius-badge, 6px);
   font-size: 11px;
   font-weight: 600;
   letter-spacing: 0.5px;
   margin-bottom: 20px;
 }
 
-/* Tamanho do novo ícone no Badge */
 .badge-icon {
   width: 12px;
   height: 12px;
-  margin-top: -1px; /* Ajuste fino de eixo */
+  margin-top: -1px;
 }
 
 .hero-panel h1 {
@@ -144,7 +143,7 @@ body {
    ÁREA DE CONTEÚDO
    ========================================================= */
 .content-area {
-  padding: 24px var(--bulbe-page-padding);
+  padding: 24px var(--bulbe-page-padding, 20px);
 }
 
 .section-title {
@@ -157,10 +156,10 @@ body {
 
 .timeline-card {
   border: 1px solid var(--gray-border);
-  border-radius: var(--bulbe-radius-card);
+  border-radius: var(--bulbe-radius-card, 12px);
   padding: 24px 16px;
   background-color: #ffffff;
-  box-shadow: var(--bulbe-shadow-card);
+  box-shadow: var(--bulbe-shadow-card, 0 4px 10px rgba(0,0,0,0.02));
   margin-bottom: 24px;
 }
 
@@ -169,7 +168,8 @@ body {
    ========================================================= */
 .timeline-step {
   position: relative;
-  padding-left: 45px; 
+  width: 100%;
+  padding-left: 48px; 
   padding-bottom: 28px; 
 }
 
@@ -179,15 +179,15 @@ body {
 
 .marker {
   position: absolute;
-  left: 12px; 
+  left: 14px;
   top: 0;
   transform: translateX(-50%); 
   z-index: 2;
 }
 
 .marker-done {
-  width: 22px;
-  height: 22px;
+  width: 28px;
+  height: 28px;
   background-color: var(--green-success);
   border-radius: 50%;
   display: flex;
@@ -197,35 +197,36 @@ body {
 
 .marker-done::after {
   content: "";
-  width: 5px;
-  height: 10px;
+  width: 6px;
+  height: 12px;
   border-right: 2px solid #fff;
   border-bottom: 2px solid #fff;
-  transform: rotate(45deg) translate(-1px, -1px);
+  transform: rotate(45deg) translate(-1px, -2px);
 }
 
 .marker-current {
-  width: 20px;
-  height: 20px;
+  width: 22px;
+  height: 22px;
   background-color: var(--blue-dark);
   border-radius: 50%;
   border: 3px solid #ffffff;
-  box-shadow: 0 0 0 1px var(--blue-dark); 
+  box-shadow: 0 0 0 2px var(--blue-dark);
+  margin-top: 3px;
 }
 
 .marker-pending {
-  width: 14px;
-  height: 14px;
+  width: 16px;
+  height: 16px;
   background-color: #7b8595;
   border-radius: 50%;
-  border: 4px solid #e7eaef;
-  top: 2px; 
+  border: 5px solid #e7eaef;
+  top: 5px; 
 }
 
 .track-line {
   position: absolute;
-  left: 12px; 
-  top: 24px;  
+  left: 14px;
+  top: 28px;  
   bottom: -4px; 
   width: 3px;
   transform: translateX(-50%);
@@ -242,21 +243,30 @@ body {
 }
 
 .step-content {
+  width: 100%; 
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
   text-align: center; 
-  padding-top: -2px;
 }
 
 .step-header {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 6px;
+  margin-bottom: 4px;
+  width: 100%;
 }
 
 .step-header span {
   color: var(--blue-dark);
-  font-weight: 700;
-  font-size: 16px;
+  font-weight: 800; 
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  display: inline-block;
+  width: 76px; /* A caixa invisível onde fica "ETAPA X" (Alinha tudo 100%) */
+  text-align: center; 
+  margin: 0 8px; 
 }
 
 .step-header::before,
@@ -264,24 +274,86 @@ body {
   content: "";
   height: 1px;
   background-color: #d8dee8;
-  width: 40px;
-  margin: 0 14px;
+  width: 32px; 
 }
 
 .step-content h3 {
-  color: var(--gray-title);
-  font-size: 15px;
-  font-weight: 600;
+  color: var(--blue-text); 
+  font-size: 16px; 
+  font-weight: 700;
   margin-bottom: 6px;
+  width: 100%;
+  text-align: center;
 }
 
 .step-content p {
   color: var(--gray-text);
-  font-size: 12px;
+  font-size: 13px; 
   line-height: 1.5;
-  margin: 0 auto;
   font-weight: 400;
-  max-width: 98%; 
+  margin: 0 auto; 
+  max-width: 250px; 
+  text-align: center;
+}
+
+/* =========================================================
+   ANIMAÇÃO DO ACCORDION (OCULTAR E MOSTRAR TEXTOS)
+   ========================================================= */
+.card-header-trigger {
+  cursor: pointer;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.accordion-arrow {
+  font-size: 10px;
+  color: var(--blue-text, #050361);
+}
+
+/* Oculta os textos por padrão (altura 0 e opacidade 0) */
+.step-content p {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  margin-top: 0 !important;
+  transition: max-height 0.4s ease, opacity 0.4s ease, margin-top 0.4s ease;
+}
+
+/* Quando o JS colocar a classe 'active' no card, o texto aparece */
+.timeline-step.active .step-content p {
+  max-height: 150px;
+  opacity: 1;
+  margin-top: 8px !important;
+}
+
+/* =========================================================
+   SIDEBAR BÁSICA (Para o JS funcionar)
+   ========================================================= */
+#sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 0;
+  background-color: var(--blue-dark);
+  z-index: 9999;
+  overflow-x: hidden;
+  transition: 0.3s;
+  padding-top: 60px;
+}
+
+#closeBtn {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  font-size: 36px;
+  color: white;
+  background: none;
+  border: none;
+  cursor: pointer;
 }
 
 /* =========================================================
@@ -292,7 +364,7 @@ body {
   align-items: center;
   background-color: var(--info-bg);
   padding: 16px;
-  border-radius: var(--bulbe-radius-card);
+  border-radius: var(--bulbe-radius-card, 8px);
   gap: 16px;
 }
 
@@ -315,70 +387,81 @@ body {
   color: var(--gray-text);
   font-size: 12px;
   line-height: 1.5;
+  max-height: none; /* Reseta o comportamento do accordion aqui */
+  opacity: 1;
 }
 
 /* =========================================================
    BARRA DE NAVEGAÇÃO INFERIOR
    ========================================================= */
 .bottom-nav {
-  position: fixed;
-  bottom: 0;
-  left: 50%;
-  display: flex; 
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  height: 72px;
-  padding: 0 16px;
-  background: #ffffff;
-  border-top: var(--bulbe-border-subtle);
-  border-radius: 0;
-  transform: translateX(-50%);
-  z-index: 10;
+  position: fixed !important; 
+  bottom: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  margin: 0 auto !important; 
+  transform: none !important; 
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: flex-start !important; 
+  width: 100% !important;
+  max-width: var(--bulbe-page-max-width, 414px) !important; 
+  height: 72px !important;
+  padding: 0 16px !important;
+  background: #ffffff !important;
+  border-top: 1px solid var(--gray-border, #e2e6ee) !important;
+  z-index: 999 !important; 
+  box-sizing: border-box !important;
 }
 
 .nav-item {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 60px;
-  height: 100%;
-  gap: 6px;
-  color: #a0aab8;
-  font-size: 11px;
-  font-weight: 500;
-  text-decoration: none;
+  position: relative !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 60px !important;
+  height: 72px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  gap: 6px !important;
+  color: var(--gray-text, #a0aab8) !important;
+  font-size: 11px !important;
+  font-weight: 500 !important;
+  text-decoration: none !important;
+  box-sizing: border-box !important;
 }
 
-.nav-item-active {
-  color: var(--blue-text);
-  font-weight: 600;
+/* A classe active usada pelo JS para a Navbar */
+.nav-item.active {
+  color: var(--blue-text, #050361) !important;
+  font-weight: 600 !important;
 }
 
-.nav-item-active::before {
-  content: "";
-  position: absolute;
-  top: -1px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 44px;
-  height: 3px;
-  background: var(--blue-text);
-  border-radius: 0 0 4px 4px;
+.nav-item.active::before {
+  content: "" !important;
+  position: absolute !important;
+  top: -1px !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  width: 44px !important;
+  height: 3px !important;
+  background-color: var(--blue-text, #050361) !important;
+  border-radius: 0 0 4px 4px !important;
+  margin: 0 !important;
 }
 
 .nav-icon-img {
-  display: block;
-  width: 24px;
-  height: 24px;
+  display: block !important;
+  width: 24px !important;
+  height: 24px !important;
+  margin: 0 !important;
 }
 
-.nav-item:not(.nav-item-active) .nav-icon-img {
-  filter: invert(79%) sepia(10%) saturate(301%) hue-rotate(178deg) brightness(92%) contrast(87%);
+.nav-item:not(.active) .nav-icon-img {
+  filter: invert(79%) sepia(10%) saturate(301%) hue-rotate(178deg) brightness(92%) contrast(87%) !important;
 }
 
-.nav-item-active .nav-icon-img {
-  filter: invert(9%) sepia(87%) saturate(6143%) hue-rotate(241deg) brightness(65%) contrast(116%);
+.nav-item.active .nav-icon-img {
+  filter: invert(9%) sepia(87%) saturate(6143%) hue-rotate(241deg) brightness(65%) contrast(116%) !important;
 }
