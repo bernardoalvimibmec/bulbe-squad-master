@@ -68,17 +68,6 @@ button {
     font-weight: 500;
     margin-bottom: 4px;
 }
-.status-container {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    margin-bottom: 4px;
-}
-
-.check-icone {
-    width: 16px;
-    height: 16px;
-}
 
 .valor {
     font-size: 32px;
@@ -120,9 +109,9 @@ button {
 }
 
     .status {
-    padding: 24px 20px 20px 20px; 
+    padding: 24px 20px 60px 20px; 
     background-color: #ffffff;
-}
+    }
 
 .status h4 {
     font-size: 11px;
@@ -195,69 +184,69 @@ button {
     margin-bottom: 8px;
 }
 
+/* Dinâmica de Cores baseada nas classes do seu HTML */
 
-
-
-/* 1. Concluído (Verde com Gradiente e Sombra) */
+/* 1. Concluído (Verde) */
 .timeline li.concluido .circulo {
-    width: 21px;                  /* Ajustado para bater com os 21px da ativação */
-    height: 21px;                 /* Ajustado para bater com os 21px da ativação */
-    background: linear-gradient(180deg, #22c55e, #3bff83);
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
-    border: none;
+    background-color: #00B15E;
 }
-/* Alinha o check branco perfeitamente no meio da bolinha verde */
 .timeline li.concluido .circulo::after {
     content: '✓';
     color: #ffffff;
+    font-size: 12px;
+    font-weight: bold;
+}
+.badge-concluido {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    background-color: #E6F7ED;
+    color: #00B15E;
+    padding: 4px 8px;
+    border-radius: 6px;
     font-size: 11px;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 700;
+    font-weight: 600;
 }
 
-/* 2. Em Andamento (Azul Escuro com Outline e Gradiente) */
+/* 2. Em Andamento (Azul) */
 .timeline li:nth-child(3) .circulo { 
-    width: 21px;                  /* Ajustado para 21px */
-    height: 21px;                 /* Ajustado para 21px */
-    background: linear-gradient(180deg, #010047, #1411c5);
-    border: 2px solid #ffffff;    /* Borda branca interna */
-    outline: 2px solid var(--bulbe-color-blue, #00068D); /* Outline azul por fora */
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    background-color: #08068D;
+    border: 4px solid #E6E7F4; 
 }
-/* Remove o '✓' caso ele tente herdar de algum lugar */
-.timeline li:nth-child(3) .circulo::after {
-    content: none;
+.andamento div span {
+    display: inline-block;
+    background-color: #E6E7F4;
+    color: #08068D;
+    padding: 4px 8px;
+    border-radius: 6px;
+    font-size: 11px;
+    font-weight: 600;
 }
 
-/* 3. Pendente (Cinza com Miolo Chumbo) */
-.timeline li .circulo {
-    width: 21px;                  /* Ajustado para 21px */
-    height: 21px;                 /* Ajustado para 21px */
-    background: #d9dade;          /* Base cinza idêntica */
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
-    border: none;
-    position: relative;
+/* 3. Pendente (Cinza Opaco) */
+.pendente h4 {
+    color: #94A3B8;
 }
-/* Cria o pontinho cinza escuro dentro da bolinha pendente */
-.timeline li:not(.concluido):not(:nth-child(3)) .circulo::after {
-    content: "";
-    position: absolute;
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background: #64748b;          /* Cor cinza chumbo idêntica */
+.pendente span {
+    display: inline-block;
+    background-color: #F1F5F9;
+    color: #94A3B8;
+    padding: 4px 8px;
+    border-radius: 6px;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: capitalize;
 }
 
 
 
  .botao {
     padding: 0 20px;       
-    margin-top: 10px;      
-    margin-bottom: 30px !important; 
+    margin-top: 20px;      
+    margin-bottom: 110px !important; 
     width: 100%;
+
 }
-
-
 
 .historico {
     width: 100%;                  
@@ -435,9 +424,8 @@ body {
 
 .conteudo-rolavel {
     width: 100%;
-    overflow-y: auto !important; 
-    overflow-x: hidden;
-    padding-bottom: 80px;
+    overflow-y: visible !important;
+    padding-bottom: calc(var(--bulbe-navbar-four-height) + 18px);
 }
 
 .cards,
