@@ -4,10 +4,17 @@
   const PROGRESSO_INICIAL = 50;
   const ETAPAS_DO_STATUS = {
     0: "Cadastro",
-    25: "Cadastro",
-    50: "Valida\u00e7\u00e3o",
+    25: "Valida\u00e7\u00e3o",
+    50: "Homologa\u00e7\u00e3o",
     75: "Homologa\u00e7\u00e3o",
     100: "Cr\u00e9ditos Ativos",
+  };
+  const ESTADOS_DAS_ETAPAS = {
+    0: ["active", "pending", "pending", "pending"],
+    25: ["completed", "active", "pending", "pending"],
+    50: ["completed", "completed", "active", "pending"],
+    75: ["completed", "completed", "active", "pending"],
+    100: ["completed", "completed", "completed", "completed"],
   };
   const STATUS_EM_ANALISE = "Em an\u00e1lise";
   const STATUS_CONCLUIDO = "Conclu\u00eddo";
@@ -16,7 +23,6 @@
   const LINHA_PASSO = 43;
 
   let progressoAtual = PROGRESSO_INICIAL;
-  let checkIconSrc = "../assets/ativacao-da-sua-conta/check.svg";
 
   function limitarPercentual(percentual) {
     const numero = Number(percentual);
@@ -28,7 +34,7 @@
     return Math.min(100, Math.max(0, Math.round(numero)));
   }
 
-  function obterMarcoDoStatus(percentual) {
+  function obterMarcoDoProgresso(percentual) {
     if (percentual >= 100) {
       return 100;
     }
@@ -78,21 +84,12 @@
     badge.classList.add("step-pill-pending", "bulbe-badge-pending");
   }
 
-  function definirMarcador(marker, concluida) {
+  function limparMarcador(marker) {
     if (!marker) {
       return;
     }
 
     marker.textContent = "";
-
-    if (!concluida) {
-      return;
-    }
-
-    const img = document.createElement("img");
-    img.src = checkIconSrc;
-    img.alt = STATUS_CONCLUIDO;
-    marker.appendChild(img);
   }
 
   function atualizarLinhaDasEtapas(stepsList, etapasConcluidas, totalEtapas) {
@@ -130,16 +127,15 @@
     const progressFill = document.querySelector(".progress-fill");
     const progressRing = document.querySelector(".hero-progress-ring");
     const statusCurrentStep = document.querySelector(".status-current-step");
+    const statusActivationItem = document.querySelector(".status-item-activation");
     const statusActivationState = document.querySelector(".status-activation-state");
     const stepsCard = document.querySelector(".steps-card");
     const stepsList = stepsCard ? stepsCard.querySelector(".steps-list") : null;
     const etapas = stepsCard ? Array.from(stepsCard.querySelectorAll(".step")) : [];
-    const marcoStatus = obterMarcoDoStatus(percentualNormalizado);
+    const marcoProgresso = obterMarcoDoProgresso(percentualNormalizado);
+    const estadosDasEtapas = ESTADOS_DAS_ETAPAS[marcoProgresso];
     const ativacaoConcluida = percentualNormalizado >= 100;
-    const etapasConcluidas = Math.min(
-      etapas.length,
-      Math.floor(percentualNormalizado / PASSO_PROGRESSO)
-    );
+    const etapasConcluidas = estadosDasEtapas.filter((estado) => estado === "completed").length;
 
     progressoAtual = percentualNormalizado;
 
@@ -152,32 +148,34 @@
     }
 
     if (progressRing) {
-      const strokeDashoffset = ativacaoConcluida ? 0 : 100 - percentualNormalizado;
+      const strokeDashoffset = 100 - percentualNormalizado;
       progressRing.style.strokeDashoffset = String(strokeDashoffset);
+      progressRing.classList.toggle("progress-empty", percentualNormalizado <= 0);
     }
 
     if (statusCurrentStep) {
-      statusCurrentStep.textContent = ETAPAS_DO_STATUS[marcoStatus];
+      statusCurrentStep.textContent = ETAPAS_DO_STATUS[marcoProgresso];
+    }
+
+    if (statusActivationItem) {
+      statusActivationItem.classList.toggle("status-is-completed", ativacaoConcluida);
+      statusActivationItem.classList.toggle("status-is-analysis", !ativacaoConcluida);
     }
 
     if (statusActivationState) {
       statusActivationState.textContent = ativacaoConcluida
         ? STATUS_CONCLUIDO
         : STATUS_EM_ANALISE;
-      statusActivationState.classList.toggle("status-state-complete", ativacaoConcluida);
-      statusActivationState.classList.toggle("status-state-analysis", !ativacaoConcluida);
     }
 
     etapas.forEach((etapa, index) => {
-      const concluida = index < etapasConcluidas;
-      const ativa = !concluida && index === etapasConcluidas;
-      const estado = concluida ? "completed" : ativa ? "active" : "pending";
+      const estado = estadosDasEtapas[index] || "pending";
       const marcador = etapa.querySelector(".step-marker");
       const badge = etapa.querySelector(".step-pill");
 
       etapa.classList.remove("step-completed", "step-active", "step-pending");
       etapa.classList.add(`step-${estado}`);
-      definirMarcador(marcador, concluida);
+      limparMarcador(marcador);
       definirBadge(badge, estado);
     });
 
@@ -204,13 +202,8 @@
   }
 
   function prepararSimulador() {
-    const checkAtual = document.querySelector(".steps-card .step-marker img");
     const botaoAnterior = document.querySelector(".progress-arrow-left");
     const botaoProximo = document.querySelector(".progress-arrow-right");
-
-    if (checkAtual) {
-      checkIconSrc = checkAtual.src;
-    }
 
     if (botaoAnterior) {
       botaoAnterior.addEventListener("click", () => moverProgresso(-1));

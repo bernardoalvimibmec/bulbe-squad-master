@@ -176,25 +176,28 @@ button {
   scale: 120%;
 }
 
-.hero-ring-base {
+.hero-ring-svg {
   inset: 0;
   width: 129px;
   height: 129px;
-}
-
-.hero-ring-progress {
-  top: -6px;
-  left: -6px;
-  width: 141px;
-  height: 141px;
   overflow: visible;
 }
 
+.hero-ring-track,
 .hero-progress-ring {
   fill: none;
+}
+
+.hero-progress-ring {
   stroke-dasharray: 100;
   stroke-dashoffset: 100;
+  transform: rotate(-90deg);
+  transform-origin: 50% 50%;
   transition: stroke-dashoffset 0.4s ease;
+}
+
+.hero-progress-ring.progress-empty {
+  opacity: 0;
 }
 
 .hero-bulb {
@@ -320,17 +323,25 @@ button {
   white-space: nowrap;
 }
 
-.status-item-text .status-activation-state {
+.status-item-activation .status-activation-state {
   font-family: "Poppins-Bold", "Poppins", Helvetica, Arial, sans-serif;
   font-weight: 700;
 }
 
-.status-activation-state.status-state-analysis {
+.status-item-activation.status-is-analysis .status-activation-state {
   color: var(--orange);
 }
 
-.status-activation-state.status-state-complete {
+.status-item-activation.status-is-completed .status-activation-state {
   color: var(--green);
+}
+
+.status-item-activation.status-is-analysis .status-icon-wrapper img {
+  filter: none;
+}
+
+.status-item-activation.status-is-completed .status-icon-wrapper img {
+  filter: brightness(0) saturate(100%) invert(34%) sepia(26%) saturate(1154%) hue-rotate(97deg) brightness(91%) contrast(89%);
 }
 
 .steps-card {
@@ -425,14 +436,17 @@ button {
   transition: background 0.3s ease, outline-color 0.3s ease;
 }
 
-.step-marker img {
-  width: 10px;
-  height: 10px;
-  filter: brightness(0) invert(1);
-}
-
 .step-completed .step-marker {
   background: linear-gradient(180deg, #22c55e, #3bff83);
+}
+
+.step-completed .step-marker::after {
+  content: "\2713";
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1;
 }
 
 .step-active .step-marker {
