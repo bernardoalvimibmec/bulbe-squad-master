@@ -183,13 +183,15 @@ button {
 }
 
 .hero-ring-progress {
-  top: 0;
-  left: 7px;
-  width: 121px;
-  height: 129px;
+  top: -6px;
+  left: -6px;
+  width: 141px;
+  height: 141px;
+  overflow: visible;
 }
 
 .hero-progress-ring {
+  fill: none;
   stroke-dasharray: 100;
   stroke-dashoffset: 100;
   transition: stroke-dashoffset 0.4s ease;
@@ -263,7 +265,7 @@ button {
 
 .status-items {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   align-items: center;
   height: 54px;
   margin-top: 20px;
@@ -318,10 +320,17 @@ button {
   white-space: nowrap;
 }
 
-.status-item:last-child .status-item-text strong {
-  color: var(--orange);
+.status-item-text .status-activation-state {
   font-family: "Poppins-Bold", "Poppins", Helvetica, Arial, sans-serif;
   font-weight: 700;
+}
+
+.status-activation-state.status-state-analysis {
+  color: var(--orange);
+}
+
+.status-activation-state.status-state-complete {
+  color: var(--green);
 }
 
 .steps-card {
@@ -514,8 +523,6 @@ button {
 }
 
 .info-card {
-  /* display: grid;
-  grid-template-columns: 30px 1fr; */
   display: flex;
   justify-content: center;
   gap: 15px;
@@ -599,8 +606,9 @@ button {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: min(100vw, var(--bulbe-page-max-width));
-  padding: 0 6px;
+  width: min(calc(100vw + 28px), calc(var(--bulbe-page-max-width) + 112px));
+  padding: 0;
+  box-sizing: border-box;
   pointer-events: none;
   transform: translate(-50%, -50%);
 }
@@ -610,6 +618,7 @@ button {
   place-items: center;
   width: 34px;
   height: 34px;
+  flex: 0 0 auto;
   padding: 0 0 3px;
   border: 1px solid rgba(0, 0, 156, 0.12);
   border-radius: 50%;
@@ -701,7 +710,7 @@ button {
   }
 
   .progress-simulator {
-    padding: 0 4px;
+    width: calc(100vw + 24px);
   }
 
   .progress-arrow {

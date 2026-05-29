@@ -2,6 +2,15 @@
   const VALORES_PROGRESSO = [0, 25, 50, 75, 100];
   const PASSO_PROGRESSO = 25;
   const PROGRESSO_INICIAL = 50;
+  const ETAPAS_DO_STATUS = {
+    0: "Cadastro",
+    25: "Cadastro",
+    50: "Valida\u00e7\u00e3o",
+    75: "Homologa\u00e7\u00e3o",
+    100: "Cr\u00e9ditos Ativos",
+  };
+  const STATUS_EM_ANALISE = "Em an\u00e1lise";
+  const STATUS_CONCLUIDO = "Conclu\u00eddo";
   const LINHA_TOPO = 11;
   const LINHA_ALTURA_TOTAL = 132;
   const LINHA_PASSO = 43;
@@ -19,6 +28,26 @@
     return Math.min(100, Math.max(0, Math.round(numero)));
   }
 
+  function obterMarcoDoStatus(percentual) {
+    if (percentual >= 100) {
+      return 100;
+    }
+
+    if (percentual >= 75) {
+      return 75;
+    }
+
+    if (percentual >= 50) {
+      return 50;
+    }
+
+    if (percentual >= 25) {
+      return 25;
+    }
+
+    return 0;
+  }
+
   function definirBadge(badge, estado) {
     if (!badge) {
       return;
@@ -34,7 +63,7 @@
     );
 
     if (estado === "completed") {
-      badge.textContent = "Concluído";
+      badge.textContent = STATUS_CONCLUIDO;
       badge.classList.add("step-pill-success", "bulbe-badge-success");
       return;
     }
@@ -62,7 +91,7 @@
 
     const img = document.createElement("img");
     img.src = checkIconSrc;
-    img.alt = "Concluído";
+    img.alt = STATUS_CONCLUIDO;
     marker.appendChild(img);
   }
 
@@ -100,9 +129,13 @@
     const statusPercent = document.querySelector(".status-percent");
     const progressFill = document.querySelector(".progress-fill");
     const progressRing = document.querySelector(".hero-progress-ring");
+    const statusCurrentStep = document.querySelector(".status-current-step");
+    const statusActivationState = document.querySelector(".status-activation-state");
     const stepsCard = document.querySelector(".steps-card");
     const stepsList = stepsCard ? stepsCard.querySelector(".steps-list") : null;
     const etapas = stepsCard ? Array.from(stepsCard.querySelectorAll(".step")) : [];
+    const marcoStatus = obterMarcoDoStatus(percentualNormalizado);
+    const ativacaoConcluida = percentualNormalizado >= 100;
     const etapasConcluidas = Math.min(
       etapas.length,
       Math.floor(percentualNormalizado / PASSO_PROGRESSO)
@@ -119,7 +152,20 @@
     }
 
     if (progressRing) {
-      progressRing.style.strokeDashoffset = 100 - percentualNormalizado;
+      const strokeDashoffset = ativacaoConcluida ? 0 : 100 - percentualNormalizado;
+      progressRing.style.strokeDashoffset = String(strokeDashoffset);
+    }
+
+    if (statusCurrentStep) {
+      statusCurrentStep.textContent = ETAPAS_DO_STATUS[marcoStatus];
+    }
+
+    if (statusActivationState) {
+      statusActivationState.textContent = ativacaoConcluida
+        ? STATUS_CONCLUIDO
+        : STATUS_EM_ANALISE;
+      statusActivationState.classList.toggle("status-state-complete", ativacaoConcluida);
+      statusActivationState.classList.toggle("status-state-analysis", !ativacaoConcluida);
     }
 
     etapas.forEach((etapa, index) => {
