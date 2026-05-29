@@ -173,19 +173,31 @@ button {
 .hero-bulb {
   position: absolute;
   pointer-events: none;
+  scale: 120%;
 }
 
-.hero-ring-base {
+.hero-ring-svg {
   inset: 0;
   width: 129px;
   height: 129px;
+  overflow: visible;
 }
 
-.hero-ring-progress {
-  top: 0;
-  left: 7px;
-  width: 121px;
-  height: 129px;
+.hero-ring-track,
+.hero-progress-ring {
+  fill: none;
+}
+
+.hero-progress-ring {
+  stroke-dasharray: 100;
+  stroke-dashoffset: 100;
+  transform: rotate(-90deg);
+  transform-origin: 50% 50%;
+  transition: stroke-dashoffset 0.4s ease;
+}
+
+.hero-progress-ring.progress-empty {
+  opacity: 0;
 }
 
 .hero-bulb {
@@ -247,15 +259,16 @@ button {
 }
 
 .progress-fill {
-  width: 60.2%;
+  width: 50%;
   height: 100%;
   border-radius: inherit;
   background: linear-gradient(90deg, var(--blue-deep), var(--blue-bright));
+  transition: width 0.4s ease;
 }
 
 .status-items {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   align-items: center;
   height: 54px;
   margin-top: 20px;
@@ -310,10 +323,25 @@ button {
   white-space: nowrap;
 }
 
-.status-item:last-child .status-item-text strong {
-  color: var(--orange);
+.status-item-activation .status-activation-state {
   font-family: "Poppins-Bold", "Poppins", Helvetica, Arial, sans-serif;
   font-weight: 700;
+}
+
+.status-item-activation.status-is-analysis .status-activation-state {
+  color: var(--orange);
+}
+
+.status-item-activation.status-is-completed .status-activation-state {
+  color: var(--green);
+}
+
+.status-item-activation.status-is-analysis .status-icon-wrapper img {
+  filter: none;
+}
+
+.status-item-activation.status-is-completed .status-icon-wrapper img {
+  filter: brightness(0) saturate(100%) invert(34%) sepia(26%) saturate(1154%) hue-rotate(97deg) brightness(91%) contrast(89%);
 }
 
 .steps-card {
@@ -354,6 +382,10 @@ button {
 }
 
 .steps-list {
+  --steps-line-completed: 86px;
+  --steps-line-pending-top: 97px;
+  --steps-line-pending-height: 46px;
+
   position: relative;
   display: grid;
   gap: 5px;
@@ -371,14 +403,16 @@ button {
 
 .steps-list::before {
   top: 11px;
-  height: 106px;
+  height: var(--steps-line-completed);
   background: #26d07c;
+  transition: height 0.4s ease;
 }
 
 .steps-list::after {
-  top: 116px;
-  height: 27px;
+  top: var(--steps-line-pending-top);
+  height: var(--steps-line-pending-height);
   border-left: 2px dashed #cccccc;
+  transition: top 0.4s ease, height 0.4s ease;
 }
 
 .step {
@@ -399,16 +433,20 @@ button {
   border-radius: 50%;
   background: #d9dade;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
-}
-
-.step-marker img {
-  width: 10px;
-  height: 10px;
-  filter: brightness(0) invert(1);
+  transition: background 0.3s ease, outline-color 0.3s ease;
 }
 
 .step-completed .step-marker {
   background: linear-gradient(180deg, #22c55e, #3bff83);
+}
+
+.step-completed .step-marker::after {
+  content: "\2713";
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1;
 }
 
 .step-active .step-marker {
@@ -465,6 +503,7 @@ button {
   font-weight: 600;
   line-height: 1.2;
   white-space: nowrap;
+  transition: background 0.3s ease, color 0.3s ease;
 }
 
 .step-pill-success {
@@ -498,8 +537,6 @@ button {
 }
 
 .info-card {
-  /* display: grid;
-  grid-template-columns: 30px 1fr; */
   display: flex;
   justify-content: center;
   gap: 15px;
@@ -575,6 +612,51 @@ button {
   height: 22px;
 }
 
+.progress-simulator {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 12;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: min(calc(100vw + 28px), calc(var(--bulbe-page-max-width) + 112px));
+  padding: 0;
+  box-sizing: border-box;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+}
+
+.progress-arrow {
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  flex: 0 0 auto;
+  padding: 0 0 3px;
+  border: 1px solid rgba(0, 0, 156, 0.12);
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.94);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.14);
+  color: var(--blue);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 32px;
+  line-height: 1;
+  pointer-events: auto;
+  transition: opacity 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.progress-arrow:hover {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.18);
+  transform: translateY(-1px);
+}
+
+.progress-arrow:disabled {
+  opacity: 0.42;
+  cursor: not-allowed;
+  transform: none;
+}
+
 .bottom-nav {
   position: fixed;
   bottom: 0;
@@ -639,5 +721,27 @@ button {
 
   .hero-visual {
     right: 10px;
+  }
+
+  .progress-simulator {
+    width: calc(100vw + 24px);
+  }
+
+  .progress-arrow {
+    width: 30px;
+    height: 30px;
+    font-size: 28px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-progress-ring,
+  .progress-fill,
+  .steps-list::before,
+  .steps-list::after,
+  .step-marker,
+  .step-pill,
+  .progress-arrow {
+    transition: none;
   }
 }

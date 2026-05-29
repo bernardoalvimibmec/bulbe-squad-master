@@ -40,8 +40,16 @@
             </p>
           </div>
           <div class="hero-visual">
-            <img class="hero-ring hero-ring-base" src="../assets/ativacao-da-sua-conta/Cinca.svg" alt="" />
-            <img class="hero-ring hero-ring-progress" src="../assets/ativacao-da-sua-conta/Amarelo.svg" alt="" />
+            <svg class="hero-ring hero-ring-svg" width="129" height="129" viewBox="0 0 100 100" fill="none" aria-hidden="true" focusable="false">
+              <circle class="hero-ring-track" pathLength="100" cx="50" cy="50" r="44" stroke="#D9D9D9" stroke-width="4.1" stroke-linecap="round" />
+              <circle class="hero-progress-ring" pathLength="100" cx="50" cy="50" r="44" stroke="url(#hero-progress-gradient)" stroke-width="4.1" stroke-linecap="round" />
+              <defs>
+                <linearGradient id="hero-progress-gradient" x1="50" y1="6" x2="50" y2="94" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#FFF700" />
+                  <stop offset="0.966346" stop-color="#FF9E1B" />
+                </linearGradient>
+              </defs>
+            </svg>
             <img class="hero-bulb" src="../assets/ativacao-da-sua-conta/lightbulb.png" alt="" />
           </div>
         </div>
@@ -51,7 +59,7 @@
         <section class="status-card">
         <div class="status-card-header">
           <span class="status-title">Progresso da Ativação</span>
-          <span class="status-percent">68%</span>
+          <span class="status-percent">50%</span>
         </div>
         <div class="progress-bar">
           <div class="progress-fill"></div>
@@ -63,25 +71,16 @@
             </div>
             <div class="status-item-text">
               <span>Etapa atual</span>
-              <strong>Homologação</strong>
+              <strong class="status-current-step">Homologação</strong>
             </div>
           </div>
-          <div class="status-item">
-            <div class="status-icon-wrapper">
-              <img src="../assets/ativacao-da-sua-conta/Calendar.svg" alt="Prazo estimado" />
-            </div>
-            <div class="status-item-text">
-              <span>Prazo estimado</span>
-              <strong>Até 90 dias</strong>
-            </div>
-          </div>
-          <div class="status-item">
+          <div class="status-item status-item-activation status-is-analysis">
             <div class="status-icon-wrapper">
               <img src="../assets/ativacao-da-sua-conta/Status Icon.svg" alt="Status" />
             </div>
             <div class="status-item-text">
               <span>Status</span>
-              <strong>Em análise</strong>
+              <strong class="status-activation-state">Em análise</strong>
             </div>
           </div>
         </div>
@@ -96,9 +95,7 @@
 
         <div class="steps-list">
           <article class="step step-completed">
-            <div class="step-marker">
-              <img src="../assets/ativacao-da-sua-conta/check.svg" alt="Concluído" />
-            </div>
+            <div class="step-marker"></div>
             <div class="step-body">
               <div class="step-heading">
                 <span>Cadastro concluído</span>
@@ -109,9 +106,7 @@
           </article>
 
           <article class="step step-completed">
-            <div class="step-marker">
-              <img src="../assets/ativacao-da-sua-conta/check.svg" alt="Concluído" />
-            </div>
+            <div class="step-marker"></div>
             <div class="step-body">
               <div class="step-heading">
                 <span>Validação de dados</span>
@@ -161,6 +156,11 @@
       </button>
       </div>
 
+      <div class="progress-simulator" role="group" aria-label="Simular progresso da ativação">
+        <button class="progress-arrow progress-arrow-left" type="button" aria-label="Reduzir progresso da ativação">‹</button>
+        <button class="progress-arrow progress-arrow-right" type="button" aria-label="Aumentar progresso da ativação">›</button>
+      </div>
+
       <nav class="bottom-nav bulbe-nav bulbe-nav-four" aria-label="Navegação principal">
         <a class="nav-link nav-link-active" href="ativacao.html">
           <img src="../assets/ativacao-da-sua-conta/lucide_clock.svg" alt="Espera" />
@@ -180,5 +180,6 @@
         </a>
       </nav>
     </div>
+    <script src="../js/ativacao.js"></script>
   </body>
 </html>
