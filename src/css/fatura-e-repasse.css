@@ -3,14 +3,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--bulbe-font-family);
 }
 
 body {
-    background-color: #eef2f7; /* Fundo cinza claro para destacar o celular na tela do PC */
+    background-color: var(--bulbe-color-app-backdrop);
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     min-height: 100vh;
 }
 
@@ -18,17 +18,18 @@ body {
     width: 100%;
     max-width: var(--bulbe-page-max-width);
     min-height: 100vh;
-    background-color: #ffffff;
+    background-color: var(--bulbe-color-page);
     box-shadow: none;
     border-radius: 0;
     
     /* Ativa o flexbox para segurar o conteúdo e o rodapé */
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
     position: relative;
     
-    overflow: visible;
+    overflow-x: hidden;
+    overflow-y: visible;
 }
 /* Remove os estilos padrão de listas e botões globais */
 ul {
@@ -42,9 +43,9 @@ button {
 }
 
 .header-fatura {
-    background-color: #00068D;
+    background-color: var(--bulbe-color-blue);
     color: #ffffff;
-    padding: 24px 20px 32px 20px;
+    padding: 0 var(--bulbe-page-padding) 32px;
     border-radius: 0;
 }
 
@@ -53,6 +54,7 @@ button {
     display: flex;
     align-items: center; 
     gap: 12px;           
+    min-height: var(--bulbe-header-height);
     margin-bottom: 16px; 
 }
 
@@ -101,7 +103,7 @@ button {
 .card-pix, .card-data {
     flex: 1;
     padding: 12px;
-    border-radius: 12px;
+    border-radius: var(--bulbe-radius-inner);
     font-size: 13px;
     font-weight: 600;
     display: flex;
@@ -119,8 +121,8 @@ button {
     color: #054894;
 }
 
-    .status {
-    padding: 24px 20px 20px 20px; 
+.status {
+    padding: 24px var(--bulbe-page-padding) 20px; 
     background-color: #ffffff;
 }
 
@@ -250,10 +252,10 @@ button {
 
 
 
- .botao {
-    padding: 0 20px;       
+.botao {
+    padding: 0 var(--bulbe-page-padding);       
     margin-top: 10px;      
-    margin-bottom: 30px !important; 
+    margin-bottom: 30px; 
     width: 100%;
 }
 
@@ -261,10 +263,10 @@ button {
 
 .historico {
     width: 100%;                  
-    background-color: #00068D !important; /* O azul escuro do Bulbe */
-    color: #ffffff !important;    
+    background-color: var(--bulbe-color-blue);
+    color: #ffffff;    
     padding: 16px 24px;          
-    border-radius: 12px;          
+    border-radius: var(--bulbe-radius-button);          
     font-size: 15px;
     font-weight: 600;             
     display: flex;               
@@ -282,38 +284,20 @@ button {
 }
 
 .menu-inferior {
-    position: absolute;   
+    position: fixed;
     bottom: 0;
     left: 0;
+    right: 0;
     width: 100%;
-    background-color: #ffffff;
-    border-top: 1px solid #E2E8F0;
-    padding: 12px 8px 16px 8px; 
-    z-index: 999;         
-}
-
-.menu-inferior ul {
-    display: flex;                
-    justify-content: space-around; 
-    align-items: center;          
-    width: 100%;
-}
-
-.menu-inferior li {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex: 1;                      
-}
-
-.menu-inferior li img {
-    width: 95px;          
-    height: auto;         
-    object-fit: contain;
+    max-width: var(--bulbe-page-max-width);
+    margin: 0 auto;
+    transform: none;
+    box-sizing: border-box;
+    z-index: 30;
 }
 .conteudo-rolavel {
     flex: 1;
-    overflow-y: auto !important; 
+    overflow-y: auto; 
     overflow-x: hidden;
     width: 100%;
 }
@@ -326,13 +310,14 @@ body {
 }
 
 .celular {
-    max-width: 414px;
+    max-width: var(--bulbe-page-max-width);
     min-height: 100vh;
     height: auto;
-    background-color: var(--bulbe-color-white);
+    background-color: var(--bulbe-color-page);
     border-radius: 0;
     box-shadow: none;
-    overflow: visible;
+    overflow-x: hidden;
+    overflow-y: visible;
 }
 
 .header-fatura {
@@ -421,23 +406,28 @@ body {
 
 .historico {
     min-height: 54px;
-    background-color: var(--bulbe-color-blue) !important;
+    background-color: var(--bulbe-color-blue);
     font-size: 16px;
 }
 
 .menu-inferior {
     position: fixed;
-    left: 50%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
     max-width: var(--bulbe-page-max-width);
-    border-top: var(--bulbe-border-subtle);
-    transform: translateX(-50%);
+    margin: 0 auto;
+    transform: none;
+    box-sizing: border-box;
+    z-index: 30;
 }
 
 .conteudo-rolavel {
     width: 100%;
-    overflow-y: auto !important; 
+    overflow-y: auto; 
     overflow-x: hidden;
-    padding-bottom: 80px;
+    padding-bottom: calc(var(--bulbe-navbar-four-height) + 20px);
 }
 
 .cards,

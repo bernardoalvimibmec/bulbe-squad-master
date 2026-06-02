@@ -29,10 +29,11 @@ body {
 
 .phone {
   width: 100%;
-  max-width: 414px;
+  max-width: var(--bulbe-page-max-width);
   min-height: 100vh;
   background: var(--bulbe-color-white);
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: visible;
   position: relative;
 }
 
@@ -40,13 +41,14 @@ body {
 
 .topbar {
   height: var(--bulbe-header-height);
+  min-height: var(--bulbe-header-height);
   background: var(--bulbe-color-blue);
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 var(--bulbe-page-padding);
   color: white;
-  border-bottom: 1px solid var(--bulbe-color-gray-400);
+  border-bottom: 0;
   position: relative;
 
 }
@@ -83,7 +85,7 @@ body {
 .hero {
   background: var(--bulbe-color-blue);
   color: white;
-  padding: 20px var(--bulbe-hero-padding-inline) 35px;
+  padding: 20px var(--bulbe-page-padding) 35px;
 }
 
 .bell-icon {
@@ -238,33 +240,14 @@ body {
 .bottom-nav {
   position: fixed;
   bottom: 0;
-  left: 50%;
+  left: 0;
+  right: 0;
   width: 100%;
-  max-width: 414px;
-  transform: translateX(-50%);
-  height: var(--bulbe-navbar-five-height);
-  background: white;
-  border-top: var(--bulbe-border-subtle);
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.nav-item {
-  text-align: center;
-  color: var(--bulbe-color-gray-400);
-  font-size: 12px;
-}
-
-.nav-item span {
-  display: block;
-  margin-bottom: 4px;
-  font-size: 18px;
-}
-
-.nav-item.active {
-  color: var(--bulbe-color-blue);
-  font-weight: 700;
+  max-width: var(--bulbe-page-max-width);
+  margin: 0 auto;
+  transform: none;
+  box-sizing: border-box;
+  z-index: 30;
 }
 
 @media (max-width: 430px) {
@@ -277,7 +260,7 @@ body {
   position: absolute;
   background: white;
   color: #333;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  box-shadow: var(--bulbe-shadow-card);
   z-index: 999;
   transition: all 0.3s ease-in-out;
 }
@@ -319,13 +302,13 @@ body {
 /* POPUPS (Notificação e Perfil) */
 .popup-panel {
   position: absolute;
-  top: 65px; /* Alinhado abaixo do header */
+  top: var(--bulbe-header-height);
   width: 220px;
   background: white;
   color: #333;
   padding: 16px;
-  border-radius: 8px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+  border-radius: var(--bulbe-radius-inner);
+  box-shadow: var(--bulbe-shadow-card);
   z-index: 99;
   opacity: 0;
   pointer-events: none;

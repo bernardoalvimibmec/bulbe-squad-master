@@ -22,7 +22,7 @@
 body {
   margin: 0;
   min-height: 100vh;
-  background: var(--bg);
+  background: var(--bulbe-color-app-backdrop);
   color: var(--gray-700);
   font-family: var(--bulbe-font-family);
 }
@@ -44,7 +44,8 @@ button {
   max-width: var(--bulbe-page-max-width);
   min-height: 100vh;
   margin: 0 auto;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: visible;
   background: var(--surface);
 }
 
@@ -55,9 +56,10 @@ button {
   align-items: center;
   
   height: var(--bulbe-header-height);
-  padding: 8px var(--bulbe-page-padding);
+  min-height: var(--bulbe-header-height);
+  padding: 0 var(--bulbe-page-padding);
   background: var(--blue);
-  border-bottom: 2px solid var(--gray-500);
+  border-bottom: 0;
 }
 
 .logo {
@@ -141,7 +143,8 @@ button {
 }
 
 .hero-copy h1 {
-  width: 250px;
+  width: 100%;
+  max-width: 250px;
   margin: 16px 0 0;
   color: #ffffff;
   font-family: "Poppins-SemiBold", "Poppins", Helvetica, Arial, sans-serif;
@@ -152,7 +155,8 @@ button {
 }
 
 .hero-copy p {
-  width: 168px;
+  width: 100%;
+  max-width: 180px;
   margin: 8px 0 0;
   color: var(--gray-500);
   font-size: 12px;
@@ -254,7 +258,7 @@ button {
   width: 100%;
   height: 12px;
   overflow: hidden;
-  border-radius: 18px;
+  border-radius: var(--bulbe-radius-inner);
   background: var(--gray-200);
 }
 
@@ -275,7 +279,7 @@ button {
   padding: 10px 15px;
   border-radius: var(--bulbe-radius-inner);
   background: var(--surface);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0.25);
+  box-shadow: var(--bulbe-shadow-card);
 }
 
 .status-item {
@@ -350,7 +354,7 @@ button {
   padding: 12px 12px 14px;
   border-radius: var(--bulbe-radius-card);
   background: var(--surface);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0.25);
+  box-shadow: var(--bulbe-shadow-card);
 }
 
 .steps-title {
@@ -359,7 +363,8 @@ button {
   align-items: center;
   justify-content: center;
   gap: 12px;
-  width: 249px;
+  width: 100%;
+  max-width: 249px;
   height: 12px;
   margin: 0 auto 10px;
 }
@@ -545,7 +550,7 @@ button {
   padding: 10px;
   border-radius: var(--bulbe-radius-card);
   background: var(--surface);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0.25);
+  box-shadow: var(--bulbe-shadow-card);
 }
 
 .info-icon {
@@ -579,7 +584,7 @@ button {
   font-size: 9px;
   line-height: 13px;
   letter-spacing: 0.18px;
-  white-space: nowrap;
+  white-space: normal;
 }
 
 .primary-button {
@@ -620,7 +625,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: min(calc(100vw + 28px), calc(var(--bulbe-page-max-width) + 112px));
+  width: min(100vw, calc(var(--bulbe-page-max-width) + 72px));
   padding: 0;
   box-sizing: border-box;
   pointer-events: none;
@@ -660,61 +665,17 @@ button {
 .bottom-nav {
   position: fixed;
   bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  transform: none;
+  box-sizing: border-box;
   z-index: 10;
   width: 100%;
   max-width: var(--bulbe-page-max-width);
-
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  height: 80px;
-  padding: 8px 0;
-
-  background: #ffffff;
-}
-
-.nav-link {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 4px;
-  color: var(--gray-400);
-  font-family: "Poppins-Medium", "Poppins", Helvetica, Arial, sans-serif;
-  font-size: 12px;
-  line-height: 18px;
-  text-decoration: none;
-}
-
-.nav-link img {
-  width: 24px;
-  height: 24px;
-  opacity: 0.75;
-}
-
-.nav-link-active {
-  color: var(--blue);
-  border-top: 0;
-  margin-top: 0;
-}
-
-.nav-link-active img {
-  opacity: 1;
 }
 
 @media (max-width: 359px) {
-  .page {
-    max-width: none;
-  }
-
-  .status-card,
-  .steps-card,
-  .info-card,
-  .primary-button {
-    width: calc(100% - 36px);
-  }
-
   .progress-bar {
     width: 100%;
   }
@@ -724,7 +685,7 @@ button {
   }
 
   .progress-simulator {
-    width: calc(100vw + 24px);
+    width: 100vw;
   }
 
   .progress-arrow {
