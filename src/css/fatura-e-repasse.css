@@ -286,10 +286,13 @@ button {
 .menu-inferior {
     position: fixed;
     bottom: 0;
-    left: 50%;
+    left: 0;
+    right: 0;
     width: 100%;
     max-width: var(--bulbe-page-max-width);
-    transform: translateX(-50%);
+    margin: 0 auto;
+    transform: none;
+    box-sizing: border-box;
     z-index: 30;
 }
 .conteudo-rolavel {
@@ -410,10 +413,13 @@ body {
 .menu-inferior {
     position: fixed;
     bottom: 0;
-    left: 50%;
+    left: 0;
+    right: 0;
     width: 100%;
     max-width: var(--bulbe-page-max-width);
-    transform: translateX(-50%);
+    margin: 0 auto;
+    transform: none;
+    box-sizing: border-box;
     z-index: 30;
 }
 
