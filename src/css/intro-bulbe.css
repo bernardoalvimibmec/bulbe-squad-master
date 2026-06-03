@@ -62,20 +62,6 @@ body {
 }
 
 /* HEADER COM CENTRALIZAÇÃO ABSOLUTA DA LOGO */
-.header {
-    width: 100%;
-    height: var(--bulbe-header-height);
-    min-height: var(--bulbe-header-height);
-    background-color: var(--bulbe-color-blue);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 var(--bulbe-page-padding);
-    color: white;
-    position: sticky;
-    top: 0;
-    z-index: 20;
-}
 
 .menu-btn {
     background: none;

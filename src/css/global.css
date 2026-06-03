@@ -33,6 +33,12 @@
   --bulbe-page-padding: 20px;
   --bulbe-hero-padding-inline: 24px;
   --bulbe-header-height: 65px;
+  --bulbe-header-control-size: 40px;
+  --bulbe-header-icon-size: 24px;
+  --bulbe-header-logo-width: 100px;
+  --bulbe-header-logo-height: 29px;
+  --bulbe-header-profile-size: 32px;
+  --bulbe-header-actions-gap: 8px;
   --bulbe-navbar-five-height: 72px;
   --bulbe-navbar-four-height: 80px;
   --radius-sm: 5px;
@@ -135,6 +141,206 @@ img {
 .bulbe-badge-warning {
   background: var(--bulbe-color-warning-soft);
   color: var(--bulbe-color-warning);
+}
+
+.header.bulbe-app-header,
+.topbar.bulbe-app-header,
+.page-header.bulbe-app-header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: var(--bulbe-header-height);
+  min-height: var(--bulbe-header-height);
+  padding: 0 var(--bulbe-page-padding);
+  box-sizing: border-box;
+  background: var(--bulbe-color-blue);
+  color: var(--bulbe-color-white);
+  border: 0;
+}
+
+.header.bulbe-app-header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+}
+
+.header-top.bulbe-header-row,
+.top-bar.bulbe-header-row {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  min-height: var(--bulbe-header-height);
+  margin: 0 0 20px;
+  box-sizing: border-box;
+  color: var(--bulbe-color-white);
+}
+
+.bulbe-app-header .bulbe-header-control,
+.bulbe-header-row .bulbe-header-control,
+.header.bulbe-app-header .menu-btn,
+.topbar.bulbe-app-header .menu,
+.page-header.bulbe-app-header .icon-button,
+.header-top.bulbe-header-row .icon-btn,
+.top-bar.bulbe-header-row .menu-btn,
+.top-bar.bulbe-header-row .bell-btn {
+  display: grid;
+  place-items: center;
+  width: var(--bulbe-header-control-size);
+  height: var(--bulbe-header-control-size);
+  min-width: var(--bulbe-header-control-size);
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  background: none;
+  color: inherit;
+  font: inherit;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.bulbe-app-header .bulbe-header-menu,
+.bulbe-header-row .bulbe-header-menu,
+.header.bulbe-app-header .menu-btn,
+.topbar.bulbe-app-header .menu,
+.page-header.bulbe-app-header .menu-button,
+.header-top.bulbe-header-row > .icon-btn,
+.top-bar.bulbe-header-row .menu-btn {
+  font-size: var(--bulbe-header-icon-size);
+}
+
+.bulbe-app-header .bulbe-header-menu svg,
+.bulbe-header-row .bulbe-header-menu svg,
+.bulbe-app-header .bulbe-header-control > svg,
+.bulbe-header-row .bulbe-header-control > svg,
+.bulbe-app-header .bulbe-header-control > img,
+.bulbe-header-row .bulbe-header-control > img,
+.page-header.bulbe-app-header .icon-button > img,
+.header-top.bulbe-header-row .icon-btn > svg,
+.top-bar.bulbe-header-row .menu-btn > svg,
+.top-bar.bulbe-header-row .bell-btn > svg {
+  display: block;
+  width: var(--bulbe-header-icon-size);
+  height: var(--bulbe-header-icon-size);
+  margin: 0;
+  object-fit: contain;
+}
+
+.bulbe-app-header .bulbe-header-menu span,
+.bulbe-header-row .bulbe-header-menu span,
+.page-header.bulbe-app-header .menu-button span {
+  display: block;
+  width: 22px;
+  height: 2px;
+  border-radius: 99px;
+  background: currentColor;
+}
+
+.page-header.bulbe-app-header .menu-button {
+  align-content: center;
+  gap: 5px;
+}
+
+.bulbe-app-header .bulbe-header-icon-only,
+.bulbe-header-row .bulbe-header-icon-only,
+.header.bulbe-app-header .bell-icon,
+.topbar.bulbe-app-header .bell-icon {
+  display: block;
+  width: var(--bulbe-header-control-size);
+  height: var(--bulbe-header-control-size);
+  padding: calc((var(--bulbe-header-control-size) - var(--bulbe-header-icon-size)) / 2);
+  box-sizing: border-box;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+.bulbe-app-header .bulbe-header-logo,
+.bulbe-header-row .bulbe-header-logo,
+.header.bulbe-app-header .logo-container,
+.topbar.bulbe-app-header .logo,
+.page-header.bulbe-app-header .logo,
+.header-top.bulbe-header-row .logo,
+.top-bar.bulbe-header-row .logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--bulbe-header-logo-width);
+  height: var(--bulbe-header-logo-height);
+  max-height: var(--bulbe-header-logo-height);
+  margin: 0;
+  transform: translate(-50%, -50%);
+  object-fit: contain;
+}
+
+.bulbe-app-header img.bulbe-header-logo,
+.bulbe-header-row img.bulbe-header-logo,
+.topbar.bulbe-app-header img.logo,
+.page-header.bulbe-app-header img.logo,
+.header-top.bulbe-header-row img.logo,
+.top-bar.bulbe-header-row img.logo {
+  height: auto;
+}
+
+.bulbe-app-header .bulbe-header-logo img,
+.bulbe-header-row .bulbe-header-logo img,
+.header.bulbe-app-header .logo-container img {
+  display: block;
+  width: 100%;
+  max-height: 100%;
+  margin: 0;
+  object-fit: contain;
+}
+
+.bulbe-app-header .bulbe-header-actions,
+.bulbe-header-row .bulbe-header-actions,
+.header.bulbe-app-header .header-icons,
+.topbar.bulbe-app-header .top-icons,
+.page-header.bulbe-app-header .header-actions,
+.header-top.bulbe-header-row .header-actions,
+.top-bar.bulbe-header-row .actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: var(--bulbe-header-actions-gap);
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.bulbe-app-header .bulbe-header-profile,
+.bulbe-header-row .bulbe-header-profile,
+.header.bulbe-app-header .user-avatar,
+.topbar.bulbe-app-header .profile,
+.page-header.bulbe-app-header .avatar,
+.top-bar.bulbe-header-row .profile-circle {
+  display: block;
+  width: var(--bulbe-header-profile-size);
+  height: var(--bulbe-header-profile-size);
+  min-width: var(--bulbe-header-profile-size);
+  border: 2px solid currentColor;
+  border-radius: 50%;
+  box-sizing: border-box;
+  background: transparent;
+}
+
+.header-top.bulbe-header-row .header-actions .icon-btn:last-child {
+  width: var(--bulbe-header-profile-size);
+  height: var(--bulbe-header-profile-size);
+  min-width: var(--bulbe-header-profile-size);
+}
+
+.bulbe-app-header .bulbe-header-profile-control > svg,
+.bulbe-header-row .bulbe-header-profile-control > svg,
+.header-top.bulbe-header-row .header-actions .icon-btn:last-child > svg {
+  width: var(--bulbe-header-profile-size);
+  height: var(--bulbe-header-profile-size);
 }
 
 .bulbe-nav {
