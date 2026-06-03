@@ -49,68 +49,6 @@ button {
   background: var(--surface);
 }
 
-.page-header {
-
-  display: grid;
-  grid-template-columns: 64px 1fr 88px;
-  align-items: center;
-  
-  height: var(--bulbe-header-height);
-  min-height: var(--bulbe-header-height);
-  padding: 0 var(--bulbe-page-padding);
-  background: var(--blue);
-  border-bottom: 0;
-}
-
-.logo {
-  width: 100px;
-  height: 29px;
-  justify-self: center;
-  object-fit: contain;
-}
-
-.header-actions {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  gap: 8px;
-}
-
-.icon-button {
-  display: grid;
-  place-items: center;
-  width: 40px;
-  height: 40px;
-  padding: 0;
-  color: #ffffff;
-}
-
-.icon-button img {
-  width: 24px;
-  height: 24px;
-}
-
-.menu-button {
-  justify-self: start;
-  gap: 6px;
-  width: 24px;
-  height: 24px;
-}
-
-.menu-button span {
-  width: 20px;
-  height: 2px;
-  background: currentColor;
-  border-radius: 99px;
-}
-
-.avatar {
-  width: 32px;
-  height: 32px;
-  border: 2px solid #ffffff;
-  border-radius: 50%;
-}
-
 .hero-card {
   position: relative;
   min-height: 286px;

@@ -39,58 +39,12 @@ body {
 
 /* HEADER */
 
-.topbar {
-  height: var(--bulbe-header-height);
-  min-height: var(--bulbe-header-height);
-  background: var(--bulbe-color-blue);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 var(--bulbe-page-padding);
-  color: white;
-  border-bottom: 0;
-  position: relative;
-
-}
-
-.menu {
-  font-size: 22px;
-}
-
-.logo {
-  width: 95px;
-  object-fit: contain;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.top-icons {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  font-size: 18px;
-}
-
-.profile {
-  width: 28px;
-  height: 28px;
-  border: 2px solid white;
-  border-radius: 50%;
-}
-
 /* HERO */
 
 .hero {
   background: var(--bulbe-color-blue);
   color: white;
   padding: 20px var(--bulbe-page-padding) 35px;
-}
-
-.bell-icon {
-  width: 24px;
-  height: 24px;
 }
 
 .hero h1 {
