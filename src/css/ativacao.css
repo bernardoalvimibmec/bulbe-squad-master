@@ -498,6 +498,10 @@ button {
   height: 27px;
   border: 2.4px solid var(--blue);
   border-radius: 50%;
+  font-family: serif; 
+  font-weight: bold;
+  font-size: 16px;
+  color: #1411c5;
 }
 
 .info-icon img {
