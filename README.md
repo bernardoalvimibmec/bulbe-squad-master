@@ -171,9 +171,6 @@ A demanda consiste em tornar o funcionamento do serviço mais claro e acessível
 
 ## 3. Personas
 
-> ⚠️ **Instrução para a Squad:** As personas devem ser construídas com base em dados reais coletados pela squad (entrevistas, questionários, observação). Referência metodológica: Cooper et al. (2014) — *About Face: The Essentials of Interaction Design*.
-
----
 
 ### Persona 1 — Luciana
 
@@ -243,8 +240,6 @@ Representa perfil de usuário classe A-B, que engloba a maior parte dos assinant
 ---
 
 ## 4. User Stories
-
-> ⚠️ **Instrução para a Squad:** User Stories devem seguir o formato padrão: *"Como [persona], quero [ação], para que [benefício]"* (Cohn, 2004). Cada história deve ter critérios de aceitação mensuráveis.
 
 ### Tabela Resumo
 
@@ -477,15 +472,9 @@ A tela `fatura-e-repasse.html` exibe uma fatura Bulbe paga, o método de pagamen
 
 ## 6. Protótipos
 
-> ⚠️ **Registro do protótipo:** Não há arquivos Figma ou pasta `prototipos/` versionados neste repositório. O protótipo navegável entregue está implementado diretamente em HTML, CSS e JavaScript dentro de `src/pages`.
-
 ### 6.2 Protótipo de Alta Fidelidade
 
 **Link do protótipo interativo em código:** `src/pages/preview.html`
-
-#### Capturas de Tela
-
-As capturas não estão versionadas no repositório. Para revisar visualmente, execute o projeto localmente e acesse `src/pages/preview.html`, que funciona como índice navegável das telas.
 
 ### 6.3 Decisões de Design
 
@@ -501,7 +490,7 @@ As capturas não estão versionadas no repositório. Para revisar visualmente, e
 
 ## 7. Código-Fonte
 
-> ⚠️ **Organização:** A estrutura abaixo reflete os arquivos existentes no repositório. O projeto não possui `package.json`, pasta `components`, pasta `data` ou processo de build.
+> ⚠️ **Organização:** A estrutura abaixo reflete os arquivos existentes no repositório.
 
 ### 7.1 Estrutura de Diretórios
 
